@@ -1,0 +1,16 @@
+---
+// <Misconception claim="常見說法">為什麼不對…</Misconception> — a native <details>, works without JS.
+interface Props { claim: string }
+const { claim } = Astro.props
+---
+
+<details class="not-prose group my-3 rounded-[var(--radius-card)] border border-line bg-surface shadow-[var(--shadow-soft)] transition-shadow open:shadow-[var(--shadow-lift)]">
+  <summary class="flex min-h-14 cursor-pointer list-none items-center gap-3 px-5 py-3 font-bold [&::-webkit-details-marker]:hidden">
+    <span aria-hidden="true" class="text-lg">🤔</span>
+    <span class="flex-1">「{claim}」對嗎？</span>
+    <span aria-hidden="true" class="grid h-8 w-8 place-items-center rounded-full bg-surface-2 text-ink-2 transition-transform group-open:rotate-45">＋</span>
+  </summary>
+  <div class="border-t border-line px-5 py-4 text-[16px] leading-[1.8] [&_strong]:font-extrabold">
+    <slot />
+  </div>
+</details>

@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProgressSummary from '../components/ProgressSummary.vue'
+import { subjects } from '../data/scope'
+import { getLessons, lessonUrl } from '../lib/lessons'
+import { url } from '../lib/url'
+
+const lessons = await getLessons()
+const lessonInfo = lessons.map(l => ({
+  id: l.id, title: l.data.title, emoji: l.data.emoji, href: lessonUrl(l), total: l.data.quiz.length
+}))
+const plannedTotal = subjects.reduce((n, s) => n + s.topics.reduce((m, t) => m + t.items.length, 0), 0)
+const lessonCount = (id: string) => lessons.filter(l => l.data.subject === id).length
+
+const steps = [
+  { emoji: '💡', title: '先聽比喻', text: '用學開車、逛超市這種生活例子，先抓住概念的感覺。' },
+  { emoji: '🧭', title: '學會判斷', text: '考題都是情境題。用互動流程圖練習「看到題目怎麼想」。' },
+  { emoji: '⚠️', title: '避開陷阱', text: '整理歷屆題目最常挖的坑，點開誤區卡自我檢查。' },
+  { emoji: '📝', title: '馬上測驗', text: '每個選項都有解析，錯了也知道為什麼錯。' }
+]
+
+const facts = [
+  { big: '2', unit: '科', text: '人工智慧基礎概論＋生成式 AI 應用與規劃' },
+  { big: '50', unit: '題', text: '每科單選、75 分鐘、電腦作答' },
+  { big: '70', unit: '分', text: '兩科同考：平均 70 分且每科不低於 60 分' },
+  { big: '情境', unit: '題', text: '幾乎都是「某企業想做 X，哪種做法最適合」' }
+]
+---
+
+<BaseLayout title="AI 讀書會">
+  <!-- Hero -->
+  <section class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pt-16 lg:grid-cols-[1.15fr_1fr]">
+    <div>
+      <p class="inline-flex rounded-full bg-brand-soft px-4 py-1.5 text-sm font-extrabold text-brand">iPAS AI 應用規劃師・初級</p>
+      <h1 class="mt-5 text-[34px] font-extrabold leading-[1.25] tracking-tight sm:text-[52px]">
+        不用啃 PDF，<br />也能<span class="text-brand">讀懂 AI</span>。
+      </h1>
+      <p class="mt-5 max-w-xl text-lg leading-[1.8] text-ink-2">
+        給完全不懂 AI 的上班族：每個單元都用生活比喻、互動圖解和情境小測驗，一次只講一個概念。
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={url('l11/')} class="inline-flex min-h-12 items-center rounded-[var(--radius-btn)] bg-brand px-6 font-extrabold text-on-brand shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5">從科目一開始 →</a>
+        <a href={url('about/')} class="inline-flex min-h-12 items-center rounded-[var(--radius-btn)] border-2 border-line px-6 font-extrabold transition-colors hover:border-brand">這個網站怎麼做的？</a>
+      </div>
+    </div>
+    <ProgressSummary client:load lessons={lessonInfo} plannedTotal={plannedTotal} />
+  </section>
+
+  <!-- Subjects -->
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6" aria-labelledby="subjects-title">
+    <h2 id="subjects-title" class="text-2xl font-extrabold tracking-tight">兩個科目</h2>
+    <div class="mt-6 grid gap-5 md:grid-cols-2">
+      {subjects.map(s => (
+        <a href={url(`${s.id}/`)}
+           class:list={['group relative overflow-hidden rounded-[var(--radius-card)] p-6 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] sm:p-8', s.tone === 'brand' ? 'bg-brand-soft' : 'bg-accent-soft']}>
+          <span aria-hidden="true" class="absolute -right-4 -top-6 text-[120px] opacity-15 transition-transform group-hover:rotate-6">{s.emoji}</span>
+          <p class:list={['text-sm font-extrabold', s.tone === 'brand' ? 'text-brand' : 'text-accent']}>{s.short}</p>
+          <p class="mt-1 text-2xl font-extrabold">{s.title}</p>
+          <p class="mt-3 max-w-md leading-[1.8] text-ink-2">{s.blurb}</p>
+          <p class="mt-6 font-extrabold">
+            已上線 {lessonCount(s.id)} 單元 <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- How each lesson works -->
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6" aria-labelledby="how-title">
+    <h2 id="how-title" class="text-2xl font-extrabold tracking-tight">每個單元都是這四步</h2>
+    <ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {steps.map((s, i) => (
+        <li class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+          <div class="flex items-center justify-between">
+            <span aria-hidden="true" class="text-3xl">{s.emoji}</span>
+            <span class="text-sm font-extrabold text-ink-2">STEP {i + 1}</span>
+          </div>
+          <p class="mt-3 text-lg font-extrabold">{s.title}</p>
+          <p class="mt-1 text-[15px] leading-[1.75] text-ink-2">{s.text}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- Exam facts -->
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6" aria-labelledby="facts-title">
+    <h2 id="facts-title" class="text-2xl font-extrabold tracking-tight">考試長什麼樣子</h2>
+    <dl class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {facts.map(f => (
+        <div class="rounded-[var(--radius-card)] bg-surface-2 p-5">
+          <dt class="text-[40px] font-extrabold leading-none text-brand">{f.big}<span class="ml-1 text-lg">{f.unit}</span></dt>
+          <dd class="mt-3 text-[15px] leading-[1.7] text-ink-2">{f.text}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <!-- Teasers -->
+  <section class="mx-auto grid max-w-6xl gap-5 px-4 pb-16 pt-10 sm:px-6 md:grid-cols-2">
+    <a href={url('news/')} class="group rounded-[var(--radius-card)] border border-line bg-surface p-6 shadow-[var(--shadow-soft)] transition-shadow hover:shadow-[var(--shadow-lift)]">
+      <span aria-hidden="true" class="text-3xl">📰</span>
+      <p class="mt-3 text-xl font-extrabold">AI 時事</p>
+      <p class="mt-2 leading-[1.8] text-ink-2">考題每一梯次都會加入新技術。每月整理一次「可能變成考題」的新東西。</p>
+    </a>
+    <a href={url('exam/')} class="group rounded-[var(--radius-card)] border border-line bg-surface p-6 shadow-[var(--shadow-soft)] transition-shadow hover:shadow-[var(--shadow-lift)]">
+      <span aria-hidden="true" class="text-3xl">⏱️</span>
+      <p class="mt-3 text-xl font-extrabold">模擬考 <span class="ml-1 rounded-full bg-surface-2 px-2.5 py-0.5 align-middle text-xs font-bold text-ink-2">成員限定</span></p>
+      <p class="mt-2 leading-[1.8] text-ink-2">50 題、75 分鐘，和正式考試一樣。交卷後看解析，錯題自動收進錯題本。</p>
+    </a>
+  </section>
+</BaseLayout>

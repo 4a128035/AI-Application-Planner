@@ -1,0 +1,130 @@
+---
+import '@fontsource-variable/nunito'
+import '@fontsource-variable/noto-sans-tc'
+import '../styles/global.css'
+import { url } from '../lib/url'
+import themeInit from '../scripts/theme-init.js?raw'
+
+interface Props {
+  title: string
+  description?: string
+}
+
+const { title, description = 'iPAS AI 應用規劃師（初級）互動式學習網站：用生活比喻、圖解與情境小測驗準備考試。' } = Astro.props
+const siteName = 'AI 讀書會'
+const pageTitle = title === siteName ? title : `${title}｜${siteName}`
+
+const nav = [
+  { key: 'home', label: '首頁', icon: '🏠', href: url('') },
+  { key: 'l11', label: '科目一', icon: '🧠', href: url('l11/') },
+  { key: 'l12', label: '科目二', icon: '🛠️', href: url('l12/') },
+  { key: 'news', label: '時事', icon: '📰', href: url('news/') },
+  { key: 'exam', label: '模擬考', icon: '⏱️', href: url('exam/') }
+]
+const path = Astro.url.pathname
+const isActive = (href: string) => (href === url('') ? path === href : path.startsWith(href))
+---
+
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#fbf8f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1917" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <title>{pageTitle}</title>
+    <!-- Apply the saved/system theme before first paint to avoid a light flash.
+         Must stay inline; astro.config.mjs hashes this exact file into the CSP. -->
+    <script is:inline set:html={themeInit} />
+  </head>
+
+  <body class="min-h-dvh flex flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-[var(--radius-btn)] focus:bg-surface focus:px-4 focus:py-2 focus:shadow-[var(--shadow-lift)]">跳到主要內容</a>
+
+    <header class="sticky top-0 z-30 border-b border-line bg-canvas/85 backdrop-blur supports-[backdrop-filter]:bg-canvas/70">
+      <div class="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6">
+        <a href={url('')} class="flex items-center gap-2 text-lg font-extrabold tracking-tight">
+          <span aria-hidden="true" class="grid h-9 w-9 place-items-center rounded-[var(--radius-btn)] bg-brand-soft text-xl">🌱</span>
+          {siteName}
+        </a>
+
+        <nav aria-label="主選單" class="ml-auto hidden md:block">
+          <ul class="flex items-center gap-1">
+            {nav.map(item => (
+              <li>
+                <a
+                  href={item.href}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
+                  class:list={[
+                    'inline-flex min-h-11 items-center rounded-full px-4 font-semibold transition-colors',
+                    isActive(item.href) ? 'bg-brand-soft text-brand' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'
+                  ]}
+                >{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          data-theme-toggle
+          class="ml-auto grid h-11 w-11 place-items-center rounded-full text-xl transition-colors hover:bg-surface-2 md:ml-2"
+          aria-label="切換深色／淺色模式"
+        >
+          <span class="dark:hidden" aria-hidden="true">🌙</span>
+          <span class="hidden dark:inline" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="flex-1 pb-28 md:pb-0">
+      <slot />
+    </main>
+
+    <footer class="border-t border-line pb-28 md:pb-0">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 text-sm text-ink-2 sm:px-6 md:grid-cols-[1fr_auto]">
+        <p class="max-w-prose">
+          本站為讀書會個人學習用途，非 iPAS 官方網站；教材與示範題為自行撰寫。考試資訊請以
+          <a class="font-semibold text-brand underline underline-offset-4" href="https://ipd.nat.gov.tw/ipas/AIAP/" rel="noopener noreferrer" target="_blank">iPAS 官方網站</a>為準。
+        </p>
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 font-semibold">
+          <li><a class="hover:text-ink" href={url('about/')}>關於本站</a></li>
+          <li><a class="hover:text-ink" href={url('design/')}>設計規範</a></li>
+          <li><a class="hover:text-ink" href={url('security/')}>資安設計</a></li>
+          <li><a class="hover:text-ink" href="https://github.com/4a128035/AI-Application-Planner" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Phone: app-style bottom tab bar (thumb reach). Desktop uses the header nav. -->
+    <nav aria-label="主選單" class="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 backdrop-blur md:hidden pb-[env(safe-area-inset-bottom)]">
+      <ul class="mx-auto grid max-w-md grid-cols-5">
+        {nav.map(item => (
+          <li>
+            <a
+              href={item.href}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              class:list={[
+                'flex min-h-16 flex-col items-center justify-center gap-0.5 text-xs font-bold transition-colors',
+                isActive(item.href) ? 'text-brand' : 'text-ink-2'
+              ]}
+            >
+              <span aria-hidden="true" class:list={['text-xl transition-transform', isActive(item.href) && 'scale-110']}>{item.icon}</span>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <script>
+      document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
+        const dark = document.documentElement.classList.toggle('dark')
+        try { localStorage.setItem('theme', dark ? 'dark' : 'light') } catch { /* storage blocked */ }
+      })
+    </script>
+  </body>
+</html>

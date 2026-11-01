@@ -1,0 +1,25 @@
+---
+// <Callout type="analogy|key|trap|note" title="可選標題">內容</Callout>
+interface Props {
+  type?: 'analogy' | 'key' | 'trap' | 'note'
+  title?: string
+}
+const { type = 'note', title } = Astro.props
+
+const styles = {
+  analogy: { icon: '💡', label: '生活比喻', box: 'bg-info-soft border-info/30', head: 'text-info' },
+  key: { icon: '📌', label: '重點', box: 'bg-brand-soft border-brand/30', head: 'text-brand' },
+  trap: { icon: '⚠️', label: '考試陷阱', box: 'bg-warn-soft border-warn/30', head: 'text-warn' },
+  note: { icon: 'ℹ️', label: '補充', box: 'bg-surface-2 border-line', head: 'text-ink-2' }
+}[type]
+---
+
+<aside class:list={['not-prose my-8 rounded-[var(--radius-card)] border px-5 py-4 sm:px-6', styles.box]}>
+  <p class:list={['mb-2 flex items-center gap-2 font-extrabold', styles.head]}>
+    <span aria-hidden="true">{styles.icon}</span>
+    {title ?? styles.label}
+  </p>
+  <div class="space-y-2 text-[16px] leading-[1.8] [&_strong]:font-extrabold [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5">
+    <slot />
+  </div>
+</aside>

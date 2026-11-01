@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PageHero from '../../components/PageHero.astro'
+
+const timeline = [
+  { when: '2025/11', what: 'MCP、A2A、Solution Graph、GPT-OSS、Context Engineering' },
+  { when: '2026/03', what: 'Sora 的 C2PA、Veo 的 SynthID、AgentKit、LoRA、RFT' },
+  { when: '2026/05', what: 'Claude Code、Dify、Extended Thinking、CLIP、Webhook' },
+  { when: '2026/08', what: 'MCP vs Skill、Thinking Budget、模型路由、Reranker' }
+]
+---
+
+<BaseLayout title="AI 時事" description="iPAS 考題持續加入新 AI 技術。每月整理一次可能變成考題的新東西。">
+  <PageHero emoji="📰" title="AI 時事" lead="考題每一梯次都會加入新技術，而且大約落後實際發布 3～9 個月。這裡每月整理一次，只收「可能變成考題」的新東西。" />
+
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_22rem]">
+    <section aria-labelledby="tl-title">
+      <h2 id="tl-title" class="text-xl font-extrabold">歷屆考題出現過的新主題</h2>
+      <ol class="mt-6 space-y-4 border-l-2 border-line pl-6">
+        {timeline.map(t => (
+          <li class="relative">
+            <span aria-hidden="true" class="absolute -left-[33px] top-2 h-4 w-4 rounded-full border-4 border-canvas bg-brand"></span>
+            <p class="text-sm font-extrabold text-brand">{t.when} 考試</p>
+            <p class="mt-1 font-semibold leading-[1.75]">{t.what}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <aside class="h-fit rounded-[var(--radius-card)] bg-info-soft p-6">
+      <p class="font-extrabold text-info">🗓️ 更新時程</p>
+      <p class="mt-2 leading-[1.8]">第一次更新預計在 <strong>2026 年 12 月</strong>：115 年第四次考試的新主題，以及 116 年評鑑範圍的變動。</p>
+      <p class="mt-4 font-extrabold text-info">✅ 收錄標準</p>
+      <ul class="mt-2 list-disc space-y-1 pl-5 leading-[1.75]">
+        <li>能對應到官方評鑑代碼</li>
+        <li>能出成情境題</li>
+        <li>附上原始來源連結</li>
+      </ul>
+    </aside>
+  </div>
+</BaseLayout>

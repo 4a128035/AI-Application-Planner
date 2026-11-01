@@ -1,0 +1,151 @@
+---
+import { render } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Badge from '../../components/Badge.astro'
+import Quiz from '../../components/Quiz.vue'
+import { getLessons, lessonUrl, type Lesson } from '../../lib/lessons'
+import { subjectById } from '../../data/scope'
+import { url } from '../../lib/url'
+
+export async function getStaticPaths() {
+  const lessons = await getLessons()
+  return lessons.map((lesson, i) => ({
+    params: { subject: lesson.data.subject, slug: lesson.id },
+    props: { lesson, prev: lessons[i - 1], next: lessons[i + 1] }
+  }))
+}
+
+interface Props { lesson: Lesson; prev?: Lesson; next?: Lesson }
+const { lesson, prev, next } = Astro.props
+const { Content, headings } = await render(lesson)
+const subject = subjectById[lesson.data.subject]
+const tone = subject.tone
+
+const sections = [
+  ...headings.filter(h => h.depth === 2).map(h => ({ slug: h.slug, text: h.text })),
+  ...(lesson.data.quiz.length ? [{ slug: 'quiz', text: '動手測一下' }] : [])
+]
+---
+
+<BaseLayout title={lesson.data.title} description={lesson.data.description}>
+  <!-- Reading progress: width is driven by JS through CSSOM (allowed under our CSP). -->
+  <div class="fixed inset-x-0 top-0 z-40 h-1 bg-transparent" aria-hidden="true">
+    <div data-reading-bar class:list={['h-full origin-left scale-x-0', tone === 'brand' ? 'bg-brand' : 'bg-accent']}></div>
+  </div>
+
+  <!-- 58rem = 13rem TOC + 2.5rem gap + ~38-character content column, centred as one block -->
+  <div class="mx-auto max-w-[58rem] px-4 sm:px-6">
+    <!-- Lesson hero -->
+    <header class="pb-8 pt-8 sm:pt-12">
+      <nav aria-label="麵包屑" class="mb-6 text-sm font-semibold text-ink-2">
+        <ol class="flex flex-wrap items-center gap-2">
+          <li><a class="hover:text-ink" href={url('')}>首頁</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a class="hover:text-ink" href={url(`${subject.id}/`)}>{subject.short}</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page" class="text-ink">{lesson.data.title}</li>
+        </ol>
+      </nav>
+
+      <div class="flex flex-col gap-5 sm:flex-row sm:items-center">
+        <span aria-hidden="true" class:list={['grid h-20 w-20 flex-none place-items-center rounded-3xl text-5xl', tone === 'brand' ? 'bg-brand-soft' : 'bg-accent-soft']}>{lesson.data.emoji}</span>
+        <div>
+          <Badge tone={tone}>{lesson.data.code}・{subject.short}</Badge>
+          <h1 class="mt-2 text-[28px] font-extrabold leading-tight tracking-tight sm:text-[40px]">{lesson.data.title}</h1>
+          <p class="mt-2 max-w-2xl text-ink-2">{lesson.data.description}</p>
+        </div>
+      </div>
+
+      <ul class="mt-6 flex flex-wrap gap-2 text-sm font-bold">
+        <li class="rounded-full bg-surface px-4 py-1.5 shadow-[var(--shadow-soft)]">⏱️ 約 {lesson.data.minutes} 分鐘</li>
+        {lesson.data.quiz.length > 0 && <li class="rounded-full bg-surface px-4 py-1.5 shadow-[var(--shadow-soft)]">📝 {lesson.data.quiz.length} 題情境小測驗</li>}
+      </ul>
+    </header>
+
+    <!-- Phone/tablet: section chips -->
+    <nav aria-label="本頁段落" class="-mx-4 mb-6 overflow-x-auto px-4 lg:hidden">
+      <ul class="flex w-max gap-2">
+        {sections.map(s => (
+          <li><a href={`#${s.slug}`} class="inline-flex min-h-11 items-center whitespace-nowrap rounded-full border border-line bg-surface px-4 text-sm font-bold">{s.text}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="grid gap-10 pb-16 lg:grid-cols-[13rem_minmax(0,1fr)]">
+      <!-- Desktop: sticky table of contents -->
+      <aside class="hidden lg:block">
+        <nav aria-label="本頁段落" class="sticky top-24">
+          <p class="mb-3 text-xs font-extrabold uppercase tracking-widest text-ink-2">本頁重點</p>
+          <ol class="space-y-1 border-l-2 border-line">
+            {sections.map(s => (
+              <li>
+                <a href={`#${s.slug}`} data-toc={s.slug}
+                   class="-ml-0.5 block border-l-2 border-transparent py-1.5 pl-4 text-[15px] font-semibold text-ink-2 transition-colors hover:text-ink data-[active]:border-brand data-[active]:text-brand">
+                  {s.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </aside>
+
+      <div class="min-w-0">
+        <article class="lesson">
+          <Content />
+        </article>
+
+        {lesson.data.quiz.length > 0 && (
+          <section class="max-w-[38em]">
+            <h2 id="quiz" class="mt-14 text-2xl font-extrabold tracking-tight">動手測一下</h2>
+            <p class="mt-2 text-ink-2">作答後每個選項都會顯示解析。弄懂錯的選項為什麼錯，比背答案更有用。</p>
+            <Quiz client:visible lessonId={lesson.id} questions={lesson.data.quiz} title={`${lesson.data.title}：情境小測驗`} />
+          </section>
+        )}
+
+        <nav aria-label="上一個／下一個單元" class="mt-12 grid max-w-[38em] gap-3 sm:grid-cols-2">
+          {prev ? (
+            <a href={lessonUrl(prev)} class="rounded-[var(--radius-card)] border border-line bg-surface p-4 transition-shadow hover:shadow-[var(--shadow-lift)]">
+              <span class="text-sm font-bold text-ink-2">← 上一單元</span>
+              <span class="mt-1 block font-extrabold">{prev.data.emoji} {prev.data.title}</span>
+            </a>
+          ) : <span />}
+          {next ? (
+            <a href={lessonUrl(next)} class="rounded-[var(--radius-card)] border border-line bg-surface p-4 text-right transition-shadow hover:shadow-[var(--shadow-lift)]">
+              <span class="text-sm font-bold text-ink-2">下一單元 →</span>
+              <span class="mt-1 block font-extrabold">{next.data.emoji} {next.data.title}</span>
+            </a>
+          ) : (
+            <a href={url(`${subject.id}/`)} class="rounded-[var(--radius-card)] border border-dashed border-line p-4 text-right transition-colors hover:border-brand">
+              <span class="text-sm font-bold text-ink-2">回到單元總覽 →</span>
+              <span class="mt-1 block font-extrabold">{subject.emoji} {subject.short}：{subject.title}</span>
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Reading progress bar
+  const bar = document.querySelector<HTMLElement>('[data-reading-bar]')
+  const update = () => {
+    const max = document.documentElement.scrollHeight - innerHeight
+    if (bar) bar.style.transform = `scaleX(${max > 0 ? Math.min(scrollY / max, 1) : 0})`
+  }
+  addEventListener('scroll', update, { passive: true })
+  update()
+
+  // Highlight the table-of-contents entry for the section being read
+  const links = new Map(
+    [...document.querySelectorAll<HTMLElement>('[data-toc]')].map(a => [a.dataset.toc!, a])
+  )
+  const observer = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue
+      links.forEach(a => a.removeAttribute('data-active'))
+      links.get(e.target.id)?.setAttribute('data-active', '')
+    }
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  links.forEach((_, id) => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>

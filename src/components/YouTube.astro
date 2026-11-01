@@ -1,0 +1,32 @@
+---
+// <YouTube id="影片ID" title="影片標題" />
+// Privacy-friendly facade: shows a thumbnail first and only loads the
+// youtube-nocookie player after the reader clicks, so no YouTube requests happen on page load.
+interface Props { id: string; title: string }
+const { id, title } = Astro.props
+if (!/^[\w-]{11}$/.test(id)) throw new Error(`YouTube: invalid video id "${id}"`)
+---
+
+<figure class="not-prose my-8">
+  <div class="relative aspect-video overflow-hidden rounded-[var(--radius-card)] bg-surface-2 shadow-[var(--shadow-soft)]" data-yt={id} data-yt-title={title}>
+    <button type="button" class="group absolute inset-0 grid w-full place-items-center" aria-label={`播放影片：${title}`}>
+      <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover" />
+      <span class="relative grid h-16 w-16 place-items-center rounded-full bg-brand text-2xl text-on-brand shadow-[var(--shadow-lift)] transition-transform group-hover:scale-110">▶</span>
+    </button>
+  </div>
+  <figcaption class="mt-3 text-center text-sm text-ink-2">🎬 {title}・點擊後才會連線到 YouTube</figcaption>
+</figure>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-yt]').forEach(box => {
+    box.querySelector('button')?.addEventListener('click', () => {
+      const frame = document.createElement('iframe')
+      frame.src = `https://www.youtube-nocookie.com/embed/${box.dataset.yt}?autoplay=1`
+      frame.title = box.dataset.ytTitle ?? 'YouTube 影片'
+      frame.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; autoplay'
+      frame.allowFullscreen = true
+      frame.className = 'absolute inset-0 h-full w-full border-0'
+      box.replaceChildren(frame)
+    }, { once: true })
+  })
+</script>

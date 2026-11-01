@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+
+const threats = [
+  { asset: '私人題庫（含歷屆原題）', threat: '非成員繞過登入，直接呼叫後端拿題目', impact: '題庫外流、著作權問題' },
+  { asset: '模擬考公正性', threat: '用開發者工具看答案、竄改分數', impact: '模擬考失去意義' },
+  { asset: '成員個資（email、成績）', threat: '被其他人讀取', impact: '違反個資最小化原則' },
+  { asset: 'Google／GitHub 帳號', threat: '帳號被盜', impact: '最嚴重：後端與原始碼全部失守' },
+  { asset: '網站本身', threat: 'XSS、惡意腳本、npm 套件遭污染', impact: '訪客被攻擊、網站被竄改' },
+  { asset: '試算表', threat: '公式注入（以 = 開頭的輸入）', impact: '試算表執行惡意公式' }
+]
+
+type Status = 'done' | 'next'
+const layers: { emoji: string; title: string; items: { s: Status; text: string }[] }[] = [
+  {
+    emoji: '🔑', title: '第一層：帳號', items: [
+      { s: 'done', text: 'Google 與 GitHub 帳號皆啟用兩步驟驗證' }
+    ]
+  },
+  {
+    emoji: '📦', title: '第二層：程式碼庫與供應鏈', items: [
+      { s: 'done', text: 'Secret scanning＋Push protection：誤推金鑰會被 GitHub 直接擋下' },
+      { s: 'done', text: 'Dependabot：漏洞警示、自動安全更新、每週檢查套件與 Actions 版本' },
+      { s: 'done', text: '建置時執行 npm audit，有高風險漏洞就停止部署' },
+      { s: 'done', text: 'GitHub Actions 鎖定到完整 commit 雜湊值，權限依工作最小化，不保留 git 憑證' },
+      { s: 'done', text: 'main 分支禁止強制覆寫與刪除；開啟私下回報漏洞管道' },
+      { s: 'done', text: '.gitignore 排除 PDF、試算表與題庫檔，永遠不進公開 repo' }
+    ]
+  },
+  {
+    emoji: '🌐', title: '第三層：前端網站', items: [
+      { s: 'done', text: 'Content Security Policy：腳本與樣式只允許本站檔案＋建置時算出的雜湊值' },
+      { s: 'done', text: '字體自行託管，不從 Google Fonts 等第三方載入' },
+      { s: 'done', text: 'YouTube 先顯示縮圖，點擊後才載入 youtube-nocookie 播放器' },
+      { s: 'done', text: '所有題目文字以純文字渲染，不使用 v-html／innerHTML，杜絕 XSS' },
+      { s: 'done', text: '瀏覽器內的學習進度只存作答紀錄，讀取時驗證格式，不存任何個資' },
+      { s: 'done', text: '外部連結加上 rel="noopener noreferrer"，並設定 Referrer-Policy' },
+      { s: 'next', text: '登入憑證（ID token）只放在記憶體，不寫入 localStorage' }
+    ]
+  },
+  {
+    emoji: '⚙️', title: '第四層：模擬考後端（Google Apps Script）', items: [
+      { s: 'next', text: '每個請求都驗證 Google ID token 的簽章、發給誰（aud）、是否過期、email 已驗證，再比對白名單' },
+      { s: 'next', text: '絕不相信前端自己說的 email；每人只能讀自己的作答紀錄' },
+      { s: 'next', text: '出題不送答案，交卷後由伺服器批改；同一次考試不能重複交卷' },
+      { s: 'next', text: '只接受預先定義的動作，驗證型別與長度；寫入前中和 = + - @ 開頭的內容' },
+      { s: 'next', text: '每人每分鐘請求數限制；錯誤訊息不洩漏細節，紀錄不存 token' },
+      { s: 'next', text: '白名單與設定放在試算表與 Script Properties，不寫進程式碼' }
+    ]
+  },
+  {
+    emoji: '🪪', title: '第五層：個資與隱私', items: [
+      { s: 'next', text: '只蒐集必要資料：email、顯示名稱、作答紀錄，並公告用途與保存期限' },
+      { s: 'next', text: '試算表不共用給任何人，以 Google 版本紀錄作為備份' }
+    ]
+  }
+]
+
+const limits = [
+  { title: 'GitHub Pages 無法自訂 HTTP 標頭', text: 'CSP 只能用 <meta> 設定，因此無法使用 frame-ancestors 防止網站被嵌入其他網頁（點擊劫持）。本站沒有表單或付款，風險很低。github.io 網域本身已強制 HTTPS（HSTS）。' },
+  { title: 'Apps Script 無法限制呼叫來源', text: '任何人都能對後端網址發送請求，所以安全性全部建立在「每個請求都驗證 Google token」。這也是為什麼這一關必須做得最嚴格。' },
+  { title: '瀏覽器內的學習進度可以被竄改', text: '那只是讀者自己的進度提示，不影響任何人。正式的模擬考成績由伺服器批改與保存。' }
+]
+---
+
+<BaseLayout title="資安設計" description="AI 讀書會網站的威脅模型、分層防護措施與已知限制。">
+  <PageHero emoji="🛡️" title="資安設計" lead="這個網站同時是公開網站，又有登入與私人題庫。資安從設計階段就納入，而不是做完才補。這也剛好是考試範圍（L11203 資料隱私與安全、L12303 風險管理）的實作。" tone="accent" />
+
+  <div class="mx-auto max-w-6xl space-y-16 px-4 pb-16 sm:px-6">
+    <section aria-labelledby="tm-title">
+      <h2 id="tm-title" class="text-2xl font-extrabold tracking-tight">威脅模型：要保護什麼、防誰</h2>
+      <div class="mt-6 overflow-x-auto rounded-[var(--radius-card)] border border-line bg-surface">
+        <table class="w-full min-w-[40rem] text-left text-[15px] leading-[1.7]">
+          <thead class="bg-surface-2 text-sm">
+            <tr><th class="px-5 py-3 font-extrabold">要保護的</th><th class="px-5 py-3 font-extrabold">威脅</th><th class="px-5 py-3 font-extrabold">後果</th></tr>
+          </thead>
+          <tbody class="divide-y divide-line">
+            {threats.map(t => (
+              <tr><td class="px-5 py-3 font-bold">{t.asset}</td><td class="px-5 py-3">{t.threat}</td><td class="px-5 py-3 text-ink-2">{t.impact}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="ly-title">
+      <h2 id="ly-title" class="text-2xl font-extrabold tracking-tight">分層防護</h2>
+      <p class="mt-2 flex flex-wrap gap-4 text-sm font-bold text-ink-2">
+        <span><span class="text-ok">✓ 已實作</span></span>
+        <span><span class="text-warn">○ 後端階段實作</span></span>
+      </p>
+      <div class="mt-6 grid gap-5 lg:grid-cols-2">
+        {layers.map(l => (
+          <section class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] sm:p-6">
+            <h3 class="text-lg font-extrabold"><span aria-hidden="true">{l.emoji}</span> {l.title}</h3>
+            <ul class="mt-4 space-y-3">
+              {l.items.map(i => (
+                <li class="flex gap-3 text-[15px] leading-[1.7]">
+                  <span class:list={['mt-0.5 grid h-6 w-6 flex-none place-items-center rounded-full text-xs font-extrabold', i.s === 'done' ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn']}>
+                    {i.s === 'done' ? '✓' : '○'}
+                  </span>
+                  <span>
+                    {i.text}
+                    <span class="sr-only">（{i.s === 'done' ? '已實作' : '後端階段實作'}）</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
+
+    <section aria-labelledby="lm-title">
+      <h2 id="lm-title" class="text-2xl font-extrabold tracking-tight">已知限制</h2>
+      <p class="mt-2 max-w-2xl text-ink-2">沒有系統是零風險。把限制寫清楚，比假裝它們不存在更安全。</p>
+      <ul class="mt-6 grid gap-4 md:grid-cols-3">
+        {limits.map(m => (
+          <li class="rounded-[var(--radius-card)] bg-warn-soft p-5">
+            <p class="font-extrabold text-warn">⚠️ {m.title}</p>
+            <p class="mt-2 text-[15px] leading-[1.75]">{m.text}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

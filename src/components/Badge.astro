@@ -1,0 +1,14 @@
+---
+// Scope-code tag, e.g. <Badge tone="brand">L11302</Badge>
+interface Props { tone?: 'brand' | 'accent' | 'neutral' }
+const { tone = 'neutral' } = Astro.props
+const toneClass = {
+  brand: 'bg-brand-soft text-brand',
+  accent: 'bg-accent-soft text-accent',
+  neutral: 'bg-surface-2 text-ink-2'
+}[tone]
+---
+
+<span class:list={['inline-flex items-center rounded-full px-3 py-0.5 text-[13px] font-bold tracking-wide', toneClass]}>
+  <slot />
+</span>

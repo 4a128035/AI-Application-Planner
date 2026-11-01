@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Dark mode follows the `.dark` class on <html>, set before first paint by BaseLayout. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Design tokens ───────────────────────────────────────────────
+   Semantic colours are CSS variables so light/dark swap in one place.
+   Every text/background pair used in the UI is ≥ 4.5:1 (WCAG AA) in both
+   themes — checked numerically, including colour-on-tint pairs such as
+   accent on accent-soft and ok on ok-soft.                            */
+:root {
+  --canvas: #fbf8f3;
+  --surface: #ffffff;
+  --surface-2: #f3eee6;
+  --line: #e7e0d5;
+  --ink: #2b2a28;
+  --ink-2: #6b6760;
+
+  --brand: #0f766e;        /* 科目一 · 主色 */
+  --brand-soft: #e0f2ef;
+  --on-brand: #ffffff;
+  --accent: #b93d0b;       /* 科目二 · 輔色 */
+  --accent-soft: #fdebdd;
+
+  --ok: #137336;   --ok-soft: #e3f4e8;
+  --bad: #be123c;  --bad-soft: #fce7ec;
+  --warn: #b45309; --warn-soft: #fef3d7;
+  --info: #1d4ed8; --info-soft: #e3ecfd;
+
+  color-scheme: light;
+}
+
+.dark {
+  --canvas: #1a1917;
+  --surface: #24221f;
+  --surface-2: #2e2b27;
+  --line: #3a3631;
+  --ink: #edeae4;
+  --ink-2: #a8a29a;
+
+  --brand: #2dd4bf;
+  --brand-soft: #133a36;
+  --on-brand: #0b1f1d;
+  --accent: #fb923c;
+  --accent-soft: #3b2416;
+
+  --ok: #4ade80;   --ok-soft: #14301e;
+  --bad: #fb7185;  --bad-soft: #3a1820;
+  --warn: #fbbf24; --warn-soft: #362a12;
+  --info: #93c5fd; --info-soft: #172440;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+}
+
+@theme {
+  /* Nunito draws Latin letters & digits (rounded, friendly); Noto Sans TC covers Chinese. */
+  --font-sans: 'Nunito Variable', 'Noto Sans TC Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;   /* 16px cards */
+  --radius-btn: 0.75rem; /* 12px buttons */
+
+  --shadow-soft: 0 1px 2px rgb(43 42 40 / 0.04), 0 8px 24px -8px rgb(43 42 40 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(43 42 40 / 0.06), 0 16px 32px -12px rgb(43 42 40 / 0.2);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  :focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  }
+}
+
+/* ── Lesson prose ────────────────────────────────────────────────
+   Typography plugin, re-coloured with our tokens and tuned for Chinese:
+   ~38 characters per line, generous line height.                     */
+@layer components {
+  .lesson {
+    @apply prose max-w-[38em];
+    --tw-prose-body: var(--ink);
+    --tw-prose-headings: var(--ink);
+    --tw-prose-bold: var(--ink);
+    --tw-prose-links: var(--brand);
+    --tw-prose-counters: var(--ink-2);
+    --tw-prose-bullets: var(--brand);
+    --tw-prose-hr: var(--line);
+    --tw-prose-quotes: var(--ink);
+    --tw-prose-quote-borders: var(--brand);
+    --tw-prose-code: var(--ink);
+    --tw-prose-th-borders: var(--line);
+    --tw-prose-td-borders: var(--line);
+    font-size: 17px;
+    line-height: 1.85;
+  }
+  /* Prose tweaks apply to Markdown output only, never inside components marked .not-prose */
+  .lesson :where(h2):not(:where(.not-prose, .not-prose *)) { @apply mt-14 mb-4 text-2xl font-extrabold tracking-tight; }
+  .lesson :where(h3):not(:where(.not-prose, .not-prose *)) { @apply mt-10 text-xl font-bold; }
+  .lesson :where(p):not(:where(.not-prose, .not-prose *)) { @apply my-4; }
+  .lesson :where(a):not(:where(.not-prose, .not-prose *)) { @apply font-semibold underline decoration-2 underline-offset-4; }
+  .lesson :where(blockquote):not(:where(.not-prose, .not-prose *)) {
+    @apply not-italic rounded-r-[var(--radius-card)] bg-brand-soft px-5 py-3 font-semibold;
+  }
+  /* The typography plugin adds curly quotes around blockquotes; Chinese text doesn't want them */
+  .lesson blockquote p:first-of-type::before,
+  .lesson blockquote p:last-of-type::after { content: none; }
+  /* Tables scroll sideways on phones instead of squashing Chinese text */
+  .lesson :where(table):not(:where(.not-prose *)) { @apply block overflow-x-auto rounded-[var(--radius-card)] border border-line; }
+  .lesson :where(thead):not(:where(.not-prose *)) { @apply bg-surface-2; }
+  .lesson :where(th, td):not(:where(.not-prose *)) { @apply min-w-[7em] px-4 py-3 align-top; }
+}
