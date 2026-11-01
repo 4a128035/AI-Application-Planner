@@ -1,0 +1,6 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Exam source PDFs and question banks never belong in this public repo
+*.pdf

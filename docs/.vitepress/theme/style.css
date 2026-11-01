@@ -1,0 +1,17 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #3a7bd5 20%, #00b4a0);
+}
+
+/* Comparison tables in lessons read better at full width */
+.vp-doc table { display: table; width: 100%; }
+
+/* Scope-code tag at the top of each lesson, e.g. <span class="badge">L11302 …</span> */
+.vp-doc .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
