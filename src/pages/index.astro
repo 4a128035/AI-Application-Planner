@@ -7,9 +7,9 @@ import { url } from '../lib/url'
 
 const lessons = await getLessons()
 const lessonInfo = lessons.map(l => ({
-  id: l.id, title: l.data.title, emoji: l.data.emoji, href: lessonUrl(l), total: l.data.quiz.length
+  id: l.id, subject: l.data.subject, title: l.data.title, emoji: l.data.emoji, href: lessonUrl(l), total: l.data.quiz.length
 }))
-const plannedTotal = subjects.reduce((n, s) => n + s.topics.reduce((m, t) => m + t.items.length, 0), 0)
+const subjectInfo = subjects.map(s => ({ id: s.id, short: s.short, tone: s.tone }))
 const lessonCount = (id: string) => lessons.filter(l => l.data.subject === id).length
 
 const steps = [
@@ -43,7 +43,7 @@ const facts = [
         <a href={url('about/')} class="inline-flex min-h-12 items-center rounded-[var(--radius-btn)] border-2 border-line px-6 font-extrabold transition-colors hover:border-brand">這個網站怎麼做的？</a>
       </div>
     </div>
-    <ProgressSummary client:load lessons={lessonInfo} plannedTotal={plannedTotal} />
+    <ProgressSummary client:load lessons={lessonInfo} subjects={subjectInfo} />
   </section>
 
   <!-- Subjects -->
