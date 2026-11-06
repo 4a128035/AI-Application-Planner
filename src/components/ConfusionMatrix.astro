@@ -1,0 +1,47 @@
+---
+// 2×2 confusion matrix explained with an everyday example.
+// <ConfusionMatrix predicted={['響了','沒響']} actual={['真的有火','其實沒火']} cells={{ tp, fp, fn, tn }} />
+interface Cell { emoji: string; title: string; desc: string }
+interface Props {
+  predicted: [string, string]
+  actual: [string, string]
+  cells: { tp: Cell; fp: Cell; fn: Cell; tn: Cell }
+}
+const { predicted, actual, cells } = Astro.props
+
+const rows = [
+  { head: predicted[0], items: [{ k: 'TP', c: cells.tp, cls: 'bg-ok-soft', tag: 'text-ok' }, { k: 'FP', c: cells.fp, cls: 'bg-warn-soft', tag: 'text-warn' }] },
+  { head: predicted[1], items: [{ k: 'FN', c: cells.fn, cls: 'bg-bad-soft', tag: 'text-bad' }, { k: 'TN', c: cells.tn, cls: 'bg-surface-2', tag: 'text-ink-2' }] }
+]
+---
+
+<figure class="not-prose my-8">
+  <div class="grid grid-cols-[auto_1fr_1fr] gap-2 text-[15px]">
+    <div></div>
+    {actual.map(a => (
+      <div class="flex flex-col items-center py-1 text-center leading-tight">
+        <span class="text-xs font-bold text-ink-2">實際</span>
+        <span class="text-sm font-extrabold">{a}</span>
+      </div>
+    ))}
+    {rows.map(r => (
+      <>
+        <div class="flex max-w-[4.5em] flex-col items-center justify-center text-center leading-tight sm:max-w-none sm:px-2">
+          <span class="text-xs font-bold text-ink-2">預測</span>
+          <span class="text-sm font-extrabold">{r.head}</span>
+        </div>
+        {r.items.map(i => (
+          <div class:list={['rounded-[var(--radius-card)] p-3 sm:p-4', i.cls]}>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl" aria-hidden="true">{i.c.emoji}</span>
+              <span class:list={['text-sm font-extrabold', i.tag]}>{i.k}</span>
+            </div>
+            <p class="mt-1 font-extrabold">{i.c.title}</p>
+            <p class="mt-0.5 text-sm leading-[1.6] text-ink-2">{i.c.desc}</p>
+          </div>
+        ))}
+      </>
+    ))}
+  </div>
+  <figcaption class="mt-3 text-center text-sm text-ink-2">混淆矩陣（Confusion Matrix）：預測 × 實際，四種結果</figcaption>
+</figure>
