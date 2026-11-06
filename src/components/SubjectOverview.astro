@@ -1,7 +1,8 @@
 ---
-// Subject page body, organised by the official scope. Each scope code is a small group:
-// a heading (code + title) followed by its lessons, or an "upcoming" card if none exist yet.
-// Several lessons can share one code (e.g. L11302 covers both learning types and evaluation).
+// Subject page body, organised by the official scope's two levels:
+//   評鑑主題 (topic, e.g. L111) → a panel with a plain-language blurb and progress
+//   評鑑內容 (item,  e.g. L11101) → inside the panel, listing its lessons or "即將推出"
+// Several lessons can share one item code (e.g. L11302 covers learning types and evaluation).
 import Badge from './Badge.astro'
 import PageHero from './PageHero.astro'
 import { subjectById, type SubjectId } from '../data/scope'
@@ -14,63 +15,85 @@ const byCode = (code: string) => lessons.filter(l => l.data.code === code)
 const itemCount = subject.topics.reduce((n, t) => n + t.items.length, 0)
 const tone = subject.tone
 const codeColor = tone === 'brand' ? 'text-brand' : 'text-accent'
+const codePill = tone === 'brand' ? 'bg-brand text-on-brand' : 'bg-accent text-surface'
+const progressBar = tone === 'brand'
+  ? '[&::-moz-progress-bar]:bg-brand [&::-webkit-progress-value]:bg-brand'
+  : '[&::-moz-progress-bar]:bg-accent [&::-webkit-progress-value]:bg-accent'
 ---
 
 <PageHero emoji={subject.emoji} title={`${subject.short}：${subject.title}`} lead={subject.blurb} tone={tone}>
   <p class="mt-5 inline-flex rounded-full bg-surface px-4 py-1.5 text-sm font-bold shadow-[var(--shadow-soft)]">
-    已上線 {lessons.length} 個單元・共 {itemCount} 個評鑑主題
+    已上線 {lessons.length} 個單元・{subject.topics.length} 個評鑑主題・{itemCount} 項評鑑內容
   </p>
   <p class="mt-3 max-w-2xl text-[15px] text-ink-2">
     這頁依照官方評鑑範圍分類，方便查詢。第一次讀建議照「第 1 課、第 2 課……」的順序，首頁的「開始讀」會帶你走。
   </p>
 </PageHero>
 
-<div class="mx-auto max-w-6xl space-y-12 px-4 pb-16 sm:px-6">
-  {subject.topics.map(topic => (
-    <section aria-labelledby={`t-${topic.code}`}>
-      <h2 id={`t-${topic.code}`} class="mb-5 flex flex-wrap items-baseline gap-3 border-b border-line pb-3 text-xl font-extrabold">
-        <span class:list={['text-sm font-extrabold', codeColor]}>{topic.code}</span>
-        {topic.title}
-      </h2>
-
-      <div class="space-y-7">
-        {topic.items.map(item => {
-          const ready = byCode(item.code)
-          return (
+<div class="mx-auto max-w-6xl space-y-8 px-4 pb-16 sm:px-6">
+  {subject.topics.map(topic => {
+    const covered = topic.items.filter(i => byCode(i.code).length).length
+    return (
+      <section aria-labelledby={`t-${topic.code}`} class="rounded-[calc(var(--radius-card)+0.5rem)] border border-line bg-surface-2/60 p-4 sm:p-6">
+        {/* 評鑑主題 header */}
+        <header class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div class="flex items-start gap-4">
+            <span class:list={['flex-none rounded-[var(--radius-btn)] px-3 py-1.5 text-sm font-extrabold', codePill]}>{topic.code}</span>
             <div>
-              <h3 class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <span class:list={['text-sm font-extrabold', codeColor]}>{item.code}</span>
-                <span class="font-extrabold">{item.title}</span>
-                <span class="text-sm text-ink-2">{ready.length ? `${ready.length} 個單元` : item.hint}</span>
-              </h3>
-              <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {ready.length ? ready.map(l => (
-                  <li>
-                    <a href={lessonUrl(l)} class="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
-                      <div class="flex items-center justify-between">
-                        <Badge tone={tone}>第 {l.data.order} 課</Badge>
-                        <span class="text-xs font-bold text-ok">● 已上線</span>
-                      </div>
-                      <span class="mt-4 text-3xl" aria-hidden="true">{l.data.emoji}</span>
-                      <span class="mt-2 text-lg font-extrabold">{l.data.title}</span>
-                      <span class="mt-1 flex-1 text-[15px] leading-[1.7] text-ink-2">{l.data.description}</span>
-                      <span class="mt-4 flex items-center justify-between text-sm font-bold text-ink-2">
-                        <span>⏱️ {l.data.minutes} 分鐘・📝 {l.data.quiz.length} 題</span>
-                        <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
-                      </span>
-                    </a>
-                  </li>
-                )) : (
-                  <li class="flex items-center gap-3 rounded-[var(--radius-card)] border border-dashed border-line px-5 py-4">
-                    <span aria-hidden="true" class="text-xl">🕒</span>
-                    <span class="text-sm font-bold text-ink-2">即將推出</span>
-                  </li>
-                )}
-              </ul>
+              <p class="text-xs font-bold text-ink-2">評鑑主題</p>
+              <h2 id={`t-${topic.code}`} class="text-xl font-extrabold leading-snug sm:text-2xl">{topic.title}</h2>
+              <p class="mt-1 text-[15px] leading-[1.7] text-ink-2">{topic.blurb}</p>
             </div>
-          )
-        })}
-      </div>
-    </section>
-  ))}
+          </div>
+          <div class="flex min-w-40 items-center gap-3 sm:flex-col sm:items-end sm:gap-1.5">
+            <span class="text-sm font-extrabold">{covered} / {topic.items.length} 項已上線</span>
+            <progress
+              class:list={['h-2 w-24 overflow-hidden rounded-full [&::-webkit-progress-bar]:bg-line', progressBar]}
+              value={covered} max={topic.items.length} aria-label={`${topic.title} 已上線項目`}
+            />
+          </div>
+        </header>
+
+        {/* 評鑑內容 inside the topic */}
+        <div class="mt-6 space-y-6 border-t border-line pt-6">
+          {topic.items.map(item => {
+            const ready = byCode(item.code)
+            return (
+              <div>
+                <h3 class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span class:list={['text-sm font-extrabold', codeColor]}>{item.code}</span>
+                  <span class="font-extrabold">{item.title}</span>
+                  <span class="text-sm text-ink-2">{ready.length ? `${ready.length} 個單元` : item.hint}</span>
+                </h3>
+                <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {ready.length ? ready.map(l => (
+                    <li>
+                      <a href={lessonUrl(l)} class="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
+                        <div class="flex items-center justify-between">
+                          <Badge tone={tone}>第 {l.data.order} 課</Badge>
+                          <span class="text-xs font-bold text-ok">● 已上線</span>
+                        </div>
+                        <span class="mt-4 text-3xl" aria-hidden="true">{l.data.emoji}</span>
+                        <span class="mt-2 text-lg font-extrabold">{l.data.title}</span>
+                        <span class="mt-1 flex-1 text-[15px] leading-[1.7] text-ink-2">{l.data.description}</span>
+                        <span class="mt-4 flex items-center justify-between text-sm font-bold text-ink-2">
+                          <span>⏱️ {l.data.minutes} 分鐘・📝 {l.data.quiz.length} 題</span>
+                          <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+                        </span>
+                      </a>
+                    </li>
+                  )) : (
+                    <li class="flex items-center gap-3 rounded-[var(--radius-card)] border border-dashed border-line bg-surface/50 px-5 py-4">
+                      <span aria-hidden="true" class="text-xl">🕒</span>
+                      <span class="text-sm font-bold text-ink-2">即將推出</span>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+    )
+  })}
 </div>
