@@ -1,0 +1,289 @@
+---
+title: AI 治理：讓 AI 值得信任
+description: 偏見從哪裡來、人要在迴圈的哪裡、台灣《人工智慧基本法》與歐盟 AI 法案的風險分級，一課看懂 AI 的遊戲規則。
+subject: l11
+code: L11102
+order: 9
+minutes: 12
+emoji: ⚖️
+quiz:
+  - id: gv-1
+    code: L11102
+    stem: 某縣市政府導入 AI 初審「急難救助金」申請案，系統會判斷申請人是否符合資格。由於結果直接影響民眾能否領到救助，下列哪一種設計最恰當？
+    answer: 1
+    options:
+      - text: 讓 AI 直接核定並發放，以提升行政效率
+        why: 結果對民眾權益影響重大，完全交給 AI 決定，出錯時沒有人把關。
+      - text: AI 提供初審建議，由承辦人員做最終審核後才核定（人在迴圈內）
+        why: 對民眾權益有重大影響的自動決策，應確保人類做最終決定，這正是人在迴圈內（Human-in-the-loop）。
+      - text: 每年請外部顧問抽查一次 AI 的判斷結果
+        why: 事後抽查無法即時攔下個案錯誤，救助金可能已經錯發或錯拒。
+      - text: 把每一筆 AI 判斷結果全部公開在政府網站上
+        why: 公開個案會洩漏申請人的個資，也不能取代人工審核。
+  - id: gv-2
+    code: L11102
+    stem: 某物流倉庫的搬運機器人由 AI 自動規劃路線並執行，管理員平時不需要逐一下指令，但會在控制室監看儀表板，發現異常時可立即暫停或修正。這最符合哪一種人機協作模式？
+    answer: 2
+    options:
+      - text: 人在迴圈內（Human-in-the-loop）：每個動作都要人核准
+        why: 這個情境裡機器人不需要逐一等待批准，所以不是「迴圈內」。
+      - text: 人在迴圈外（Human-out-of-the-loop）：完全沒有人監督
+        why: 管理員持續監看、可隨時介入，並不是完全放手。
+      - text: 人在迴圈上（Human-on／over-the-loop）：人類持續監督，必要時立即介入
+        why: AI 自主運作，人類在一旁監督並保有介入權，正是「人在迴圈上」。
+      - text: 強化學習：機器人靠獎勵自己學會路線
+        why: 強化學習是一種學習方法，不是描述人類監督程度的模式。
+  - id: gv-3
+    code: L11102
+    stem: 某公司的 AI 履歷篩選模型已經刪除「性別」欄位，但稽核發現模型仍明顯偏好男性求職者。進一步分析發現，「曾參加的社團」「就讀科系」等欄位與性別高度相關。最恰當的處理方式是？
+    answer: 0
+    options:
+      - text: 用公平性指標比較不同性別的錄取率與錯誤率，檢查這些代理特徵是否造成偏誤，再調整模型
+        why: 刪除敏感欄位不夠，與它高度相關的「代理變數」仍會把偏見帶進來。要先量測，再修正。
+      - text: 把性別欄位加回來，讓模型更準確
+        why: 加回性別只會讓模型更直接地使用性別，偏見更嚴重。
+      - text: 提高社團、科系欄位的資料品質，以提升預測準確度
+        why: 資料再準確，代理變數造成的不公平還是存在。
+      - text: 只要模型整體準確率高，就不需要處理
+        why: 整體準確率高，不代表對每個群體都公平。
+  - id: gv-4
+    code: L11102
+    stem: 下列哪一項做法屬於「偏見檢測（Bias Detection）」，而不是「偏見緩解（Bias Mitigation）」？
+    answer: 3
+    options:
+      - text: 對樣本數較少的群體提高訓練權重
+        why: 重新加權是在「修正」偏見，屬於緩解。
+      - text: 擴充訓練語料，讓不同群體的資料比例更平衡
+        why: 這是資料去偏（Data Debiasing），屬於緩解。
+      - text: 針對不同群體分別調整決策門檻
+        why: 調整門檻是在改變模型的輸出，屬於緩解。
+      - text: 分別計算模型對不同性別、年齡群體的預測結果分布與錯誤率並互相比較
+        why: 這一步只是「量出有沒有偏見」，還沒有做任何修正，所以是檢測。
+  - id: gv-5
+    code: L11102
+    stem: 依我國《人工智慧基本法》，下列何者「不屬於」該法明定的 AI 發展基本原則？
+    answer: 2
+    options:
+      - text: 人類自主
+        why: 人類自主是七大原則之一。
+      - text: 公平與不歧視
+        why: 公平與不歧視是七大原則之一。
+      - text: 效率優先，技術發展不受限制
+        why: 七大原則強調福祉、自主、隱私、安全、透明、公平與問責，沒有「效率優先、不受限制」。
+      - text: 透明與可解釋
+        why: 透明與可解釋是七大原則之一。
+  - id: gv-6
+    code: L11102
+    stem: 某公司想把 AI 產品賣到歐盟。依歐盟《人工智慧法》（AI Act）的風險分級，下列哪一項產品最可能被歸為「高風險」，需要符合較嚴格的規範？
+    answer: 1
+    options:
+      - text: 電子郵件的垃圾信過濾功能
+        why: 垃圾信過濾對人的權益影響很小，屬於最小風險。
+      - text: 自動篩選求職履歷、決定誰能進入面試的系統
+        why: 就業與招募直接影響個人權益，是歐盟明列的高風險領域。
+      - text: 政府依民眾日常行為打分數，決定其能享有的公共服務
+        why: 社會評分屬於「不可接受風險」，直接被禁止，比高風險更嚴重。
+      - text: 網站上的客服聊天機器人
+        why: 聊天機器人屬於「有限風險」，主要義務是讓使用者知道自己在和 AI 對話。
+  - id: gv-7
+    code: L11102
+    stem: 某新創公司開發了 AI 保險理賠服務，但現行法規沒有明確規範這類服務。若主管機關讓它在「限定範圍、限定期間、受監督」的條件下先行測試，以便評估風險並調整法規，這種制度稱為？
+    answer: 0
+    options:
+      - text: 監理沙盒（Regulatory Sandbox）
+        why: 在受控的範圍內讓創新服務先試行，主管機關從中觀察風險、調整規範，這就是監理沙盒。
+      - text: 個人資料保護影響評估（DPIA）
+        why: DPIA 是評估「處理個資」風險的工具，不是讓新服務先行試辦的制度。
+      - text: AI 信任標章
+        why: 標章是對已完成產品的驗證，不是試行制度。
+      - text: AI 倫理審查委員會
+        why: 倫理審查是組織內部的把關機制，不是主管機關提供的測試環境。
+  - id: gv-8
+    code: L11102
+    stem: 某銀行導入生成式 AI 客服。依金管會「金融業運用 AI 之核心原則」的精神，下列哪一項做法最恰當？
+    answer: 3
+    options:
+      - text: 為了讓服務更自然，刻意不讓客戶知道對方是 AI
+        why: 這違反透明性。與消費者直接互動時，應適當揭露正在使用 AI。
+      - text: AI 系統由外部廠商提供，出問題時由廠商全權負責
+        why: 核心原則要求金融機構建立治理及問責機制，也要監督第三方業者，責任不能外包。
+      - text: 只要 AI 回答速度快，就不必評估是否有偏見
+        why: 核心原則要求重視公平性，避免演算法偏見造成不公平。
+      - text: 告知客戶正在與 AI 互動，並提供轉接真人客服的選項
+        why: 這同時符合「透明性」與「保護客戶權益」：讓客戶知情，也保留不使用 AI 的選擇。
+---
+
+import Callout from '../../components/Callout.astro'
+import Misconception from '../../components/Misconception.astro'
+import SortGame from '../../components/SortGame.vue'
+
+export const loopBuckets = [
+  { id: 'in', label: '迴圈內', emoji: '✋' },
+  { id: 'on', label: '迴圈上', emoji: '👀' },
+  { id: 'out', label: '迴圈外', emoji: '🤖' }
+]
+export const loopItems = [
+  { emoji: '🩺', text: 'AI 標出疑似腫瘤的影像，醫師確認後才告知病人', answer: 'in', why: '每個結果都要醫師確認才算數，人在迴圈內。' },
+  { emoji: '🚚', text: '無人物流車自動行駛，遠端人員監看畫面，必要時可接管', answer: 'on', why: 'AI 自己開，人在旁監督、隨時能介入，是迴圈上。' },
+  { emoji: '📧', text: '信箱自動把垃圾信移到垃圾桶，沒有人逐封檢查', answer: 'out', why: '風險低、量又大，完全交給 AI，是迴圈外。' },
+  { emoji: '🛒', text: 'AI 採購助理遇到超過授權金額的訂單，轉給主管核准', answer: 'in', why: '超出權限的決定交回給人做最終審核，是迴圈內。' },
+  { emoji: '🏭', text: '產線機器手臂自動運作，工程師看儀表板，異常時按停機', answer: 'on', why: '平時自動、人在一旁監督並保有停機權，是迴圈上。' },
+  { emoji: '🎬', text: '影音平台自動推薦下一部影片', answer: 'out', why: '推薦錯了影響很小，不需要人介入，是迴圈外。' }
+]
+
+export const riskBuckets = [
+  { id: 'ban', label: '不可接受（禁止）', emoji: '⛔' },
+  { id: 'high', label: '高風險', emoji: '🟥' },
+  { id: 'limited', label: '有限風險', emoji: '🟨' },
+  { id: 'minimal', label: '最小風險', emoji: '🟩' }
+]
+export const riskItems = [
+  { emoji: '🧮', text: '政府依民眾的日常行為打「社會信用分數」', answer: 'ban', why: '社會評分會造成大規模的不公平對待，在歐盟直接禁止。' },
+  { emoji: '📄', text: '自動篩選求職履歷，決定誰能面試', answer: 'high', why: '就業機會影響重大，是高風險，需要風險管理、人類監督等嚴格要求。' },
+  { emoji: '💬', text: '網站的客服聊天機器人', answer: 'limited', why: '主要義務是透明：要讓使用者知道自己在和 AI 對話。' },
+  { emoji: '😠', text: '在辦公室用 AI 辨識員工的情緒', answer: 'ban', why: '職場與學校的情緒辨識，屬於歐盟禁止的 AI 應用。' },
+  { emoji: '🏦', text: '銀行用 AI 評估個人信用，決定能不能貸款', answer: 'high', why: '信用評分影響個人取得金融服務，是高風險。' },
+  { emoji: '🎮', text: '電玩遊戲裡的 AI 對手', answer: 'minimal', why: '對人的權益幾乎沒有影響，屬於最小風險，不另外規範。' },
+  { emoji: '🎞️', text: '用 AI 生成以假亂真的深偽（Deepfake）影片', answer: 'limited', why: '屬於透明義務：必須標示這是 AI 生成或竄改的內容。' }
+]
+
+> AI 越來越常幫人做決定：誰能貸款、誰能進面試、哪份申請能過。**AI 治理**要回答的問題是：**怎麼讓這些決定公平、安全、出錯時有人負責？**
+
+## AI 為什麼會有偏見？
+
+AI 本身沒有立場，但它從**歷史資料**學習。如果過去的資料就不公平，AI 會把這種不公平學起來，甚至放大。
+
+<Callout type="analogy" title="刪掉欄位，偏見還在">
+  某銀行的信貸模型已經<strong>不使用「職業別」</strong>，稽核卻發現某些職業的人仍然常被拒絕。原因是「居住地區」「消費類別」和職業高度相關，模型透過這些欄位，<strong>間接</strong>學到了職業。這類欄位叫做<strong>代理變數</strong>（Proxy Variable）。
+</Callout>
+
+處理偏見分兩步，考題很愛考兩者的差別：
+
+| 步驟 | 目的 | 例子 |
+|---|---|---|
+| **偏見檢測**（Detection） | 量出有沒有偏見 | 比較不同性別、年齡、地區群體的預測結果分布和錯誤率 |
+| **偏見緩解**（Mitigation） | 把偏見修正掉 | 擴充或平衡訓練資料（資料去偏）、重新加權樣本、調整決策門檻 |
+
+<Callout type="key">
+  發現偏見時，優先做法是<strong>引入公平性評估指標，檢查代理變數是否造成偏誤，再調整模型</strong>。「讓模型變大就會自動消除偏見」、「全部改成人工審查」都不是好答案。
+</Callout>
+
+## 人要站在哪裡？三種人機協作模式
+
+AI 再厲害也會出錯，所以要決定：**人類在 AI 的決策流程中，扮演什麼角色？**
+
+<div class="not-prose my-8 grid gap-4 sm:grid-cols-3">
+  <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+    <p class="text-2xl" aria-hidden="true">✋</p>
+    <p class="mt-1 text-lg font-extrabold">人在迴圈內</p>
+    <p class="text-sm font-bold text-ink-2">Human-in-the-loop</p>
+    <p class="mt-3 text-[15px] leading-[1.75] text-ink-2">AI 只提供建議，<strong class="text-ink">每個決定都要人核准</strong>才會執行。</p>
+    <p class="mt-2 text-sm font-bold text-brand">適合：影響重大權益的決定</p>
+  </div>
+  <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+    <p class="text-2xl" aria-hidden="true">👀</p>
+    <p class="mt-1 text-lg font-extrabold">人在迴圈上</p>
+    <p class="text-sm font-bold text-ink-2">Human-on／over-the-loop</p>
+    <p class="mt-3 text-[15px] leading-[1.75] text-ink-2">AI 自己執行，<strong class="text-ink">人類持續監督</strong>，必要時立即介入修正。</p>
+    <p class="mt-2 text-sm font-bold text-brand">適合：需要即時反應的自動化作業</p>
+  </div>
+  <div class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+    <p class="text-2xl" aria-hidden="true">🤖</p>
+    <p class="mt-1 text-lg font-extrabold">人在迴圈外</p>
+    <p class="text-sm font-bold text-ink-2">Human-out-of-the-loop</p>
+    <p class="mt-3 text-[15px] leading-[1.75] text-ink-2">AI <strong class="text-ink">完全自動</strong>，人不參與個別決定。</p>
+    <p class="mt-2 text-sm font-bold text-brand">適合：低風險、大量的任務</p>
+  </div>
+</div>
+
+<Callout type="key" title="考題關鍵字">
+  <strong>「對民眾權益有重大影響」「超過 AI 的授權額度」</strong> → 人在迴圈內，由人做最終審核。<br />
+  <strong>「日常監督、必要時立即介入」</strong> → 人在迴圈上。
+</Callout>
+
+<SortGame client:visible title="人在迴圈的哪裡？" buckets={loopBuckets} items={loopItems} />
+
+## 台灣的 AI 規範地圖
+
+<Callout type="note" title="查證日期：2026 年 11 月">
+  以下是撰寫本課時查到的狀態。法規會持續更新，考前請再確認。
+</Callout>
+
+### 《人工智慧基本法》
+
+- **時間**：立法院 2025 年 12 月 23 日三讀，總統 **2026 年 1 月 14 日公布施行**，共 20 條。
+- **主管機關**：中央為**國科會**；行政院設「國家人工智慧戰略特別委員會」，由行政院長召集。
+- **數位發展部**：負責推動與國際接軌的 **AI 風險分類框架**，並協助認定高風險應用。數發部已在 2026 年 7 月發布《人工智慧風險分類框架》v1.0。
+- **高風險 AI**：應明確標示注意事項或警語，並釐清責任歸屬，建立救濟、補償或保險機制。
+
+基本法的**七大原則**，幾乎就是「可信任 AI」的標準清單：
+
+| 原則 | 白話解釋 |
+|---|---|
+| 永續發展與福祉 | AI 要讓社會更好，也顧及環境 |
+| 人類自主 | 重要決定由人掌握，AI 是輔助 |
+| 隱私保護與資料治理 | 呼應第 8 課：不必要的個資不要蒐集 |
+| 資安與安全 | 系統要能抵抗攻擊、穩定運作 |
+| 透明與可解釋 | 讓人知道 AI 怎麼做出判斷 |
+| 公平與不歧視 | 避免偏見，不因群體差別對待 |
+| 問責 | 出了問題，要找得到負責的人 |
+
+<Callout type="note" title="草案時期的考點：監理沙盒">
+  行政院 2025 年版本的草案提到「創新實驗環境」，參考的是歐盟的<strong>監理沙盒</strong>（Regulatory Sandbox）：在<strong>限定範圍、限定期間、受監督</strong>的條件下，讓創新服務先行測試。台灣在金融科技領域早有類似制度（金融監理沙盒）。
+</Callout>
+
+### 政府與產業的指引
+
+- **數發部《公部門人工智慧應用參考手冊》**：給公務機關導入 AI 的實務指南。AI 自動決策若可能**重大影響民眾權益**，應建立**人在迴圈內**的最終審核機制。
+- **數發部 AI 產品與系統評測中心**：2023 年 12 月啟動，對 AI 進行**自願性**評測。評測項目參考 ISO/IEC、美國 NIST 與歐盟規範，共十項：**安全性、可解釋性、彈性（韌性）、公平性、準確性、透明性、當責性、可靠性、隱私、資安**。歷屆題目考過的 LLM 安全性評測指標，則包括**事實正確性、偏見與歧視、惡意與濫用可能性**。
+
+<Callout type="trap">
+  評測中心的題目常用「下列何者<strong>不是</strong>評測項目」出題。出現過的錯誤選項有<strong>「互動性」「資料複雜性」</strong>，它們都不在清單裡。
+</Callout>
+
+- **金融業**：金管會 2023 年 10 月公布六項**核心原則**，2024 年 6 月再發布《金融業運用 AI 指引》。銀行公會的《金融機構運用人工智慧技術作業規範》則要求金融機構建立內部治理架構：指定**專責單位或人員**、由**高階主管或委員會監督**、辦理 **AI 人才培育**，並**清楚了解生成式 AI 的運作模式**。
+
+| 金管會六項核心原則 | 例子 |
+|---|---|
+| 建立治理及問責機制 | 用外部廠商的 AI，責任仍在金融機構 |
+| 重視公平性及以人為本 | 避免演算法偏見、人類可控 |
+| 保護隱私及客戶權益 | 尊重客戶選擇，提供不用 AI 的替代方案 |
+| 確保系統穩健性與安全性 | 監督第三方業者 |
+| 落實透明性與可解釋性 | 與客戶互動時，揭露正在使用 AI |
+| 促進永續發展 | 兼顧員工的工作權益 |
+
+## 國際規範：歐盟 AI 法案
+
+歐盟《人工智慧法》（EU AI Act）是全球第一部全面規範 AI 的法律，核心是**依風險分級管理**，風險越高，要求越嚴：
+
+| 等級 | 例子 | 規範 |
+|---|---|---|
+| ⛔ **不可接受風險** | 社會評分、操縱弱勢族群、職場與學校的情緒辨識 | **直接禁止** |
+| 🟥 **高風險** | 招募篩選、信用評分、教育評量、醫療器材、關鍵基礎設施 | 風險管理、資料品質、紀錄保存、**人類監督**等嚴格要求 |
+| 🟨 **有限風險** | 聊天機器人、深偽內容 | **透明義務**：告知使用者、標示 AI 生成 |
+| 🟩 **最小風險** | 垃圾信過濾、遊戲 AI | 不另外規範 |
+
+<SortGame client:visible title="歐盟 AI 法案：這屬於哪一級？" buckets={riskBuckets} items={riskItems} />
+
+<Callout type="note" title="時程（查證日期：2026 年 11 月）">
+  AI 法案 2024 年 8 月生效後分階段適用：禁止規定從 2025 年 2 月開始適用，通用型 AI 模型的義務從 2025 年 8 月開始。歐盟後來通過「數位綜合法案」（Digital Omnibus），2026 年 7 月生效，把多數<strong>高風險 AI 的義務延後到 2027 年 12 月</strong>，嵌入在醫療器材、機械等產品中的 AI，則延後到 2028 年 8 月。違反禁止規定，最高可罰全球年營業額的 7% 或 3,500 萬歐元，取較高者。
+</Callout>
+
+其他常見的國際框架，認得名字就好：
+
+- **NIST AI RMF**：美國的 AI 風險管理框架，四個核心功能是**治理、對應、衡量、管理**（Govern、Map、Measure、Manage）。
+- **ISO/IEC 42001**：AI 管理系統的國際標準，企業可以申請驗證。
+
+## 常見誤區
+
+<Misconception claim="把性別、種族等敏感欄位刪掉，模型就不會歧視">
+  <strong>不對。</strong>代理變數（居住地區、社團、科系）仍會把偏見帶進來。要用公平性指標實際檢查。
+</Misconception>
+
+<Misconception claim="AI 通過圖靈測試，代表它的判斷值得信任">
+  <strong>不對。</strong>第 1 課說過，圖靈測試只看「像不像人」，不代表判斷正確、可解釋。信任要靠透明、評測與人類監督。
+</Misconception>
+
+<Misconception claim="有人類監督，就是每一筆都要人工審查">
+  <strong>不一定。</strong>依風險高低決定：高風險的個案由人做最終審核（迴圈內），自動化作業由人在旁監督（迴圈上），低風險任務可以全自動（迴圈外）。
+</Misconception>
