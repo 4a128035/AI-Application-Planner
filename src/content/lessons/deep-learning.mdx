@@ -114,6 +114,7 @@ quiz:
 ---
 
 import Callout from '../../components/Callout.astro'
+import WatchMore from '../../components/WatchMore.astro'
 import Misconception from '../../components/Misconception.astro'
 import VanishLab from '../../components/VanishLab.vue'
 import SortGame from '../../components/SortGame.vue'
@@ -251,3 +252,5 @@ export const archItems = [
 <Misconception claim="Transformer 只能處理文字">
   <strong>不對。</strong>Transformer 也能處理影像（Vision Transformer）、語音等資料。只是考題的情境多半是長文本。
 </Misconception>
+
+<WatchMore keys={['sa1-hylee', 'sa2-hylee', 'nn-3b1b', 'tf-3b1b', 'attn-3b1b']} />

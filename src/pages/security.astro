@@ -32,7 +32,8 @@ const layers: { emoji: string; title: string; items: { s: Status; text: string }
     emoji: '🌐', title: '第三層：前端網站', items: [
       { s: 'done', text: 'Content Security Policy：腳本與樣式只允許本站檔案＋建置時算出的雜湊值' },
       { s: 'done', text: '字體自行託管，不從 Google Fonts 等第三方載入' },
-      { s: 'done', text: 'YouTube 先顯示縮圖，點擊後才載入 youtube-nocookie 播放器' },
+      { s: 'done', text: '不嵌入任何第三方內容：延伸影片只放連結，CSP 禁止所有 iframe，瀏覽網站時不會連到 YouTube' },
+      { s: 'done', text: '延伸影片清單每週自動檢查，影片下架或被換頻道就會通知' },
       { s: 'done', text: '所有題目文字以純文字渲染，不使用 v-html／innerHTML，杜絕 XSS' },
       { s: 'done', text: '瀏覽器內的學習進度只存作答紀錄，讀取時驗證格式，不存任何個資' },
       { s: 'done', text: '外部連結加上 rel="noopener noreferrer"，並設定 Referrer-Policy' },

@@ -39,10 +39,10 @@ export default defineConfig({
       scriptDirective: { hashes: [themeInitHash] },
       directives: [
         "default-src 'self'",
-        "img-src 'self' data: https://i.ytimg.com",
+        "img-src 'self' data:",
         "font-src 'self'",
         "connect-src 'self'",
-        'frame-src https://www.youtube-nocookie.com',
+        "frame-src 'none'",
         "object-src 'none'",
         "base-uri 'self'",
         "form-action 'self'",

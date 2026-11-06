@@ -1,0 +1,38 @@
+---
+// <WatchMore keys={['gd-3b1b']} />
+// Optional videos as plain links (nothing from YouTube loads on our page). Entries live in src/data/videos.json,
+// which the weekly link check also reads. Unknown keys or malformed IDs fail the build.
+import videos from '../data/videos.json'
+
+interface Video { id: string; title: string; channel: string; lang: string; year: number; minutes: number; about: string }
+interface Props { keys: string[] }
+const all = videos as Record<string, Video>
+const list = Astro.props.keys.map(k => {
+  const v = all[k]
+  if (!v) throw new Error(`WatchMore: unknown video key "${k}"`)
+  if (!/^[\w-]{11}$/.test(v.id)) throw new Error(`WatchMore: invalid video id for "${k}"`)
+  return v
+})
+---
+
+<section class="not-prose my-10 rounded-[var(--radius-card)] border border-dashed border-line bg-surface-2 p-5 sm:p-6" aria-labelledby="watch-more">
+  <h2 id="watch-more" class="flex items-center gap-2 text-lg font-extrabold"><span aria-hidden="true">🎬</span>延伸觀看（選看）</h2>
+  <p class="mt-1 text-sm leading-[1.7] text-ink-2">想看動畫版的講解可以點開，不看也不影響考試。連結會在新分頁開啟 YouTube。講原理的影片不會過時，但影片裡提到的模型或產品名稱，請以課文為準。</p>
+  <ul class="mt-4 space-y-3">
+    {list.map(v => (
+      <li>
+        <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer"
+           class="group block rounded-[var(--radius-btn)] border border-line bg-surface p-4 transition-colors hover:border-brand">
+          <span class="block font-bold leading-[1.6] group-hover:text-brand">{v.title} <span aria-hidden="true">↗</span><span class="sr-only">（在新分頁開啟）</span></span>
+          <span class="mt-1 block text-sm leading-[1.7] text-ink-2">{v.about}</span>
+          <span class="mt-2 flex flex-wrap gap-2 text-xs font-bold">
+            <span class="rounded-full bg-surface-2 px-2.5 py-1">{v.channel}</span>
+            <span class={`rounded-full px-2.5 py-1 ${v.lang === '中文' ? 'bg-brand-soft text-brand' : 'bg-surface-2'}`}>{v.lang}</span>
+            <span class="rounded-full bg-surface-2 px-2.5 py-1">約 {v.minutes} 分鐘</span>
+            <span class="rounded-full bg-surface-2 px-2.5 py-1">{v.year} 年</span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
