@@ -1,5 +1,7 @@
 ---
-// Subject page body: official scope topics, each item linking to its lessons or marked as upcoming.
+// Subject page body, organised by the official scope. Each scope code is a small group:
+// a heading (code + title) followed by its lessons, or an "upcoming" card if none exist yet.
+// Several lessons can share one code (e.g. L11302 covers both learning types and evaluation).
 import Badge from './Badge.astro'
 import PageHero from './PageHero.astro'
 import { subjectById, type SubjectId } from '../data/scope'
@@ -11,51 +13,64 @@ const lessons = (await getLessons()).filter(l => l.data.subject === subject.id)
 const byCode = (code: string) => lessons.filter(l => l.data.code === code)
 const itemCount = subject.topics.reduce((n, t) => n + t.items.length, 0)
 const tone = subject.tone
+const codeColor = tone === 'brand' ? 'text-brand' : 'text-accent'
 ---
 
 <PageHero emoji={subject.emoji} title={`${subject.short}：${subject.title}`} lead={subject.blurb} tone={tone}>
   <p class="mt-5 inline-flex rounded-full bg-surface px-4 py-1.5 text-sm font-bold shadow-[var(--shadow-soft)]">
     已上線 {lessons.length} 個單元・共 {itemCount} 個評鑑主題
   </p>
+  <p class="mt-3 max-w-2xl text-[15px] text-ink-2">
+    這頁依照官方評鑑範圍分類，方便查詢。第一次讀建議照「第 1 課、第 2 課……」的順序，首頁的「開始讀」會帶你走。
+  </p>
 </PageHero>
 
-<div class="mx-auto max-w-6xl space-y-10 px-4 pb-16 sm:px-6">
+<div class="mx-auto max-w-6xl space-y-12 px-4 pb-16 sm:px-6">
   {subject.topics.map(topic => (
     <section aria-labelledby={`t-${topic.code}`}>
-      <h2 id={`t-${topic.code}`} class="mb-4 flex flex-wrap items-baseline gap-3 text-xl font-extrabold">
-        <span class:list={['text-sm font-extrabold', tone === 'brand' ? 'text-brand' : 'text-accent']}>{topic.code}</span>
+      <h2 id={`t-${topic.code}`} class="mb-5 flex flex-wrap items-baseline gap-3 border-b border-line pb-3 text-xl font-extrabold">
+        <span class:list={['text-sm font-extrabold', codeColor]}>{topic.code}</span>
         {topic.title}
       </h2>
-      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div class="space-y-7">
         {topic.items.map(item => {
           const ready = byCode(item.code)
-          return ready.length ? ready.map(l => (
-            <li>
-              <a href={lessonUrl(l)} class="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
-                <div class="flex items-center justify-between">
-                  <Badge tone={tone}>{item.code}</Badge>
-                  <span class="text-xs font-bold text-ok">● 已上線</span>
-                </div>
-                <span class="mt-4 text-3xl" aria-hidden="true">{l.data.emoji}</span>
-                <span class="mt-2 text-lg font-extrabold">{l.data.title}</span>
-                <span class="mt-1 flex-1 text-[15px] leading-[1.7] text-ink-2">{l.data.description}</span>
-                <span class="mt-4 text-sm font-bold text-ink-2">⏱️ {l.data.minutes} 分鐘・📝 {l.data.quiz.length} 題
-                  <span aria-hidden="true" class="float-right transition-transform group-hover:translate-x-1">→</span>
-                </span>
-              </a>
-            </li>
-          )) : (
-            <li class="flex flex-col rounded-[var(--radius-card)] border border-dashed border-line p-5">
-              <div class="flex items-center justify-between">
-                <Badge>{item.code}</Badge>
-                <span class="text-xs font-bold text-ink-2">即將推出</span>
-              </div>
-              <span class="mt-4 text-lg font-extrabold text-ink-2">{item.title}</span>
-              <span class="mt-1 text-[15px] leading-[1.7] text-ink-2">{item.hint}</span>
-            </li>
+          return (
+            <div>
+              <h3 class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <span class:list={['text-sm font-extrabold', codeColor]}>{item.code}</span>
+                <span class="font-extrabold">{item.title}</span>
+                <span class="text-sm text-ink-2">{ready.length ? `${ready.length} 個單元` : item.hint}</span>
+              </h3>
+              <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {ready.length ? ready.map(l => (
+                  <li>
+                    <a href={lessonUrl(l)} class="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
+                      <div class="flex items-center justify-between">
+                        <Badge tone={tone}>第 {l.data.order} 課</Badge>
+                        <span class="text-xs font-bold text-ok">● 已上線</span>
+                      </div>
+                      <span class="mt-4 text-3xl" aria-hidden="true">{l.data.emoji}</span>
+                      <span class="mt-2 text-lg font-extrabold">{l.data.title}</span>
+                      <span class="mt-1 flex-1 text-[15px] leading-[1.7] text-ink-2">{l.data.description}</span>
+                      <span class="mt-4 flex items-center justify-between text-sm font-bold text-ink-2">
+                        <span>⏱️ {l.data.minutes} 分鐘・📝 {l.data.quiz.length} 題</span>
+                        <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </a>
+                  </li>
+                )) : (
+                  <li class="flex items-center gap-3 rounded-[var(--radius-card)] border border-dashed border-line px-5 py-4">
+                    <span aria-hidden="true" class="text-xl">🕒</span>
+                    <span class="text-sm font-bold text-ink-2">即將推出</span>
+                  </li>
+                )}
+              </ul>
+            </div>
           )
         })}
-      </ul>
+      </div>
     </section>
   ))}
 </div>

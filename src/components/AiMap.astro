@@ -1,0 +1,32 @@
+---
+// Nested "map" of AI ⊃ 機器學習 ⊃ 深度學習 ⊃ 生成式 AI.
+// Built as nested <div>s (each layer sits inside the previous one) so it reads correctly
+// at any width and needs no inline styles. A screen-reader summary list follows.
+const layers = [
+  { name: '人工智慧 AI', en: 'Artificial Intelligence', desc: '讓機器做原本需要人類智慧的事', eg: '規則式專家系統、導航算最短路線', box: 'bg-surface-2 border-line', tag: 'text-ink-2' },
+  { name: '機器學習', en: 'Machine Learning', desc: '不靠人寫規則，從資料中自己學出規律', eg: '垃圾信過濾、信用評分、銷量預測', box: 'bg-info-soft border-info/30', tag: 'text-info' },
+  { name: '深度學習', en: 'Deep Learning', desc: '用多層神經網路，擅長圖片、聲音、文字', eg: '人臉解鎖、語音轉文字、瑕疵檢測', box: 'bg-brand-soft border-brand/30', tag: 'text-brand' },
+  { name: '生成式 AI', en: 'Generative AI', desc: '不只判斷，還能產生新的內容', eg: 'ChatGPT、Gemini、Midjourney', box: 'bg-accent-soft border-accent/30', tag: 'text-accent' }
+]
+---
+
+<figure class="not-prose my-8" aria-labelledby="aimap-cap">
+  <div aria-hidden="true">
+    {/* Render layers from the innermost outward so each wraps the next */}
+    {(function render(i: number): any {
+      const l = layers[i]
+      return (
+        <div class:list={['rounded-[var(--radius-card)] border-2 p-3 sm:p-4', l.box]}>
+          <p class:list={['font-extrabold', l.tag]}>{l.name} <span class="text-xs font-bold opacity-80">{l.en}</span></p>
+          <p class="mt-0.5 text-sm leading-[1.6]">{l.desc}</p>
+          <p class="mt-0.5 text-xs leading-[1.6] text-ink-2">例：{l.eg}</p>
+          {i < layers.length - 1 && <div class="mt-3">{render(i + 1)}</div>}
+        </div>
+      )
+    })(0)}
+  </div>
+  <ul class="sr-only">
+    {layers.map(l => <li>{l.name}：{l.desc}。例如{l.eg}。</li>)}
+  </ul>
+  <figcaption id="aimap-cap" class="mt-3 text-center text-sm text-ink-2">外層包含內層：生成式 AI 是深度學習的一種，深度學習是機器學習的一種……</figcaption>
+</figure>

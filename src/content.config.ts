@@ -17,7 +17,9 @@ const lessons = defineCollection({
     description: z.string(),
     subject: z.enum(['l11', 'l12']),
     code: z.string().regex(/^L1[12]\d{3}$/),
-    order: z.number(),
+    // Lesson number in the beginner learning path (shown as 第 N 課). This is the reading
+    // order, not the scope order; gaps are fine while earlier lessons are still being written.
+    order: z.number().int().positive(),
     minutes: z.number(),
     emoji: z.string(),
     quiz: z.array(question).default([])
