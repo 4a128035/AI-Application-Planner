@@ -1,12 +1,23 @@
-Copyright (c) 2026 4a128035. All rights reserved.
+Copyright (c) 2026 4a128035
 
-本儲存庫中的教材內容（包括 src/content/ 下的課程文字、練習題與解析，以及圖解與互動元件的設計），
-著作權均屬 4a128035 所有。
+本儲存庫的全部內容（包括 src/content/ 下的課程文字、練習題與解析、圖解與互動元件，以及網站程式碼）
+採用「創用 CC 姓名標示－非商業性 4.0 國際」授權條款（CC BY-NC 4.0）。
 
-允許：個人閱讀、學習，以及在網路上分享本站網址。
-未經書面授權，禁止：轉載、重製、改作、彙編成冊，或以任何形式販售或用於商業用途。
+您可以自由：
+- 分享：以任何媒介或格式重製及散布本素材
+- 改作：重混、轉換本素材，及依本素材建立新素材
 
-The course materials in this repository (including lesson text, practice questions and explanations
-under src/content/, and the design of the illustrations and interactive components) are the copyrighted
-work of 4a128035. Personal reading and sharing links to the site are permitted. Any reproduction,
-adaptation, redistribution, or commercial use requires prior written permission.
+惟需遵守下列條件：
+- 姓名標示：必須標示作者「4a128035」、附上本站或本儲存庫的連結、註明授權條款，並說明是否有修改。
+- 非商業性：不得將本素材用於商業目的，包括販售、收費課程或付費內容。
+
+授權條款摘要：https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant
+授權條款全文：https://creativecommons.org/licenses/by-nc/4.0/legalcode.zh-hant
+
+---
+
+All contents of this repository, including the course materials, interactive components and site code,
+are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+You may share and adapt them for non-commercial purposes, provided you give appropriate credit to
+4a128035, link to the source, indicate the license, and note any changes.
+https://creativecommons.org/licenses/by-nc/4.0/
