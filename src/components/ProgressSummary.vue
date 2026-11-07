@@ -43,7 +43,7 @@ const bar = {
         <span class="w-14 shrink-0 text-sm font-extrabold">{{ r.short }}</span>
         <template v-if="r.total">
           <progress
-            class="h-3 flex-1 overflow-hidden rounded-full [&::-webkit-progress-bar]:bg-surface-2" :class="bar[r.tone]"
+            class="h-3 w-0 min-w-0 flex-1 overflow-hidden rounded-full [&::-webkit-progress-bar]:bg-surface-2" :class="bar[r.tone]"
             :value="r.finished" :max="r.total" :aria-label="`${r.short}完成進度`"
           />
           <span class="w-16 shrink-0 text-right text-sm font-extrabold text-ink-2">{{ r.finished }} / {{ r.total }} 課</span>

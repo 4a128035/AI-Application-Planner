@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { title, description = 'iPAS AI 應用規劃師（初級）互動式學習網站：用生活比喻、圖解與情境小測驗準備考試。' } = Astro.props
-const siteName = 'AI 規劃師養成所'
+const siteName = 'AI 應用規劃師養成所'
 const tagline = '從零開始的 iPAS 初級備考'
 const year = new Date().getFullYear()
 const pageTitle = title === siteName ? title : `${title}｜${siteName}`
@@ -54,7 +54,7 @@ const isActive = (href: string) => (href === url('') ? path === href : path.star
         <a href={url('')} class="flex items-center gap-2.5" aria-label={`${siteName}：回首頁`}>
           <Logo class="h-10 w-10 flex-none" />
           <span class="flex flex-col leading-tight">
-            <span class="text-lg font-extrabold tracking-tight">{siteName}</span>
+            <span class="text-base font-extrabold tracking-tight sm:text-lg">{siteName}</span>
             <span class="text-xs font-bold text-ink-2">{tagline}</span>
           </span>
         </a>
