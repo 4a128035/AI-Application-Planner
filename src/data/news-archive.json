@@ -1,0 +1,1020 @@
+{
+ "updatedAt": "2026-11-07T04:02:52.928Z",
+ "keepDays": 30,
+ "failed": [],
+ "sources": [
+  {
+   "name": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "name": "iThome",
+   "lang": "zh"
+  },
+  {
+   "name": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "name": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "name": "Google AI",
+   "lang": "en"
+  },
+  {
+   "name": "Google DeepMind",
+   "lang": "en"
+  }
+ ],
+ "items": [
+  {
+   "title": "AI 聽力照護進軍中東市場！瑞音生技 SaMD 軟體破解三大驗配痛點",
+   "link": "https://finance.technews.tw/2026/11/07/samd/",
+   "date": "2026-11-07T03:09:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "連 OpenAI 都撤退，它卻拚出 145 億年營收！解密 AI 影片霸主 Runway 的突圍之道",
+   "link": "https://technews.tw/2026/11/07/how-runway-reached-450-million-dollars-in-arr/",
+   "date": "2026-11-07T03:00:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 電商新創 Dalet Labs 獲 700 萬美元融資，首推「生成式導購」App Scene",
+   "link": "https://technews.tw/2026/11/07/lightspeed-is-betting-this-startup-can-lure-shoppers-with-a-feed-of-ai-images/",
+   "date": "2026-11-07T02:30:27.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "選舉結果不改擴張計劃！OpenAI 完成 110 億美元融資、估值 1.25 兆美元",
+   "link": "https://finance.technews.tw/2026/11/07/openai-gets-11-billion/",
+   "date": "2026-11-07T02:05:13.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "半年狂虧 800 億卻衝 2 兆市值！Anthropic 挑戰史上最大 IPO，是一場豪賭還是盛世？",
+   "link": "https://finance.technews.tw/2026/11/07/anthropic-2-trillion-market-cap-biggest-ipo-challenge-wall-street-nervous/",
+   "date": "2026-11-07T02:00:14.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "矽谷 AI 領袖「效率至上」文化與大眾經驗嚴重脫節，難打造貼近消費者的產品",
+   "link": "https://technews.tw/2026/11/07/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+   "date": "2026-11-07T01:30:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達要求台積電進軍先進記憶體市場？傳組建 3D DRAM 產線解 AI 缺貨荒",
+   "link": "https://finance.technews.tw/2026/11/07/3d-dram/",
+   "date": "2026-11-07T01:01:22.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "聯發科 AI ASIC 第四季營收上看 25 億美元，蔡力行：AI 投資回收仍有過渡期",
+   "link": "https://technews.tw/2026/11/07/mediatek-rick-tsai-reveals-the-truth-about-ai-investment/",
+   "date": "2026-11-07T01:00:01.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國 PNNL 導入代理式 AI，加速開發衛星與核反應爐用抗輻射晶片",
+   "link": "https://technews.tw/2026/11/07/covering-the-fastest-computers-in-the-world-and-the-people-who-run-them-14/",
+   "date": "2026-11-07T00:30:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "最新民調：八成美國民眾呼籲醫療 AI 需透明化，逾六成盼掌握「醫療話語權」",
+   "link": "https://technews.tw/2026/11/07/medical-ai-use-transparency-poll/",
+   "date": "2026-11-06T16:00:45.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "ChatGPT 搜尋量逼近 Google 兩成，搜尋龍頭面臨挑戰",
+   "link": "https://technews.tw/2026/11/06/chatgpt-search-reaches-roughly-20-percent-of-google-s-search-volume/",
+   "date": "2026-11-06T08:49:24.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+   "link": "https://openai.com/index/partnering-with-hacktron",
+   "date": "2026-11-06T08:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "美國選後 OpenAI 主動表態，資料中心電力成本自己出錢",
+   "link": "https://technews.tw/2026/11/06/openai-responds-post-us-election-calls-new-rules-ai-data-center-grid-costs/",
+   "date": "2026-11-06T07:41:45.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Claude 跟進 ChatGPT 推個人理財，連結銀行帳戶就能問錢花去哪",
+   "link": "https://www.inside.com.tw/article/42845-anthropic-claude-personal-finance-plaid-beta",
+   "date": "2026-11-06T07:15:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "目標 2027 年全自製劇導入生成式 AI，富士電視台澄清：為減輕負擔而非取代演員",
+   "link": "https://technews.tw/2026/11/06/japans-fuji-tv-goes-all-in-with-ai-for-drama-production/",
+   "date": "2026-11-06T06:40:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "53 億美元收購 Echodyne，Shield AI 擴大反無人機雷達布局",
+   "link": "https://finance.technews.tw/2026/11/06/shield-ai-acquired-ecodyne-for-radar-techs/",
+   "date": "2026-11-06T06:18:54.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 交易變色衝擊工業類股 CAT / GEV 拋售潮恐未止",
+   "link": "https://finance.technews.tw/2026/11/06/ai-investment-hits-industrial-stocks-as-cat-and-gev-face-sell-offs/",
+   "date": "2026-11-06T06:10:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "IREN 延後交付微軟 AI 基礎設施，宣布追加 150 億美元投資",
+   "link": "https://technews.tw/2026/11/06/ai-data-center-firm-iren-delays-microsoft-ai-deliveries-plans-15-billion-spending-push/",
+   "date": "2026-11-06T05:45:44.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 遇 AI 股慘崩逆風、傳 IPO 估值恐少逾 3 成",
+   "link": "https://finance.technews.tw/2026/11/06/ai-backlash-could-threaten-anthropic-ipo-timing/",
+   "date": "2026-11-06T05:30:21.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 重申全額付資料中心電費、不要求官員簽保密協議，並呼籲各級政府立法",
+   "link": "https://www.inside.com.tw/article/42840-openai-national-community-compact-data-center-power-costs-midterm-backlash",
+   "date": "2026-11-06T05:01:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 推 GPT-6 Cyber 模型，助研究人員挖出 81 個 Firefox 漏洞",
+   "link": "https://infosecu.technews.tw/2026/11/06/openai-introduces-gpt%e2%80%916-cyber/",
+   "date": "2026-11-06T04:54:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI發表GPT-6 Cyber，找出Firefox 81個未知高風險漏洞",
+   "link": "https://www.ithome.com.tw/news/180285",
+   "date": "2026-11-06T04:11:11.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "工業AI邁向規模化導入，AVEVA以資料基礎串聯工程與營運",
+   "link": "https://www.inside.com.tw/article/42842-AVEVA",
+   "date": "2026-11-06T04:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "一句提示詞防堵 AI 失控，實測證實「先詢問再行動」能有效攔截未授權操作",
+   "link": "https://technews.tw/2026/11/06/prompt-prevents-ai-runaway-tests-confirm-ask-first-act-blocks-unauthorized-operations/",
+   "date": "2026-11-06T03:40:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "麥可貝瑞將 25% 半導體 ETF 空單獲利落袋、押 AI 續跌",
+   "link": "https://finance.technews.tw/2026/11/06/michael-burry-takes-partial-profits-on-smh/",
+   "date": "2026-11-06T03:30:04.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Perplexity 推出 AI 代理 Teammates，可長期幫你工作但月費高達 200 美元",
+   "link": "https://technews.tw/2026/11/06/perplexitys-new-ai-coworkers-can-take-over-your-workload-but-they-dont-come-cheap/",
+   "date": "2026-11-06T03:20:07.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "METR 報告：Anthropic 模型進化速度翻倍，寫程式已非人類瓶頸",
+   "link": "https://technews.tw/2026/11/06/independent-assessment-of-ai-rd-acceleration-at-anthropic-in-october-2026/",
+   "date": "2026-11-06T03:10:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達釋出多款免費 AI 模型與工具，助攻企業與科學研究",
+   "link": "https://technews.tw/2026/11/06/nvidia-open-models-help-developers-accelerate-science-and-engineering/",
+   "date": "2026-11-06T02:55:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "客製化財務分析，Claude「個人理財」功能在美先行",
+   "link": "https://finance.technews.tw/2026/11/06/anthropic-introduces-personal-finance-in-claude/",
+   "date": "2026-11-06T02:39:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "影片製作就像聊天，Google Gemini Omni 1.2 Flash 帶來「對話式編輯」與 15 秒生成能力",
+   "link": "https://technews.tw/2026/11/06/gemini-omni-1-2-flash/",
+   "date": "2026-11-06T02:30:23.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國反 AI 浪潮席捲選舉，科技巨頭被迫正視社會責任",
+   "link": "https://technews.tw/2026/11/06/anti-ai-sentiment-sweeps-through-u-s-elections-forcing-tech-giants-to-confront-their-social-responsibilities/",
+   "date": "2026-11-06T02:20:21.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "保護貼如何賣出億元年營收？ZIFRIEND 以「零失敗」突圍紅海，再用 AI 開創成長新局",
+   "link": "https://www.inside.com.tw/article/42821-SHOPLINE&ZIFRIEND",
+   "date": "2026-11-06T02:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 交易遭遇逆風，那指創「解放日」以來最大單日跌幅",
+   "link": "https://finance.technews.tw/2026/11/06/nasdaq-posts-biggest-daily-drop-in-19-months-on-fears-of-ai-regulations/",
+   "date": "2026-11-06T01:25:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 續投 AI 基建，砸 170 億美元懷俄明建資料中心",
+   "link": "https://technews.tw/2026/11/06/google-invests-17-billion-ai-infrastructure-wyoming-data-center/",
+   "date": "2026-11-06T01:15:52.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic擴大Claude文字浮水印部署，部分舊版模型仍未支援",
+   "link": "https://www.ithome.com.tw/news/180269",
+   "date": "2026-11-06T01:11:53.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "回應資料中心建設爭議，OpenAI提出用電、用水與資訊公開承諾",
+   "link": "https://www.ithome.com.tw/news/180271",
+   "date": "2026-11-06T01:11:05.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic推出Claude個人理財功能，可連結銀行帳戶分析收支",
+   "link": "https://www.ithome.com.tw/news/180268",
+   "date": "2026-11-06T00:11:44.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "資料安全業者Sentra獲1.5億美元投資，擴大AI代理安全業務",
+   "link": "https://www.ithome.com.tw/news/180235",
+   "date": "2026-11-06T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "英國NCSC預警2028年前AI惡意程式恐用於勒索軟體攻擊，威脅關鍵基礎設施",
+   "link": "https://www.ithome.com.tw/news/180196",
+   "date": "2026-11-06T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "date": "2026-11-06T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Cult.fit builds operational muscle with Codex",
+   "link": "https://openai.com/index/cultfit-builds-with-codex",
+   "date": "2026-11-05T20:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Google擴大AI基礎設施投資，首度進駐懷俄明州建資料中心",
+   "link": "https://www.ithome.com.tw/news/180286",
+   "date": "2026-11-05T17:11:08.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "link": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+   "date": "2026-11-05T17:05:16.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Australian universities are creating AI-native graduates",
+   "link": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "date": "2026-11-05T17:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+   "link": "https://openai.com/index/introducing-gpt-6-cyber",
+   "date": "2026-11-05T09:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Merge builds product and business tools with OpenAI technology",
+   "link": "https://openai.com/index/merge-builds-with-openai",
+   "date": "2026-11-05T08:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Setting a new standard for responsible AI infrastructure",
+   "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+   "date": "2026-11-05T02:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Flipsnack grows product signups with conversion optimization",
+   "link": "https://openai.com/ads/customers/flipsnack",
+   "date": "2026-11-05T00:45:15.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI揭露AI助理個人化瓶頸，模型仍難善用過往對話",
+   "link": "https://www.ithome.com.tw/news/180267",
+   "date": "2026-11-05T00:11:49.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Franklin Templeton uses OpenAI to support investment research",
+   "link": "https://openai.com/index/franklin-templeton",
+   "date": "2026-11-05T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "公路局擬擴大推動無人機AI巡檢，結合3D建模、AI影像辨識提升橋梁與邊坡養護效率",
+   "link": "https://www.ithome.com.tw/news/180263",
+   "date": "2026-11-04T21:11:26.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI收購Pierre，擴充Codex程式碼管理與審查能力",
+   "link": "https://www.ithome.com.tw/news/180257",
+   "date": "2026-11-04T17:11:01.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+   "link": "https://openai.com/index/openai-to-acquire-pierre",
+   "date": "2026-11-04T14:30:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "A thousand fewer paths to root",
+   "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "date": "2026-11-04T08:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+   "link": "https://openai.com/index/daybreak-red-aws-govcloud",
+   "date": "2026-11-04T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Introducing Images 2.6",
+   "link": "https://openai.com/index/introducing-images-2-6",
+   "date": "2026-11-04T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+   "link": "https://openai.com/index/devrev-enterprise-self-service",
+   "date": "2026-11-04T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Agentic cheminformatics with Google Antigravity",
+   "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+   "date": "2026-11-03T17:01:49.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Accelerating engineering for the physical world",
+   "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+   "date": "2026-11-03T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Cisco defends at machine speed with OpenAI",
+   "link": "https://openai.com/index/cisco-cyber",
+   "date": "2026-11-03T08:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Heimstaden is changing residential real estate management with AI",
+   "link": "https://openai.com/index/heimstaden",
+   "date": "2026-11-03T08:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+   "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+   "date": "2026-11-03T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Preparing our next security sprint to harden OpenAI",
+   "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+   "date": "2026-11-02T18:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Rewarding defenders with bigger bug bounties",
+   "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "date": "2026-11-02T18:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "The latest AI news we announced in October 2026",
+   "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+   "date": "2026-11-02T17:45:00.000Z",
+   "source": "Google AI",
+   "lang": "en"
+  },
+  {
+   "title": "Scaling Git at OpenAI",
+   "link": "https://openai.com/index/scaling-git-at-openai",
+   "date": "2026-11-02T15:30:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Introducing the Grid Protectors Program",
+   "link": "https://openai.com/index/grid-protectors-program",
+   "date": "2026-11-02T15:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "LifeVal",
+   "link": "https://openai.com/index/lifeval",
+   "date": "2026-11-02T09:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+   "link": "https://openai.com/index/dan-driscoll-joins-openai",
+   "date": "2026-11-02T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Qodo builds context into AI code review with Codex",
+   "link": "https://openai.com/index/qodo-codex-plugin",
+   "date": "2026-11-02T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Speeding up planning decisions with AI",
+   "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+   "date": "2026-10-30T14:18:30.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Making it easier for websites to express AI training preferences",
+   "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "date": "2026-10-30T09:30:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Community safety report and new protections for teens",
+   "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "date": "2026-10-30T09:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Fair use benefits everyone",
+   "link": "https://openai.com/index/fair-use-benefits-everyone",
+   "date": "2026-10-30T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "An updated Model Spec for more capable and beneficial AI",
+   "link": "https://openai.com/index/updated-model-spec",
+   "date": "2026-10-29T17:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How we detect frontier model misalignment",
+   "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+   "date": "2026-10-29T09:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Ropes & Gray is developing AI for transactional diligence",
+   "link": "https://openai.com/index/ropes-gray-ai-diligence",
+   "date": "2026-10-29T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "link": "https://openai.com/index/credit-saison",
+   "date": "2026-10-29T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Evernote turns AI-driven discovery into paid subscriptions",
+   "link": "https://openai.com/ads/customers/evernote",
+   "date": "2026-10-28T19:40:49.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "date": "2026-10-28T17:00:58.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+   "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "date": "2026-10-28T13:15:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "The future of the firm",
+   "link": "https://openai.com/index/the-future-of-the-firm",
+   "date": "2026-10-28T10:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Legora is building the agentic operating system for legal work",
+   "link": "https://openai.com/index/legora",
+   "date": "2026-10-28T09:30:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Genie 4: A new generation of world simulation",
+   "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "date": "2026-10-27T16:01:38.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Retell uses OpenAI models to help power 100M monthly calls",
+   "link": "https://openai.com/index/retell-ai",
+   "date": "2026-10-27T15:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+   "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "date": "2026-10-27T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Check Point accelerates vulnerability research with Daybreak",
+   "link": "https://openai.com/index/check-point-daybreak",
+   "date": "2026-10-27T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+   "link": "https://openai.com/index/greptile-code-review-codex-astra",
+   "date": "2026-10-26T22:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Introducing GPT-6.1 Terra",
+   "link": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "date": "2026-10-26T18:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Our newest AI Quest: Mapping the human brain",
+   "link": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+   "date": "2026-10-26T16:00:00.000Z",
+   "source": "Google AI",
+   "lang": "en"
+  },
+  {
+   "title": "Working with academic communities to build scientific understanding",
+   "link": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+   "date": "2026-10-26T14:30:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+   "link": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+   "date": "2026-10-26T13:45:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "ChatGPT’s expanding world of work",
+   "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
+   "date": "2026-10-26T10:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Fanatics and OpenAI streamline the fan experience",
+   "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "date": "2026-10-26T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+   "link": "https://openai.com/index/openai-cut-incident-investigation",
+   "date": "2026-10-26T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "date": "2026-10-23T17:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Securing our frontier model training environment",
+   "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "date": "2026-10-23T10:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+   "link": "https://openai.com/index/anima",
+   "date": "2026-10-23T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+   "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+   "date": "2026-10-23T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Build more responsive apps with the Decisions API",
+   "link": "https://openai.com/index/decisions-api",
+   "date": "2026-10-22T19:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Beyond tree cover: mapping the world’s forest types",
+   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "date": "2026-10-22T14:30:24.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "What FDE means at OpenAI",
+   "link": "https://openai.com/index/forward-deployed-engineering-means",
+   "date": "2026-10-22T06:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+   "link": "https://openai.com/index/uber-chatgpt-work-rollout",
+   "date": "2026-10-22T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Broad access through consistent standards",
+   "link": "https://openai.com/index/broad-access-through-consistent-standards",
+   "date": "2026-10-21T21:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How AT&T is rethinking in-house legal work with OpenAI",
+   "link": "https://openai.com/index/att-legal",
+   "date": "2026-10-21T17:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "date": "2026-10-21T13:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI models are coming to Google Cloud",
+   "link": "https://openai.com/index/openai-models-google-cloud",
+   "date": "2026-10-21T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "date": "2026-10-21T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+   "link": "https://openai.com/index/building-chatgpt-ad-stack",
+   "date": "2026-10-21T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "date": "2026-10-21T04:50:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Southeast Asia’s digital economy to hit $368 billion",
+   "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+   "date": "2026-10-21T04:00:00.000Z",
+   "source": "Google AI",
+   "lang": "en"
+  },
+  {
+   "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+   "link": "https://openai.com/index/cloudflare-cyber",
+   "date": "2026-10-21T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+   "link": "https://openai.com/index/empowering-cyber-defenders",
+   "date": "2026-10-21T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+   "link": "https://openai.com/index/ted-taylor-restaurant",
+   "date": "2026-10-20T10:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+   "link": "https://openai.com/index/terminal-x",
+   "date": "2026-10-20T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "OpenAI acquires Orchestra Bio",
+   "link": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "date": "2026-10-20T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Advancing coding in low‑resource programming languages",
+   "link": "https://openai.com/index/low-resource-programming-languages",
+   "date": "2026-10-19T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Itaú is building generative AI for its entire customer base",
+   "link": "https://openai.com/index/itau-generative-ai",
+   "date": "2026-10-16T19:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Localiza reorganized work around generative AI",
+   "link": "https://openai.com/index/localiza-generative-ai",
+   "date": "2026-10-16T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Grupo Boticário uses AI to strengthen human connections",
+   "link": "https://openai.com/index/grupo-boticario",
+   "date": "2026-10-16T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+   "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+   "date": "2026-10-16T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "link": "https://openai.com/index/benefit-street-partners",
+   "date": "2026-10-16T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Bringing GPT-Rosalind to academic research labs",
+   "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+   "date": "2026-10-15T19:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "date": "2026-10-15T16:08:03.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Teaching students to think and learn through questions",
+   "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+   "date": "2026-10-15T13:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+   "link": "https://openai.com/index/sullivan-cromwell",
+   "date": "2026-10-15T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Amp puts AI agents to work beyond code with OpenAI models",
+   "link": "https://openai.com/index/amp-beyond-coding",
+   "date": "2026-10-14T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "SentinelOne cuts malware analysis from weeks to hours",
+   "link": "https://openai.com/index/sentinelone",
+   "date": "2026-10-14T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+   "link": "https://openai.com/index/third-moment-research",
+   "date": "2026-10-14T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Block is building AI-powered security with OpenAI technology",
+   "link": "https://openai.com/index/block-ai-powered-security",
+   "date": "2026-10-14T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+   "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+   "date": "2026-10-14T02:00:14.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "The EU’s next chapter in AI is agentic",
+   "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+   "date": "2026-10-14T00:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Developing Gemini 4 Argon responsibly and safely",
+   "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+   "date": "2026-10-13T19:43:07.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Gemini 4 Argon for Robotics",
+   "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+   "date": "2026-10-13T16:01:58.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Gemini 4 Argon: Built to solve your hardest problems",
+   "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+   "date": "2026-10-13T16:01:52.000Z",
+   "source": "Google DeepMind",
+   "lang": "en"
+  },
+  {
+   "title": "Higgsfield takes AI video from 1 minute to over 10",
+   "link": "https://openai.com/index/higgsfield-longer-videos-voice",
+   "date": "2026-10-13T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "link": "https://openai.com/index/asana-browser-agent",
+   "date": "2026-10-09T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "link": "https://openai.com/index/sophos",
+   "date": "2026-10-09T07:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "link": "https://openai.com/index/oracle",
+   "date": "2026-10-08T16:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+   "link": "https://openai.com/index/pollo-ai",
+   "date": "2026-10-08T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  },
+  {
+   "title": "LegalOn halves Codex costs while maintaining development speed",
+   "link": "https://openai.com/index/legalon-halves-codex-costs",
+   "date": "2026-10-08T12:00:00.000Z",
+   "source": "OpenAI",
+   "lang": "en"
+  }
+ ]
+}

@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import PageHero from '../../components/PageHero.astro'
-import { getNews, sources } from '../../lib/news'
+import archive from '../../data/news-archive.json'
 import { radar } from '../../data/radar'
 import { url } from '../../lib/url'
 
-const { items, failed, updatedAt } = await getNews()
+// Headlines come from the archive that scripts/update-news.mjs refreshes every morning (kept for 30 days).
+interface NewsItem { title: string; link: string; date: string; source: string; lang: string }
+const { items, failed, updatedAt, keepDays, sources } = archive as { items: NewsItem[]; failed: string[]; updatedAt: string; keepDays: number; sources: { name: string; lang: string }[] }
 const zh = items.filter(i => i.lang === 'zh')
 const en = items.filter(i => i.lang === 'en')
+const OPEN_DAYS = 3
 
 const tz = 'Asia/Taipei'
 const dayKey = (iso: string) => new Intl.DateTimeFormat('zh-TW', { timeZone: tz, month: 'long', day: 'numeric', weekday: 'short' }).format(new Date(iso))
@@ -65,12 +68,13 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
 
       <section aria-labelledby="news-title">
         <h2 id="news-title" class="flex items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">📰</span>最新 AI 新聞</h2>
-        <p class="mt-2 text-ink-2">近兩週的中文 AI 新聞，點標題會在新分頁開啟原文。</p>
-        {zhDays.length === 0 ? (
-          <p class="mt-6 rounded-[var(--radius-card)] bg-surface-2 p-5 text-ink-2">這次更新沒有抓到新聞，明天會再自動更新一次。</p>
-        ) : zhDays.map(g => (
+        <p class="mt-2 text-ink-2">保留近 {keepDays} 天的中文 AI 新聞。最近 {OPEN_DAYS} 天直接顯示，更早的新聞點日期展開。點標題會在新分頁開啟原文。</p>
+        {zhDays.length === 0 && (
+          <p class="mt-6 rounded-[var(--radius-card)] bg-surface-2 p-5 text-ink-2">目前沒有新聞，明天會再自動更新一次。</p>
+        )}
+        {zhDays.slice(0, OPEN_DAYS).map(g => (
           <div class="mt-6">
-            <h3 class="text-sm font-extrabold text-ink-2">{g.day}</h3>
+            <h3 class="text-sm font-extrabold text-ink-2">{g.day}・{g.list.length} 則</h3>
             <ul class="mt-2 divide-y divide-line overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface">
               {g.list.map(it => (
                 <li>
@@ -83,6 +87,28 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
             </ul>
           </div>
         ))}
+        {zhDays.length > OPEN_DAYS && (
+          <div class="mt-8">
+            <h3 class="text-sm font-extrabold text-ink-2">更早的新聞</h3>
+            <div class="mt-2 space-y-2">
+              {zhDays.slice(OPEN_DAYS).map(g => (
+                <details class="rounded-[var(--radius-card)] border border-line bg-surface">
+                  <summary class="flex min-h-12 cursor-pointer items-center px-4 font-bold">{g.day}<span class="ml-2 text-sm text-ink-2">・{g.list.length} 則</span></summary>
+                  <ul class="divide-y divide-line border-t border-line">
+                    {g.list.map(it => (
+                      <li>
+                        <a class="block px-4 py-3 transition-colors hover:bg-surface-2" href={it.link} {...ext}>
+                          <span class="block font-bold leading-[1.6]">{it.title}</span>
+                          <span class="mt-0.5 block text-xs font-bold text-ink-2">{it.source}<span class="sr-only">（在新分頁開啟）</span></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
 
         {en.length > 0 && (
           <details class="mt-8 rounded-[var(--radius-card)] border border-line bg-surface">
@@ -119,7 +145,7 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
     <aside class="h-fit space-y-5 rounded-[var(--radius-card)] bg-info-soft p-6 lg:sticky lg:top-24">
       <div>
         <p class="font-extrabold text-info">🔄 自動更新</p>
-        <p class="mt-1 text-[15px] leading-[1.75]">新聞每天早上自動更新。<br />最後更新：{updated}</p>
+        <p class="mt-1 text-[15px] leading-[1.75]">新聞每天早上自動更新，保留 {keepDays} 天。<br />最後更新：{updated}</p>
         {failed.length > 0 && <p class="mt-2 text-sm leading-[1.7]">這次沒抓到：{failed.join('、')}，下次更新會再試。</p>}
       </div>
       <div>

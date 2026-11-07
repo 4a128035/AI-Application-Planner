@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Rebuild every morning (06:00 Taiwan) so the AI 新知 page picks up the latest RSS headlines.
+  # Every morning (06:00 Taiwan): update the AI news archive, then rebuild and deploy.
   schedule:
     - cron: '0 22 * * *'
   workflow_dispatch:
@@ -16,12 +16,39 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Only on the daily schedule (or a manual run): fetch RSS, merge into src/data/news-archive.json and commit it.
+  # This is the only job with write access. It runs our own script with no npm dependencies, and feed content
+  # is treated as plain data. A push made with GITHUB_TOKEN does not trigger this workflow again.
+  news:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: node scripts/update-news.mjs
+      - name: Commit the archive if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/news-archive.json
+          git diff --cached --quiet || { git commit -m "Update AI news archive" && git push; }
+
   build:
+    needs: news
+    # Runs on every push (news is skipped) and after the daily news update, even if fetching news failed.
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       # Actions are pinned to full commit SHAs; Dependabot keeps them current.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: main
           persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
@@ -37,6 +64,8 @@ jobs:
 
   deploy:
     needs: build
+    # Explicit, because a skipped news job would otherwise skip deploy too.
+    if: ${{ !cancelled() && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
     permissions:
       pages: write
