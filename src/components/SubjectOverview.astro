@@ -7,6 +7,7 @@ import Badge from './Badge.astro'
 import PageHero from './PageHero.astro'
 import { subjectById, type SubjectId } from '../data/scope'
 import { getLessons, lessonUrl } from '../lib/lessons'
+import { lessonBadge } from '../data/updates'
 
 interface Props { subjectId: SubjectId }
 const subject = subjectById[Astro.props.subjectId]
@@ -71,7 +72,12 @@ const progressBar = tone === 'brand'
                       <a href={lessonUrl(l)} class="group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
                         <div class="flex items-center justify-between">
                           <Badge tone={tone}>第 {l.data.order} 課</Badge>
-                          <span class="text-xs font-bold text-ok">● 已上線</span>
+                          {(() => {
+                            const b = lessonBadge(l.id)
+                            return b
+                              ? <span class="rounded-full bg-info-soft px-2.5 py-0.5 text-xs font-extrabold text-info">{b.kind === 'new' ? '🆕 新課程' : '🔄 已更新'}</span>
+                              : <span class="text-xs font-bold text-ok">● 已上線</span>
+                          })()}
                         </div>
                         <span class="mt-4 text-3xl" aria-hidden="true">{l.data.emoji}</span>
                         <span class="mt-2 text-lg font-extrabold">{l.data.title}</span>

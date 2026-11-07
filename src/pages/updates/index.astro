@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PageHero from '../../components/PageHero.astro'
+import { getLessons, lessonUrl } from '../../lib/lessons'
+import { subjectById } from '../../data/scope'
+import { updates, typeLabel, fmtDate } from '../../data/updates'
+
+const lessons = await getLessons()
+const byId = new Map(lessons.map(l => [l.id, l]))
+for (const u of updates) for (const id of u.lessons ?? []) {
+  if (!byId.has(id)) throw new Error(`updates.ts: unknown lesson id "${id}" in "${u.title}"`)
+}
+
+const months: { month: string; list: typeof updates }[] = []
+for (const u of updates) {
+  const month = `${u.date.slice(0, 4)} 年 ${Number(u.date.slice(5, 7))} 月`
+  const last = months[months.length - 1]
+  if (last?.month === month) last.list.push(u); else months.push({ month, list: [u] })
+}
+---
+
+<BaseLayout title="更新紀錄" description="網站新增的課程、修改的內容與新功能，依時間排列。">
+  <PageHero emoji="🗒️" title="更新紀錄" lead="新增的課程、修改過的內容與網站新功能都記在這裡。讀過的課有更新時，課程卡片上也會出現「新課程」或「已更新」的標籤。" />
+
+  <div class="mx-auto max-w-3xl px-4 pb-16 sm:px-6">
+    {months.map(m => (
+      <section class="mt-8 first:mt-0" aria-label={m.month}>
+        <h2 class="text-sm font-extrabold text-brand">{m.month}</h2>
+        <ol class="mt-3 space-y-4">
+          {m.list.map(u => {
+            const t = typeLabel[u.type]
+            const ls = (u.lessons ?? []).map(id => byId.get(id)!)
+            return (
+              <li id={`u-${u.date}-${u.title.length}`} class="rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+                <div class="flex flex-wrap items-center gap-2 text-xs font-extrabold">
+                  <span class:list={['rounded-full px-2.5 py-1', t.cls]}><span aria-hidden="true">{t.emoji}</span> {t.text}</span>
+                  <time datetime={u.date} class="text-ink-2">{fmtDate(u.date)}</time>
+                </div>
+                <p class="mt-2 text-lg font-extrabold leading-[1.5]">{u.title}</p>
+                <p class="mt-1 text-[15px] leading-[1.75] text-ink-2">{u.detail}</p>
+                {ls.length > 0 && (
+                  ls.length > 4 ? (
+                    <details class="mt-3">
+                      <summary class="cursor-pointer text-sm font-bold text-brand">查看 {ls.length} 課</summary>
+                      <ul class="mt-2 flex flex-wrap gap-2">
+                        {ls.map(l => <li><a class="inline-block rounded-full border border-line px-3 py-1 text-sm font-bold hover:border-brand" href={lessonUrl(l)}>{subjectById[l.data.subject].short}第 {l.data.order} 課・{l.data.title.split('：')[0]}</a></li>)}
+                      </ul>
+                    </details>
+                  ) : (
+                    <ul class="mt-3 flex flex-wrap gap-2">
+                      {ls.map(l => <li><a class="inline-block rounded-full border border-line px-3 py-1 text-sm font-bold hover:border-brand" href={lessonUrl(l)}>{subjectById[l.data.subject].short}第 {l.data.order} 課・{l.data.title.split('：')[0]}</a></li>)}
+                    </ul>
+                  )
+                )}
+              </li>
+            )
+          })}
+        </ol>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

@@ -6,6 +6,7 @@ import Quiz from '../../components/Quiz.vue'
 import { getLessons, lessonUrl, type Lesson } from '../../lib/lessons'
 import { subjectById } from '../../data/scope'
 import { url } from '../../lib/url'
+import { lastChange, lessonBadge, fmtDate } from '../../data/updates'
 
 export async function getStaticPaths() {
   const lessons = await getLessons()
@@ -20,6 +21,8 @@ const { lesson, prev, next } = Astro.props
 const { Content, headings } = await render(lesson)
 const subject = subjectById[lesson.data.subject]
 const tone = subject.tone
+const changed = lastChange(lesson.id)
+const badge = lessonBadge(lesson.id)
 
 const sections = [
   ...headings.filter(h => h.depth === 2).map(h => ({ slug: h.slug, text: h.text })),
@@ -59,7 +62,14 @@ const sections = [
       <ul class="mt-6 flex flex-wrap gap-2 text-sm font-bold">
         <li class="rounded-full bg-surface px-4 py-1.5 shadow-[var(--shadow-soft)]">⏱️ 約 {lesson.data.minutes} 分鐘</li>
         {lesson.data.quiz.length > 0 && <li class="rounded-full bg-surface px-4 py-1.5 shadow-[var(--shadow-soft)]">📝 {lesson.data.quiz.length} 題情境小測驗</li>}
+        {changed && <li class="rounded-full bg-surface px-4 py-1.5 shadow-[var(--shadow-soft)]">🗓️ 最後更新 {fmtDate(changed.date)}</li>}
       </ul>
+      {badge && (
+        <p class="mt-4 max-w-2xl rounded-[var(--radius-btn)] bg-info-soft px-4 py-3 text-[15px] leading-[1.7]">
+          <strong class="text-info">{badge.kind === 'new' ? '🆕 這是新課程' : `🔄 這課在 ${fmtDate(badge.update.date)} 更新了`}</strong>：{badge.update.title}。
+          <a class="font-bold text-brand underline underline-offset-4" href={url('updates/')}>看更新紀錄</a>
+        </p>
+      )}
     </header>
 
     <!-- Phone/tablet: section chips -->
