@@ -13,10 +13,7 @@ const MAX_ITEMS = 2000
 export const sources = [
   { id: 'technews', name: 'TechNews 科技新報', url: 'https://technews.tw/category/ai/feed/', lang: 'zh', hosts: ['technews.tw'], aiOnly: false },
   { id: 'ithome', name: 'iThome', url: 'https://www.ithome.com.tw/rss', lang: 'zh', hosts: ['ithome.com.tw'], aiOnly: false },
-  { id: 'inside', name: 'INSIDE', url: 'https://www.inside.com.tw/feed/rss', lang: 'zh', hosts: ['inside.com.tw'], aiOnly: false },
-  { id: 'openai', name: 'OpenAI', url: 'https://openai.com/news/rss.xml', lang: 'en', hosts: ['openai.com'], aiOnly: true },
-  { id: 'google', name: 'Google AI', url: 'https://blog.google/technology/ai/rss/', lang: 'en', hosts: ['blog.google'], aiOnly: true },
-  { id: 'deepmind', name: 'Google DeepMind', url: 'https://deepmind.google/blog/rss.xml', lang: 'en', hosts: ['deepmind.google'], aiOnly: true }
+  { id: 'inside', name: 'INSIDE', url: 'https://www.inside.com.tw/feed/rss', lang: 'zh', hosts: ['inside.com.tw'], aiOnly: false }
 ]
 
 // Uppercase "AI" is matched case-sensitively so words like "Taiwan" don't count.
@@ -89,7 +86,7 @@ const byLink = new Map()
 for (const it of [...old, ...fresh]) byLink.set(it.link, it)
 const seenTitle = new Set()
 const items = [...byLink.values()]
-  .filter(it => new Date(it.date).getTime() >= since)
+  .filter(it => new Date(it.date).getTime() >= since && sources.some(s => s.name === it.source))
   .sort((a, b) => b.date.localeCompare(a.date))
   .filter(it => { const k = it.title.toLowerCase(); if (seenTitle.has(k)) return false; seenTitle.add(k); return true })
   .slice(0, MAX_ITEMS)

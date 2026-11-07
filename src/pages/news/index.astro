@@ -9,7 +9,6 @@ import { url } from '../../lib/url'
 interface NewsItem { title: string; link: string; date: string; source: string; lang: string }
 const { items, failed, updatedAt, keepDays, sources } = archive as { items: NewsItem[]; failed: string[]; updatedAt: string; keepDays: number; sources: { name: string; lang: string }[] }
 const zh = items.filter(i => i.lang === 'zh')
-const en = items.filter(i => i.lang === 'en')
 const OPEN_DAYS = 3
 
 const tz = 'Asia/Taipei'
@@ -110,21 +109,6 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
           </div>
         )}
 
-        {en.length > 0 && (
-          <details class="mt-8 rounded-[var(--radius-card)] border border-line bg-surface">
-            <summary class="flex min-h-12 cursor-pointer items-center px-5 font-extrabold">🌐 AI 公司官方公告（英文，{en.length} 則）</summary>
-            <ul class="divide-y divide-line border-t border-line">
-              {en.map(it => (
-                <li>
-                  <a class="block px-5 py-3 transition-colors hover:bg-surface-2" href={it.link} {...ext}>
-                    <span class="block font-bold leading-[1.6]">{it.title}</span>
-                    <span class="mt-0.5 block text-xs font-bold text-ink-2">{it.source}・{dayKey(it.date)}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </details>
-        )}
       </section>
 
       <section aria-labelledby="tl-title">
@@ -151,7 +135,7 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
       <div>
         <p class="font-extrabold text-info">📚 新聞來源</p>
         <ul class="mt-1 space-y-0.5 text-[15px] leading-[1.75]">
-          {sources.map(s => <li>{s.name}{s.lang === 'en' ? '（英文）' : ''}</li>)}
+          {sources.map(s => <li>{s.name}</li>)}
         </ul>
         <p class="mt-2 text-sm leading-[1.7]">綜合科技媒體只保留標題和 AI 相關的新聞。本站只列出標題與連結，內容版權屬於各媒體。</p>
       </div>
