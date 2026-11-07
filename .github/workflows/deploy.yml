@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Rebuild every morning (06:00 Taiwan) so the AI 新知 page picks up the latest RSS headlines.
+  schedule:
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 permissions:
