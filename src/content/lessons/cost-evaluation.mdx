@@ -1,0 +1,214 @@
+---
+title: 導入評估：算清楚成本與效益
+description: TCO 要算哪些成本、Token 費用怎麼估、ROI 和回收期怎麼算？雲端 API 和私有部署怎麼選？還有哪些方法能省錢？
+subject: l12
+code: L12301
+order: 10
+minutes: 12
+emoji: 💰
+quiz:
+  - id: cost-1
+    code: L12301
+    stem: 某環保團體每月要用生成式 AI 產生 300 份通知，每份約 3,000 字，平均每字約 1.5 個 Token。只考慮輸出 Token，外部 API 每 1,000 個 Token 收費 0.02 美元。每月的 Token 成本最接近多少？
+    answer: 1
+    options:
+      - text: 約 13.5 美元
+        why: 少乘了 1.5（每字 1.5 個 Token）。
+      - text: 約 27 美元
+        why: 300 × 3,000 × 1.5 ＝ 1,350,000 Token；1,350,000 ÷ 1,000 × 0.02 ＝ 27 美元。
+      - text: 約 54 美元
+        why: 多乘了 2，計算有誤。
+      - text: 約 90 美元
+        why: 可能誤把每字當成 5 個 Token，或單價算錯。
+  - id: cost-2
+    code: L12301
+    stem: 某公司每月人工回覆 1,000 則訊息，每則成本 40 元。改用 AI 後，每則約 1,500 個 Token，費用為每 1,000 個 Token 1 元，另需一次性整合費 231,000 元。下列何者正確？
+    answer: 0
+    options:
+      - text: 每月節省 38,500 元，約 6 個月回收整合費
+        why: 人工 40,000 元；AI 為 1,000 × 1,500 ÷ 1,000 × 1 ＝ 1,500 元；節省 38,500 元；231,000 ÷ 38,500 ＝ 6 個月。
+      - text: 每月節省 40,000 元，約 5.8 個月回收
+        why: 忘了扣掉 AI 的 Token 費用 1,500 元。
+      - text: 每月節省 38,500 元，約 7 個月回收
+        why: 231,000 ÷ 38,500 剛好是 6，不是 7。
+      - text: 每月節省 1,500 元，約 154 個月回收
+        why: 把 AI 的費用誤當成節省的金額。
+  - id: cost-3
+    code: L12301
+    stem: 某工廠導入生成式 AI，每月 API 費用 15 萬元、維護人力 8 萬元、基礎設施 5 萬元。下列哪一種總體擁有成本（TCO）分析最完整？
+    answer: 3
+    options:
+      - text: 只看 API 費用 15 萬元
+        why: 只看 API 費用，會嚴重低估真正的成本。
+      - text: API 費用加維護人力，共 23 萬元
+        why: 漏了基礎設施等其他成本。
+      - text: API、人力、基礎設施三項直接成本，共 28 萬元
+        why: 比較完整，但還漏了訓練、系統整合、資安合規等成本。
+      - text: 除了直接成本，還要納入訓練、系統整合與資安合規等相關支出
+        why: TCO 是「擁有這套系統的全部成本」，看得見和看不見的都要算進去。
+  - id: cost-4
+    code: L12301
+    stem: 某物流公司做 TCO 分析時，下列哪一項「不屬於」直接成本？
+    answer: 2
+    options:
+      - text: API 呼叫產生的 Token 費用
+        why: 這是直接成本。
+      - text: 雲端運算與儲存費用
+        why: 這是直接成本。
+      - text: 導入後因配送效率提升，省下的燃油與車輛維修費
+        why: 這是「效益」，不是成本，應該放在 ROI 的收益那一邊。
+      - text: 模型訓練與優化用的 GPU 運算費
+        why: 這是直接成本。
+  - id: cost-5
+    code: L12301
+    stem: 進行 Token Economics（Token 用量與費用）分析時，下列哪一項「不屬於」考量範圍？
+    answer: 0
+    options:
+      - text: 模型訓練階段所需的 GPU 記憶體成本
+        why: Token Economics 關心的是推論（使用）時的 Token 用量與費用；訓練用的硬體成本屬於另一類。
+      - text: 每次呼叫 API 的輸入 Token 數
+        why: 輸入 Token 是 Token Economics 的核心。
+      - text: 產生內容消耗的輸出 Token 費用
+        why: 輸出 Token 也要計費。
+      - text: 推論過程中的 Token 使用量統計
+        why: 這正是 Token Economics 要追蹤的。
+  - id: cost-6
+    code: L12301
+    stem: 某工廠導入 AI 瑕疵檢測，成本 800 萬元，預估每年省下 350 萬元品質成本。評估 ROI 時，下列何者最正確？
+    answer: 1
+    options:
+      - text: 800 ÷ 350 ≈ 2.3 年回收，這樣就是完整的 ROI 評估
+        why: 只算了看得見的節省，漏了無形效益與隱性成本。
+      - text: 除了每年 350 萬的節省，還要納入無形效益（品牌、客戶滿意度）與隱性成本（維護、訓練）一起評估
+        why: 完整的 ROI 要同時看「全部效益」和「全部成本」。
+      - text: AI 成效不確定，等別人做成功再評估
+        why: 評估就是為了在不確定中做決策，不能一直等。
+      - text: 不良率從 3% 降到 0.4%，就代表一定高報酬
+        why: 不良率下降是成效指標，還要和成本比較才知道報酬。
+  - id: cost-7
+    code: L12301
+    stem: 某金融機構要用 AI 分析含有未公開資訊的監理文件。主管機關要求「資料安全與法規遵循優先於速度與成本」。最適當的策略是？
+    answer: 3
+    options:
+      - text: 直接使用公開的雲端聊天服務，速度最快
+        why: 敏感資料傳到外部服務，違反「安全優先」的要求。
+      - text: 先求上線，之後再慢慢補強合規
+        why: 題目明確要求合規優先，不能先上線再說。
+      - text: 用公開雲端 API，並把資料加密傳送
+        why: 加密保護的是傳輸過程，資料仍會在外部服務被處理。
+      - text: 私有化部署模型，並建立存取控管與稽核機制
+        why: 模型放在自己能控管的環境，敏感資料不必離開公司，再加上控管與稽核，才符合安全優先。
+  - id: cost-8
+    code: L12301
+    stem: 某公司同時有「便宜快速」和「強大但昂貴」兩種模型，希望系統自動判斷每個請求該交給哪一個，以兼顧品質與成本。最適合的架構是？
+    answer: 2
+    options:
+      - text: 負載平衡：依伺服器目前的忙碌程度分配
+        why: 負載平衡看的是伺服器忙不忙，不是問題難不難。
+      - text: 請使用者自己先選問題類型
+        why: 增加使用者負擔，也不一定選得對。
+      - text: 模型路由（Model Routing）：先判斷問題特性，再分派給適合的模型
+        why: 簡單問題給便宜模型、困難問題給強大模型，是兼顧品質與成本的常見做法。
+      - text: 規則式分流：依固定關鍵字分派
+        why: 固定關鍵字無法真正判斷問題難度，彈性不足。
+---
+
+import Callout from '../../components/Callout.astro'
+import Misconception from '../../components/Misconception.astro'
+import CostLab from '../../components/CostLab.vue'
+import SortGame from '../../components/SortGame.vue'
+
+export const tcoBuckets = [
+  { id: 'direct', label: '直接成本', emoji: '💵' },
+  { id: 'hidden', label: '間接／隱性成本', emoji: '🧊' },
+  { id: 'benefit', label: '效益（不是成本）', emoji: '📈' }
+]
+export const tcoItems = [
+  { emoji: '🔤', text: '每月的 API Token 費用', answer: 'direct', why: '依用量直接付給服務商的費用。' },
+  { emoji: '🎓', text: '教員工使用新系統的教育訓練', answer: 'hidden', why: '容易被忽略，但一定會發生的成本。' },
+  { emoji: '⛽', text: '配送效率提升後，省下的燃油費', answer: 'benefit', why: '這是導入後得到的好處，放在 ROI 的收益那一邊。' },
+  { emoji: '☁️', text: '雲端運算與儲存費用', answer: 'direct', why: '直接的基礎設施費用。' },
+  { emoji: '🛡️', text: '資安檢測與法規遵循審查', answer: 'hidden', why: '不做會出事，但常被漏算。' },
+  { emoji: '😊', text: '客服回覆變快，客戶滿意度提升', answer: 'benefit', why: '無形效益，評估 ROI 時也應納入。' }
+]
+
+> 老闆問：「導入這套 AI 要花多少錢？多久能回本？」這一課教你用三個工具回答：**TCO**（到底要花多少）、**Token 成本**（用多少付多少）、**ROI**（值不值得）。
+
+## TCO：別只看 API 帳單
+
+**總體擁有成本**（Total Cost of Ownership, TCO）是「**擁有並使用這套系統的全部成本**」：
+
+| 類型 | 例子 |
+|---|---|
+| **直接成本** | API／Token 費用、雲端運算與儲存、GPU 訓練、基礎設施、維護人力 |
+| **間接／隱性成本** | 系統整合、員工訓練、資安與法規遵循、流程調整、持續監控 |
+
+<Callout type="trap" title="效益不是成本">
+  「導入後省下的燃油費」是<strong>效益</strong>，不是成本。它應該放在 ROI 的收益那一邊，不能算進 TCO。
+</Callout>
+
+<SortGame client:visible title="這是成本，還是效益？" buckets={tcoBuckets} items={tcoItems} />
+
+## Token 成本怎麼算
+
+第 1 課說過，API 通常依 **Token 數**收費。**Token Economics** 關心的是**使用（推論）時**的 Token 用量與費用：
+
+<Callout type="key" title="Token 成本公式">
+  每月 Token 數 ＝ 每月次數 × 每次的 Token 數（輸入＋輸出）<br />
+  每月費用 ＝ 每月 Token 數 ÷ 1,000 × 每 1,000 Token 的單價
+</Callout>
+
+如果題目給的是「字數」，要先換算：**Token 數 ＝ 字數 × 每字的 Token 數**。
+
+訓練模型時用掉的 GPU 記憶體成本，屬於另一類成本，**不在** Token Economics 的範圍內。
+
+## ROI 與回收期
+
+**投資報酬率**（Return on Investment, ROI）看的是「值不值得」：
+
+- **每月節省** ＝ 原本的成本 − AI 的每月成本
+- **回收期** ＝ 一次性投入 ÷ 每月節省
+
+<CostLab client:visible />
+
+<Callout type="key" title="完整的 ROI 評估">
+  只看「每年省多少」不夠。還要納入<strong>無形效益</strong>（客戶滿意度、品牌形象、員工時間）和<strong>隱性成本</strong>（維護、訓練、合規）。試試看上面計算機的「其他每月成本」：漏算這一項，回收期就會被嚴重低估。
+</Callout>
+
+## 雲端 API 還是私有部署？
+
+| | 雲端 API | 私有部署（自建、地端） |
+|---|---|---|
+| **起步** | 快，按用量付費 | 慢，要先投入硬體與人力 |
+| **資料** | 要傳給外部服務 | **留在公司**，自主控管 |
+| **適合** | 一般資料、想快速驗證 | 敏感資料、法規要求高（金融、醫療、政府） |
+| **代價** | 用量大時費用高、依賴供應商 | 硬體、維運、資安都要自己負責 |
+
+當「**資料安全與法規遵循優先於速度和成本**」時，答案通常是**私有化部署**（例如自行部署開源模型），並同時建立**存取控管與稽核機制**。
+
+## 省錢的方法
+
+| 方法 | 做法 |
+|---|---|
+| **模型路由**（Model Routing） | 先判斷問題難度：簡單的交給便宜模型，困難的才交給強大模型 |
+| **知識蒸餾、量化** | 用更小、更快的模型（第 7 課） |
+| **控制思考預算** | 推理型模型依任務複雜度設定思考上限（第 3 課） |
+| **縮短提示** | 固定的大量範例改用微調，減少每次送出的 Token（第 7 課） |
+
+<Callout type="trap" title="模型路由 ≠ 負載平衡">
+  <strong>負載平衡</strong>看的是「伺服器忙不忙」，把請求平均分給多台伺服器；<strong>模型路由</strong>看的是「問題難不難」，把請求分給適合的模型。
+</Callout>
+
+## 常見誤區
+
+<Misconception claim="TCO 就是 API 帳單上的金額">
+  <strong>不對。</strong>還有基礎設施、人力、整合、訓練、資安合規等成本。
+</Misconception>
+
+<Misconception claim="私有部署一定比較便宜">
+  <strong>不一定。</strong>私有部署的好處是資料自主與合規，但硬體、維運與人力成本都要自己承擔。
+</Misconception>
+
+<Misconception claim="回收期短，就代表一定值得投資">
+  <strong>不一定。</strong>還要看計算時有沒有漏算隱性成本，以及風險與無形效益。
+</Misconception>

@@ -1,0 +1,208 @@
+---
+title: MCP 與多代理協作：讓 AI 接上工具，也和彼此合作
+description: MCP 為什麼被比喻成 AI 的 USB-C？它和 RAG、Skill、A2A 差在哪？多個 Agent 合作時，又為什麼需要解決方案圖與共享記憶？
+subject: l12
+code: L12202
+order: 9
+minutes: 12
+emoji: 🔗
+quiz:
+  - id: mcp-1
+    code: L12202
+    stem: 下列何者最能正確說明 MCP（Model Context Protocol）與 RAG 在功能定位上的主要差異？
+    answer: 2
+    options:
+      - text: MCP 和 RAG 都只能用來查詢文件，沒有差別
+        why: 兩者定位不同。MCP 能接上各種工具和系統，不只是查文件。
+      - text: RAG 負責呼叫外部 API，MCP 負責補充知識
+        why: 剛好說反了。
+      - text: MCP 著重讓模型以標準方式與外部工具、系統互動；RAG 著重從知識庫補充模型需要的資訊
+        why: RAG 是「查資料再回答」；MCP 是「讓 AI 用統一的方式接上各種工具與資料來源」。
+      - text: MCP 是一種新的語言模型
+        why: MCP 是一套溝通協定，不是模型。
+  - id: mcp-2
+    code: L12202
+    stem: 某公司的 AI 客服採用 MCP 架構。使用者提問後，AI 需要查詢訂單狀態再回覆。下列哪一個流程順序最正確？
+    answer: 0
+    options:
+      - text: AI Host → MCP Client → MCP Server → 資料查詢 → 結果回傳 AI Host
+        why: Host 決定要用工具，透過 Client 依協定送給 Server，Server 查詢後的結果再一路回到 Host。
+      - text: MCP Server → AI Host → MCP Client → 資料查詢 → 結果回傳 AI Host
+        why: 請求是從 Host 發起的，不是從 Server 開始。
+      - text: 資料查詢 → MCP Client → AI Host → MCP Server
+        why: 要先有請求，才會有查詢。
+      - text: AI Host 直接連到資料庫查詢，不需要 Client 和 Server
+        why: 這樣就不是 MCP 架構了。MCP 的價值正是用標準的 Client／Server 介面連接。
+  - id: mcp-3
+    code: L12202
+    stem: 某 AI 程式助理生成的程式碼，常用到已經過時的套件寫法，和最新官方文件不符。最適合導入哪一種技術，讓模型在工作時即時讀取最新的官方文件？
+    answer: 3
+    options:
+      - text: 調高溫度
+        why: 溫度與資訊是否最新無關。
+      - text: 每天重新預訓練模型
+        why: 成本極高，也不切實際。
+      - text: 只用零樣本提示
+        why: 提示寫得再好，模型也不知道最新文件寫了什麼。
+      - text: 透過 MCP 整合文件查詢工具，讓模型在推理時即時存取最新的外部文件
+        why: 讓 AI 在需要時去讀最新文件，正是 MCP 這類工具整合的用途。
+  - id: mcp-4
+    code: L12202
+    stem: 某保險公司用 MCP 讓 Agent 存取保單資料庫與文件系統，另外把「理賠文件核對」這種需要 AI 理解與專業判斷的工作，封裝成可重複使用的 Skill。下列敘述何者正確？
+    answer: 1
+    options:
+      - text: Skill 和 MCP 是同一件事的兩種說法
+        why: 兩者分工不同。
+      - text: MCP 負責讓 Agent 以統一方式存取外部工具與資料；Skill 則封裝需要 AI 理解與判斷的專業做法
+        why: MCP 是「接上工具與資料」的管道；Skill 是「怎麼做這件事」的專業知識與步驟。
+      - text: Skill 負責連接資料庫，MCP 負責專業判斷
+        why: 角色說反了。
+      - text: 用了 Skill，就不需要任何外部資料
+        why: Skill 常常需要搭配 MCP 取得的資料才能運作。
+  - id: mcp-5
+    code: L12202
+    stem: 在 Agent-to-Agent（A2A）架構中，Client Agent 與 Remote Agent 的互動方式，下列何者最正確？
+    answer: 2
+    options:
+      - text: Remote Agent 主動接管 Client Agent 的所有工作
+        why: Remote Agent 只執行被委託的任務。
+      - text: 兩者必須由同一家公司開發
+        why: A2A 的目的就是讓不同廠商的 Agent 能互相合作。
+      - text: Client Agent 發起任務，Remote Agent 執行並回傳結果
+        why: 一方委託、一方執行，是 A2A 的基本分工。
+      - text: A2A 是讓 Agent 連接資料庫的協定
+        why: 連接工具與資料是 MCP 的角色；A2A 是 Agent 之間的溝通。
+  - id: mcp-6
+    code: L12202
+    stem: 某金融系統有三個 Agent：A 做市場分析、B 做風險評估、C 執行交易。A 更新判斷後，B 卻仍依舊資訊評估，導致 C 執行了不一致的交易。最根本的原因是？
+    answer: 0
+    options:
+      - text: 各 Agent 之間缺乏有效的上下文同步或共享記憶機制
+        why: 每個 Agent 各自持有不同版本的資訊，結果就會互相矛盾。
+      - text: 每個 Agent 的模型都太小
+        why: 問題不在模型能力，而在資訊沒有同步。
+      - text: 溫度設定太高
+        why: 溫度不會造成資訊版本不一致。
+      - text: Agent 數量太少
+        why: 增加 Agent 只會讓同步問題更嚴重。
+  - id: mcp-7
+    code: L12202
+    stem: 某系統用「解決方案圖」（Solution Graph）規劃多步驟任務，同時維護一份長期保存的「知識圖」（Knowledge Graph）。兩者的主要差異是？
+    answer: 3
+    options:
+      - text: 兩者都是儲存員工資料的資料庫
+        why: 兩者都不是單純的員工資料庫。
+      - text: 解決方案圖保存跨任務的共用知識，知識圖安排本次任務的步驟
+        why: 角色說反了。
+      - text: 知識圖只能用文字表示，解決方案圖只能用圖片表示
+        why: 兩者的差異在用途，不在表示形式。
+      - text: 解決方案圖描述「這次任務」的子任務與依賴關係；知識圖保存可供不同任務共用的結構化知識
+        why: 解決方案圖是「這次怎麼做」的計畫；知識圖是「大家都能查」的知識。
+  - id: mcp-8
+    code: L12202
+    stem: 在建置多代理系統時，如果沒有清楚定義每個 Agent 的角色分工與啟動條件，最可能出現什麼問題？
+    answer: 1
+    options:
+      - text: 系統會自動變得更有效率
+        why: 沒有分工，通常只會更混亂。
+      - text: 多個 Agent 重複做同樣的工作，或互相衝突，造成效率低落
+        why: 就像一個團隊沒有分工，大家可能搶同一件事做，也可能沒人做。
+      - text: 所有 Agent 都會停止運作
+        why: 通常不會停止，而是各做各的。
+      - text: 模型的參數會被改變
+        why: 角色分工不會改變模型參數。
+---
+
+import Callout from '../../components/Callout.astro'
+import Misconception from '../../components/Misconception.astro'
+import McpFlow from '../../components/McpFlow.vue'
+import SortGame from '../../components/SortGame.vue'
+
+export const protoBuckets = [
+  { id: 'mcp', label: 'MCP', emoji: '🔌' },
+  { id: 'rag', label: 'RAG', emoji: '📚' },
+  { id: 'skill', label: 'Skill', emoji: '🎓' },
+  { id: 'a2a', label: 'A2A', emoji: '🤝' }
+]
+export const protoItems = [
+  { emoji: '🗄️', text: '讓 AI 助理用統一的方式，連上公司的訂單系統和行事曆', answer: 'mcp', why: '以標準協定接上各種工具與系統，是 MCP。' },
+  { emoji: '📖', text: '回答前先從員工手冊找出相關段落，再依據這些段落回答', answer: 'rag', why: '先檢索、再生成，是 RAG。' },
+  { emoji: '📝', text: '把「審核合約風險條款」的步驟、標準與範本，打包成 AI 可以重複使用的能力', answer: 'skill', why: '封裝專業做法與判斷步驟，是 Skill。' },
+  { emoji: '✈️', text: '旅遊公司的 Agent 把「訂機票」委託給航空公司的 Agent 執行，再取回結果', answer: 'a2a', why: 'Agent 和 Agent 之間委託與回報，是 A2A。' },
+  { emoji: '📚', text: '讓程式助理在寫程式時，即時讀取最新版的套件官方文件', answer: 'mcp', why: '透過工具整合即時存取外部資料，是 MCP 的典型用途。' },
+  { emoji: '🏦', text: '銀行的理財 Agent 請另一家公司的匯率 Agent 提供報價', answer: 'a2a', why: '不同組織的 Agent 互相合作，是 A2A。' }
+]
+
+> 上一課的 Agent 要靠「工具」才能做事。但每一家 AI 都要和每一個系統分別串接，工程量會爆炸。這一課介紹讓 AI **接上工具**的標準（MCP）、讓 AI **之間合作**的標準（A2A），以及多個 Agent 一起工作時要注意的事。
+
+## MCP：AI 的 USB-C
+
+<Callout type="analogy">
+  以前每支手機的充電孔都不一樣，每種配件都得另外做一個版本。<strong>USB-C</strong> 統一了接頭之後，一條線就能接各種裝置。<strong>MCP</strong>（Model Context Protocol）就是 AI 世界的 USB-C：系統只要做一次 <strong>MCP Server</strong>，任何支援 MCP 的 AI 應用都能接上。
+</Callout>
+
+MCP 由 Anthropic 在 2024 年 11 月發表；2025 年 12 月捐給 Linux 基金會旗下的 Agentic AI Foundation，成為由業界共同維護的開放標準。
+
+| 角色 | 是什麼 | 例子 |
+|---|---|---|
+| **MCP Host** | 使用者面對的 AI 應用 | Claude Desktop、程式編輯器、企業 AI 助理 |
+| **MCP Client** | Host 裡負責連線的元件，依協定送出請求 | 每連一個 Server，就有一個 Client |
+| **MCP Server** | 把系統能力包裝成 AI 能用的**工具**與**資料** | 訂單系統、行事曆、文件庫各自的 Server |
+
+<McpFlow client:visible />
+
+### MCP、RAG、Skill 怎麼分？
+
+| | 解決什麼 | 一句話 |
+|---|---|---|
+| **RAG** | 模型**缺知識** | 先查資料，再回答 |
+| **MCP** | 模型**接不上工具與系統** | 用統一的方式接上各種工具與資料來源 |
+| **Skill** | 模型**不知道專業做法** | 把某件事「怎麼做」的步驟、標準、範本打包起來，需要時才載入 |
+
+三者常常一起用：Agent 透過 MCP 取得保單資料，再用「理賠文件核對」這個 Skill 判斷文件是否齊全。
+
+## A2A：Agent 之間的溝通標準
+
+MCP 是「**AI 接工具**」，**A2A**（Agent-to-Agent Protocol）則是「**AI 和 AI 溝通**」。由 Google 在 2025 年提出，同年捐給 Linux 基金會。
+
+- **Client Agent**：發起任務的一方。
+- **Remote Agent**：接受委託、執行任務並**回傳結果**的一方。
+- 每個 Agent 用一張「**Agent Card**」公開自己能做什麼，方便別人找到它。
+
+<SortGame client:visible title="這是 MCP、RAG、Skill 還是 A2A？" buckets={protoBuckets} items={protoItems} />
+
+## 多個 Agent 一起工作
+
+複雜的任務常由多個 Agent 分工：一個分析、一個評估、一個執行。這時有三件事最重要：
+
+**1. 清楚的角色分工與啟動條件**：沒有定義清楚，Agent 可能重複做同樣的事，或互相衝突。
+
+**2. 共享記憶與上下文同步**：Agent A 更新了判斷，Agent B 卻還用舊資訊，Agent C 就會做出不一致的決定。多個 Agent 要能共享記憶，或同步彼此的情境脈絡，才不會重複詢問、互相矛盾。
+
+**3. 解決方案圖（Solution Graph）**：
+
+<Callout type="key" title="解決方案圖">
+  把問題的解決步驟畫成<strong>節點和連線</strong>的有向圖（通常是有向無環圖），標出每個子任務和它們的<strong>先後依賴關係</strong>。大型語言模型負責推理出有哪些步驟、彼此怎麼關聯，協助建構這張圖；Agent 再依圖逐步執行。
+</Callout>
+
+- **好處**：把推理分階段規劃、**逐步驗證**每個階段的結果，比要求 AI 一次產出最終答案更不容易出錯。
+- **找路徑**：在圖上尋找最佳解法時，會用**廣度優先、深度優先、最佳優先**等搜尋演算法探索。
+- **和知識圖的差別**：解決方案圖是「**這次任務**怎麼做」的計畫；**知識圖**（Knowledge Graph）保存的是**可供不同任務共用**的結構化知識。
+
+<Callout type="note" title="Agent 開發工具（查證日期：2026 年 11 月）">
+  各家都推出了建立 Agent 的工具，例如 OpenAI 在 2025 年 10 月推出的 <strong>AgentKit</strong>，提供視覺化的 Agent 建構介面、可嵌入的聊天介面、資料連接管理與評估工具，用來建構、整合工具與部署 Agent。工具名稱會變，考試考的是它們「用來做什麼」。
+</Callout>
+
+## 常見誤區
+
+<Misconception claim="MCP 是一種新的 AI 模型">
+  <strong>不是。</strong>MCP 是一套溝通協定，規定 AI 應用和工具之間怎麼傳遞請求與結果。
+</Misconception>
+
+<Misconception claim="有了 MCP 就不需要 RAG">
+  <strong>不一定。</strong>兩者解決的問題不同，常常一起使用。MCP 甚至可以用來接上一個 RAG 檢索工具。
+</Misconception>
+
+<Misconception claim="Agent 越多，系統就越聰明">
+  <strong>不一定。</strong>沒有分工、沒有同步，Agent 越多反而越混亂。
+</Misconception>
