@@ -1,0 +1,197 @@
+---
+title: No Code／Low Code：不寫程式也能做 AI 應用
+description: No-Code、Low-Code、AutoML、Vibe Coding 怎麼分？自動化流程裡的 Webhook、條件分支、聚合器各做什麼？
+subject: l12
+code: L12101
+order: 4
+minutes: 12
+emoji: 🧩
+quiz:
+  - id: lc-1
+    code: L12101
+    stem: 某農會只有一位懂基礎程式的資訊人員，想做一個「農民上傳病蟲害照片後，自動通知專家、建立案件並排定訪查」的系統，希望開發快、之後也能小幅客製。最適合的開發方式是？
+    answer: 2
+    options:
+      - text: 從零開始自行撰寫完整系統
+        why: 人力只有一位，從零開發耗時又難維護。
+      - text: 委外開發大型企業資源規劃（ERP）系統
+        why: 需求只是一條自動化流程，導入大型系統太重了。
+      - text: 使用 Low-Code 平台：以視覺化拖拉為主，必要時寫少量程式碼
+        why: 開發快、門檻低，又保留少量程式碼的彈性，最符合「一位懂基礎程式的人員」這個條件。
+      - text: 只靠 AI 聊天機器人手動回覆每一筆回報
+        why: 這不是自動化，也無法建立案件與排程。
+  - id: lc-2
+    code: L12101
+    stem: 客服主管想在 Low-Code 平台設定：「當 AI 判斷客人是退費意圖，而且金額超過 10,000 元時，立即通知主管。」這主要靠哪一種流程元件？
+    answer: 0
+    options:
+      - text: 條件分支（Router／Branching）：依條件決定流程往哪裡走
+        why: 「如果……而且……就……」正是條件分支的工作。
+      - text: 聚合器（Aggregator）：把多個來源的結果合併
+        why: 聚合器是等多個結果都到齊再合併，這題要的是依條件分流。
+      - text: 迭代器（Iterator）：逐筆處理清單中的每個項目
+        why: 迭代器是一筆一筆處理多個項目，不是依條件判斷。
+      - text: 排程觸發：每天固定時間執行
+        why: 這題要的是「一發生就判斷」，不是定時執行。
+  - id: lc-3
+    code: L12101
+    stem: 物流公司的自動化流程要分別向「倉儲系統」查配送狀態、向「物流商」查預計送達時間，等兩邊都回覆後，再整合成一則訊息回覆客人。最適合哪一種元件？
+    answer: 3
+    options:
+      - text: 條件分支（Router）
+        why: 條件分支是「選一條路走」，這題要的是「等多條路的結果都回來」。
+      - text: Webhook
+        why: Webhook 負責「事件發生時觸發流程」，不負責合併結果。
+      - text: 篩選器（Filter）
+        why: 篩選器只決定資料能不能通過，不會合併多個來源。
+      - text: 聚合器（Aggregator）：等多個來源的結果都到齊，再合併成一個輸出
+        why: 「分頭查詢、到齊後合併」就是聚合器的工作。
+  - id: lc-4
+    code: L12101
+    stem: 下列哪一個比喻最符合 Webhook 的運作方式？
+    answer: 1
+    options:
+      - text: 你每隔五分鐘打電話問餐廳「有空位了嗎？」
+        why: 這是「輪詢」（Polling）：一直主動去問，效率較差。
+      - text: 你在餐廳留下聯絡方式和條件，一有符合的空位，餐廳就主動通知你
+        why: 事件發生時由對方主動通知，就是 Webhook 的「事件觸發、主動推送」。
+      - text: 你到餐廳門口排隊，等到叫號為止
+        why: 這是同步等待，不是事件通知。
+      - text: 你把訂位資料寫在紙上存檔
+        why: 這只是保存資料，沒有觸發任何動作。
+  - id: lc-5
+    code: L12101
+    stem: 某銀行想快速建立「洗錢可疑交易偵測」模型，但團隊缺少會寫機器學習演算法和做特徵工程的人才。最適合優先導入哪一種工具？
+    answer: 2
+    options:
+      - text: 一般的報表儀表板工具
+        why: 儀表板用來呈現資料，不會建立預測模型。
+      - text: 影像生成工具
+        why: 這題要的是偵測可疑交易的分類模型，和影像生成無關。
+      - text: AutoML（自動化機器學習）
+        why: AutoML 能自動完成特徵處理、比較多種演算法與調整超參數，讓非專家也能建立模型。
+      - text: 文字聊天機器人
+        why: 聊天機器人不會自動訓練偵測模型。
+  - id: lc-6
+    code: L12101
+    stem: 某零售企業希望：門市主管能自己調整分析畫面，行銷部門能建立銷售預測模型。下列工具規劃何者最合理？
+    answer: 1
+    options:
+      - text: 用 AutoML 調整分析畫面，用 No-Code 平台訓練模型
+        why: 角色剛好顛倒了。
+      - text: 用 No-Code 平台讓主管調整畫面與指標，用 AutoML 建立預測模型
+        why: No-Code 擅長讓非技術人員自己做介面與流程；AutoML 擅長自動建立模型。各司其職。
+      - text: 只導入 No-Code 平台，同時處理介面與高階模型
+        why: No-Code 平台的模型能力通常有限，複雜的預測模型交給 AutoML 較適合。
+      - text: 只導入 AutoML，同時處理介面與模型
+        why: AutoML 專注在建立模型，不負責讓使用者調整分析畫面。
+  - id: lc-7
+    code: L12101
+    stem: 甲：工程師設計並優化提示詞，讓 AI 產生程式片段，再自行整合測試。乙：業務人員用自然語言描述需求，讓 AI 寫程式，再透過多輪對話調整成原型。丙：使用平台內建模組，再寫少量程式碼完成應用。下列配對何者正確？
+    answer: 0
+    options:
+      - text: 甲：提示工程；乙：Vibe Coding；丙：Low-Code
+        why: 甲的重點是設計提示詞；乙是用自然語言對話寫程式；丙是平台模組加少量程式碼。
+      - text: 甲：Vibe Coding；乙：提示工程；丙：No-Code
+        why: 乙才是 Vibe Coding；丙有寫少量程式碼，所以是 Low-Code 不是 No-Code。
+      - text: 甲：Low-Code；乙：代理式開發；丙：提示工程
+        why: 三者都配錯了。
+      - text: 甲：代理式開發；乙：Low-Code；丙：提示工程
+        why: 三者都配錯了。
+  - id: lc-8
+    code: L12101
+    stem: 某醫院想讓各科室人員自己建立行政表單，並用 AI 自動判讀填寫內容屬於哪一類問題，同時希望開發與維護負擔低。下列技術組合何者最適合？
+    answer: 3
+    options:
+      - text: 從零自行訓練一個語言模型，再自己寫表單系統
+        why: 成本與維護負擔都太高。
+      - text: 只用紙本表單，人工分類
+        why: 沒有達到數位化與自動判讀的目標。
+      - text: 用影像分割模型分析表單
+        why: 影像分割不是用來理解文字內容的。
+      - text: Low-Code 平台建立表單與流程，再串接預訓練語言模型的 API 做分類
+        why: 平台負責表單與流程，現成的語言模型 API 負責理解文字，開發快、維護負擔低。
+---
+
+import Callout from '../../components/Callout.astro'
+import Misconception from '../../components/Misconception.astro'
+import WorkflowLab from '../../components/WorkflowLab.vue'
+import SortGame from '../../components/SortGame.vue'
+
+export const partBuckets = [
+  { id: 'hook', label: 'Webhook', emoji: '⚡' },
+  { id: 'router', label: '條件分支', emoji: '🔀' },
+  { id: 'agg', label: '聚合器', emoji: '🧺' },
+  { id: 'api', label: 'API 呼叫', emoji: '🔌' }
+]
+export const partItems = [
+  { emoji: '📬', text: '網站一收到新訂單，就立刻啟動後續流程', answer: 'hook', why: '事件發生時主動觸發流程，是 Webhook。' },
+  { emoji: '💰', text: '金額大於 5 萬走主管簽核，否則自動核准', answer: 'router', why: '依條件決定走哪條路，是條件分支。' },
+  { emoji: '📊', text: '同時向三個門市查庫存，全部回來後合成一張總表', answer: 'agg', why: '等多個結果到齊再合併，是聚合器。' },
+  { emoji: '🤖', text: '把客訴內容送給語言模型，取得「問題類型」', answer: 'api', why: '呼叫外部服務（例如 AI 模型）取得結果，是 API 呼叫。' },
+  { emoji: '🔔', text: '感測器偵測到溫度異常時，主動通知流程開始處理', answer: 'hook', why: '由事件主動通知，是 Webhook。' },
+  { emoji: '🌐', text: '情緒為「憤怒」時轉真人客服，其餘由 AI 回覆', answer: 'router', why: '依判斷結果分流，是條件分支。' }
+]
+
+> 第 2 課提到，Vibe Coding 讓不會寫程式的人也能做出原型。其實在它之前，企業早就有一類工具讓業務人員自己做系統：**No-Code** 和 **Low-Code** 平台。這一課先搞懂它們是什麼、怎麼組出一條自動化流程；下一課再看它們的優勢、限制與管理。
+
+## 從「寫程式」到「拖拉積木」
+
+| 方式 | 怎麼做 | 適合誰 | 例子 |
+|---|---|---|---|
+| **傳統開發**（Pro-Code） | 工程師從頭寫程式 | 專業開發團隊 | 核心系統、高效能交易系統 |
+| **Low-Code** | **視覺化拖拉為主＋少量程式碼** | 懂一點程式的人、資訊部門 | Power Apps、n8n |
+| **No-Code** | **完全拖拉、設定**，不寫程式 | 一般業務人員 | 表單工具、Zapier、Make |
+| **Vibe Coding** | 用**自然語言**請 AI 寫程式，多輪對話調整 | 想快速做原型的人 | 用 Claude、ChatGPT 做網站 |
+
+<Callout type="analogy">
+  傳統開發像<strong>從頭蓋房子</strong>；Low-Code 像<strong>預鑄屋</strong>，主結構現成，細節可以自己改；No-Code 像<strong>樂高</strong>，用現成積木組，但只能用盒子裡有的積木。
+</Callout>
+
+這些平台的核心是**模型**（Model）：不是 AI 模型，而是用來**抽象描述資料結構、業務流程與介面邏輯**的設計藍圖。平台依照這份藍圖產生應用程式，所以模型設計得好不好，會直接影響之後的維護。
+
+### AutoML：不會寫演算法也能建模型
+
+**AutoML**（自動化機器學習）專門負責「建立預測模型」：它會自動做**特徵處理、挑選並比較多種演算法、調整超參數**。所以分工通常是：
+
+- **No-Code 平台**：讓使用者自己做表單、介面、儀表板與流程。
+- **AutoML**：讓非專家也能建立分類或預測模型（例如洗錢偵測、銷售預測）。
+
+## 自動化流程的積木
+
+n8n、Make、Zapier 這類平台，用「**節點**」串成一條**工作流程**（Workflow）。最常考的四種積木：
+
+| 積木 | 做什麼 | 生活比喻 |
+|---|---|---|
+| **⚡ Webhook**（觸發） | 事件一發生，對方**主動通知**你的流程開始 | 餐廳有空位時主動打電話給你，不用你一直打去問 |
+| **🔌 API 呼叫** | 呼叫外部系統或 AI 模型，取得結果 | 打電話請別的部門幫忙查資料 |
+| **🔀 條件分支**（Router） | 依條件決定流程往哪條路走 | 「金額大於 1 萬找主管，否則自動處理」 |
+| **🧺 聚合器**（Aggregator） | 等**多個來源都回覆**，再合併成一個結果 | 等三家廠商都報價後，整理成一張比價表 |
+
+<WorkflowLab client:visible />
+
+<SortGame client:visible title="這是哪一種流程積木？" buckets={partBuckets} items={partItems} />
+
+## 把 AI 接進來
+
+Low-Code 平台本身不一定有很強的 AI 能力，常見的做法是**串接現成的 AI 服務**：
+
+- **Low-Code ＋ 預訓練語言模型 API**：平台負責表單與流程，語言模型負責讀懂內容並分類。不必自己訓練模型，開發與維護負擔都低。
+- **No-Code ＋ 生成式 AI**：用生成式 AI 自動建立介面樣板，再結合使用者資料，即時產生個人化的內容與推播。
+- **降低門檻、促進合作**：在推動機器學習專案時，No-Code 平台最大的價值是用**視覺化介面降低技術門檻**，讓業務與技術部門能一起參與。
+
+像 **Dify** 這類平台，也讓你用拖拉的方式組出一個 AI 聊天機器人。但別忘了第 1 課：機器人要記得前面的對話，每次都得把**對話紀錄**一起送給模型。
+
+## 常見誤區
+
+<Misconception claim="No-Code 和 Low-Code 是一樣的東西">
+  <strong>不一樣。</strong>No-Code 完全不寫程式；Low-Code 以視覺化為主，但保留寫少量程式碼的彈性。題目出現「寫少量程式碼」，答案就是 Low-Code。
+</Misconception>
+
+<Misconception claim="Low-Code 平台裡的「模型」就是 AI 模型">
+  <strong>不一定。</strong>Low-Code 平台的「模型」通常是指描述資料結構、流程與介面邏輯的設計藍圖，是平台的核心元素。
+</Misconception>
+
+<Misconception claim="Webhook 就是定時去檢查有沒有新資料">
+  <strong>剛好相反。</strong>定時去問是「輪詢」；Webhook 是事件發生時，對方主動通知你。
+</Misconception>
