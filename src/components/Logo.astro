@@ -1,0 +1,17 @@
+---
+// Site mark: a rising line through network nodes (AI) ending in an arrow (growth).
+// Same drawing as public/favicon.svg; colours are fixed brand values so it reads the same in both themes.
+interface Props { class?: string }
+const { class: cls = 'h-10 w-10' } = Astro.props
+---
+
+<svg class={cls} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <rect width="64" height="64" rx="16" fill="#0f766e" />
+  <path d="M20 21 26 34" stroke="#99f6e4" stroke-width="2.5" stroke-linecap="round" opacity=".7" />
+  <path d="M14 46 26 34l10 7 13-20" fill="none" stroke="#fbf8f3" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M41 20.5 50 19l1 9" fill="none" stroke="#fbf8f3" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="20" cy="21" r="3.5" fill="#99f6e4" />
+  <circle cx="14" cy="46" r="5" fill="#99f6e4" />
+  <circle cx="26" cy="34" r="5" fill="#99f6e4" />
+  <circle cx="36" cy="41" r="5" fill="#99f6e4" />
+</svg>
