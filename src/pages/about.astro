@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import PageHero from '../components/PageHero.astro'
-import { url } from '../lib/url'
 
 const stack = [
   { name: 'Astro', role: '把 Markdown 教材組成網站，只在需要互動的地方載入 JavaScript' },
@@ -12,8 +11,8 @@ const stack = [
 ]
 ---
 
-<BaseLayout title="關於本站" description="三人讀書會的 iPAS 學習網站，也是一個與 AI 協作開發的實作專案。">
-  <PageHero emoji="🌱" title="關於本站" lead="三人讀書會準備 iPAS AI 應用規劃師（初級）的學習網站，也是一個「與 AI 協作開發網站」的實作專案：架構、程式、設計與教材都是和 AI 程式助理 Claude Code 一起完成的。" />
+<BaseLayout title="關於本站" description="iPAS AI 應用規劃師（初級）學習網站，也是一個與 AI 協作開發的實作專案。">
+  <PageHero emoji="🌱" title="關於本站" lead="準備 iPAS AI 應用規劃師（初級）的學習網站，也是一個「與 AI 協作開發網站」的實作專案：架構、程式、設計與教材都是和 AI 程式助理 Claude Code 一起完成的。" />
 
   <div class="mx-auto max-w-6xl space-y-14 px-4 pb-16 sm:px-6">
     <section aria-labelledby="arch-title">
@@ -33,7 +32,7 @@ const stack = [
         <div class="rounded-[var(--radius-card)] border-2 border-accent bg-surface p-5">
           <p class="text-sm font-extrabold text-accent">🔒 私人・Google Apps Script</p>
           <ul class="mt-3 list-disc space-y-1 pl-5 text-[15px] leading-[1.75]">
-            <li>驗證 Google 登入＋白名單</li>
+            <li>驗證 Google 登入與使用權限</li>
             <li>出題時不送答案</li>
             <li>交卷後由伺服器批改、記錄</li>
           </ul>
@@ -43,7 +42,7 @@ const stack = [
           <p class="text-sm font-extrabold text-ink-2">🗄️ 私人・Google 試算表</p>
           <ul class="mt-3 list-disc space-y-1 pl-5 text-[15px] leading-[1.75]">
             <li>題庫</li>
-            <li>成員白名單</li>
+            <li>授權名單</li>
             <li>作答紀錄</li>
           </ul>
         </div>
@@ -62,17 +61,5 @@ const stack = [
       </dl>
     </section>
 
-    <section class="grid gap-5 md:grid-cols-2" aria-label="設計與資安文件">
-      <a href={url('design/')} class="rounded-[var(--radius-card)] bg-brand-soft p-6 transition-transform hover:-translate-y-1">
-        <span aria-hidden="true" class="text-3xl">🎨</span>
-        <p class="mt-3 text-xl font-extrabold">設計規範</p>
-        <p class="mt-2 leading-[1.8] text-ink-2">設計原則、色彩、字體、元件，以及每個決定背後的理由。</p>
-      </a>
-      <a href={url('security/')} class="rounded-[var(--radius-card)] bg-accent-soft p-6 transition-transform hover:-translate-y-1">
-        <span aria-hidden="true" class="text-3xl">🛡️</span>
-        <p class="mt-3 text-xl font-extrabold">資安設計</p>
-        <p class="mt-2 leading-[1.8] text-ink-2">威脅模型、分層防護措施，以及誠實列出的已知限制。</p>
-      </a>
-    </section>
   </div>
 </BaseLayout>

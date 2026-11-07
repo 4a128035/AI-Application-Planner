@@ -33,7 +33,7 @@ export default defineConfig({
 
   security: {
     // Astro hashes its own inline scripts/styles into script-src / style-src.
-    // Everything else is listed explicitly; see the /security page for the reasoning.
+    // Everything else is listed explicitly; anything not named here is blocked.
     csp: {
       algorithm: 'SHA-256',
       scriptDirective: { hashes: [themeInitHash] },
