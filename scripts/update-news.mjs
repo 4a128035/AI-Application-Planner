@@ -1,5 +1,5 @@
 // Daily AI news update: fetch a whitelist of RSS feeds, merge with the saved archive, keep the last 30 days,
-// and write src/data/news-archive.json (committed by the scheduled workflow, then read by the AI 新知 page).
+// and write src/data/news-archive.json (committed by the scheduled workflow, then read by the AI 新聞 page).
 // Feeds only carry their latest few dozen items, so the archive is what makes news last a month.
 // Only titles, dates and https links on each source's own domain are kept (no article text).
 // A failed feed is skipped and the existing archive is kept, so a bad day never empties the page.

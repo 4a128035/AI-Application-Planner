@@ -34,8 +34,8 @@ const timeline = [
 const ext = { target: '_blank', rel: 'noopener noreferrer' }
 ---
 
-<BaseLayout title="AI 新知" description="每天自動更新的 AI 新聞，加上每月整理的「考點雷達」：哪些新技術可能變成 iPAS 考題。">
-  <PageHero emoji="📡" title="AI 新知" lead="AI 技術變化很快，考題每一梯次都會加入新東西。這裡每天自動整理最新的 AI 新聞，每月再挑出「可能變成考題」的重點。" />
+<BaseLayout title="AI 新聞" description="每天自動更新的 AI 新聞，加上每月整理的「考點雷達」：哪些新技術可能變成 iPAS 考題。">
+  <PageHero emoji="📡" title="AI 新聞" lead="AI 技術變化很快，考題每一梯次都會加入新東西。這裡每天自動整理最新的 AI 新聞，每月再挑出「可能變成考題」的重點。" />
 
   <div class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_20rem]">
     <div class="min-w-0 space-y-12">
@@ -66,7 +66,7 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' }
       </section>
 
       <section aria-labelledby="news-title">
-        <h2 id="news-title" class="flex items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">📰</span>最新 AI 新聞</h2>
+        <h2 id="news-title" class="flex items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">📰</span>最新新聞</h2>
         <p class="mt-2 text-ink-2">保留近 {keepDays} 天的中文 AI 新聞。最近 {OPEN_DAYS} 天直接顯示，更早的新聞點日期展開。點標題會在新分頁開啟原文。</p>
         {zhDays.length === 0 && (
           <p class="mt-6 rounded-[var(--radius-card)] bg-surface-2 p-5 text-ink-2">目前沒有新聞，明天會再自動更新一次。</p>

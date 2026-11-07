@@ -23,7 +23,7 @@ const SUBJECT_2 = ['llm-basics', 'genai-tools', 'prompt-engineering', 'low-code-
 
 export const updates: Update[] = [
   {
-    date: '2026-11-07', type: 'site', title: '「時事」改版為「AI 新知」',
+    date: '2026-11-07', type: 'site', title: '「時事」改版為「AI 新聞」',
     detail: '每天早上自動整理中文 AI 新聞並保留 30 天；每月整理一次「考點雷達」，挑出可能變成考題的新技術與法規。'
   },
   {
