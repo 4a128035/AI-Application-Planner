@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T04:08:51.254Z",
+ "updatedAt": "2026-11-08T00:58:24.630Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,62 @@
   }
  ],
  "items": [
+  {
+   "title": "AI 聊天機器人也能當學者？實測揭露學術出版防線的新危機",
+   "link": "https://technews.tw/2026/11/08/ai-generated-fake-papers-challenge-academic-defenses/",
+   "date": "2026-11-08T00:30:44.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "被 AI 取代後更難翻身，高盛：年長勞工重返職場比他人多等五週",
+   "link": "https://technews.tw/2026/11/07/goldman-sachs-says-ai-displaced-employees-face-a-harder-path-back-to-work/",
+   "date": "2026-11-07T09:00:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "少子化與 AI 下的高教兩極化：頂大狂開跨域新學程，私校連理工系所也失守",
+   "link": "https://technews.tw/2026/11/07/ai-impacting-ntu-nccu-nthu-new-degree-programs-private-schools-suspend-stem-enrollment/",
+   "date": "2026-11-07T08:30:51.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "一張圖看美國資料中心建置放緩對台灣 AI 供應鏈影響！法人稱訂單僅遞延",
+   "link": "https://finance.technews.tw/2026/11/07/taiwans-ai-supply-chain/",
+   "date": "2026-11-07T07:01:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 記憶系統結合腦感測穿戴裝置，成為職場新型輔助工具",
+   "link": "https://technews.tw/2026/11/07/how-ai-memory-and-wearables-could-give-you-a-career-advantage/",
+   "date": "2026-11-07T07:00:03.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 估值達 1.25 兆美元，Anthropic 搶進 IPO，AI 巨頭如何面對資本市場？",
+   "link": "https://www.inside.com.tw/article/42852-openai-1-25-trillion-investment-valuation",
+   "date": "2026-11-07T06:18:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "滿手 AI 慘綠怎麼辦？野村籲緊盯「三大指標」抱緊這幾類護城河股",
+   "link": "https://finance.technews.tw/2026/11/07/resource-center/",
+   "date": "2026-11-07T05:27:14.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta 推出 Muse「空間」功能，讓使用者打造個人化 AI 應用體驗",
+   "link": "https://www.inside.com.tw/article/42851-meta-muse-spaces",
+   "date": "2026-11-07T05:12:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "AI 聽力照護進軍中東市場！瑞音生技 SaMD 軟體破解三大驗配痛點",
    "link": "https://finance.technews.tw/2026/11/07/samd/",
