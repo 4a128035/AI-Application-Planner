@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T00:58:24.630Z",
+ "updatedAt": "2026-11-09T01:17:30.751Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,167 @@
   }
  ],
  "items": [
+  {
+   "title": "微軟傳未續租 AI 算力 甲骨文股價劇烈震盪",
+   "link": "https://finance.technews.tw/2026/11/09/microsoft-winding-down-oracle-deal-to-rent-ai-cloud-capacity/",
+   "date": "2026-11-09T01:10:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "迎戰超級細菌威脅，Google DeepMind 導入尖端 AI 攻克抗藥性危機",
+   "link": "https://technews.tw/2026/11/09/ai-aids-combating-superviruses/",
+   "date": "2026-11-09T01:00:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "德新科州長牽動 AI 發展 CoreWeave 致信求合作",
+   "link": "https://technews.tw/2026/11/09/governor-dexinke-influences-ai-development-coreweave-seeks-collaboration/",
+   "date": "2026-11-09T00:50:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 運算迎超省電曙光，布朗大學破解晶片微縮「死層」魔咒",
+   "link": "https://technews.tw/2026/11/09/magnetic-material-breakthrough-reduces-chip-power-consumption/",
+   "date": "2026-11-09T00:45:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "YC 執行長陳嘉興堪稱 AI 代理「重度發燒友」，每年 token 費高達 20 萬美元",
+   "link": "https://finance.technews.tw/2026/11/09/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+   "date": "2026-11-09T00:30:44.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "調查：Z 世代約會意願升至 34%，但只給交友軟體 AI 功能五成信任",
+   "link": "https://technews.tw/2026/11/09/gen-z-socializing-resists-ai/",
+   "date": "2026-11-09T00:20:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Dropbox砸3.5億美元收購Tigris，進軍AI儲存基礎設施市場",
+   "link": "https://www.ithome.com.tw/news/180302",
+   "date": "2026-11-09T00:11:29.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳承認婚外情，Nvidia董事會調查涉諜疑雲",
+   "link": "https://www.ithome.com.tw/news/180301",
+   "date": "2026-11-09T00:11:22.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟Intelligent Terminal支援背景執行，關閉視窗不中斷AI代理任務",
+   "link": "https://www.ithome.com.tw/news/180295",
+   "date": "2026-11-09T00:11:01.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "用說的就能查維修數據，韓國研發對話式 AI 強化海陸空武器後勤支援",
+   "link": "https://technews.tw/2026/11/09/kai-to-develop-ai-agent-to-improve-weapon-system-efficiency/",
+   "date": "2026-11-09T00:10:47.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 駭客攻擊日韓企業：自動化網路入侵加劇企業資安與營運風險",
+   "link": "https://infosecu.technews.tw/2026/11/09/automated-cyberattacks-raise-corporate-security-and-operational-risks/",
+   "date": "2026-11-09T00:00:25.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 最大的阻力不是水電，是人？",
+   "link": "https://technews.tw/2026/11/09/ai-biggest-obstacle-not-power-but-humans/",
+   "date": "2026-11-08T23:50:46.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "標普 500 企業僅 15% 設「AI 長」，企業高層問責機制為何面臨難產？",
+   "link": "https://technews.tw/2026/11/09/why-businesses-not-yet-widely-adopted-ai/",
+   "date": "2026-11-08T23:40:01.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "種子輪就募 6,250 萬美元，42AI 以行為 AI 切入金融業",
+   "link": "https://technews.tw/2026/11/09/42ai-unveils-62-5-million-seed-backed-behavioral-model-for-brokerages/",
+   "date": "2026-11-08T23:20:30.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "一天接打一百通電話，八成問題答案都一樣 犀動智能導入 AI 客服，把人留給真正需要判斷的事",
+   "link": "https://www.inside.com.tw/article/42820-aiello",
+   "date": "2026-11-08T22:04:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 讓 App 變得可有可無，消費性軟體入口正轉向訊息對話框",
+   "link": "https://technews.tw/2026/11/08/ai-is-making-the-app-optional/",
+   "date": "2026-11-08T09:00:45.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 自動化攻擊秒速得手！防守不能只拚快，專家點名企業必備的三大資安決策",
+   "link": "https://infosecu.technews.tw/2026/11/08/three-steps-companies-should-take-to-defend-against-ai-attacks/",
+   "date": "2026-11-08T08:30:20.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 演算法解碼兩萬基因發現天然胜肽 BRP，進食量降 50% 且純減脂不甩肌",
+   "link": "https://technews.tw/2026/11/08/stanford-ai-discovers-natural-weight-loss-peptide/",
+   "date": "2026-11-08T08:00:12.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "阿貢實驗室獲百倍 GPU 記憶體加持，結合全新 AI 算力開啟「自主實驗室」研究新紀元",
+   "link": "https://technews.tw/2026/11/08/argonne-national-laboratory-expands-ai-inference-computing/",
+   "date": "2026-11-08T07:00:08.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "「AI 開發 AI」時代來臨？解密遞迴式自我改進的無限潛力與作弊隱憂",
+   "link": "https://infosecu.technews.tw/2026/11/08/ai-autonomously-creates-next-gen-ai/",
+   "date": "2026-11-08T05:00:54.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 發表逾 700 篇 AI 數學論文，數學家指有突破性但品質差",
+   "link": "https://technews.tw/2026/11/08/mathematician-criticizes-the-quality-of-700-openai-math-papers/",
+   "date": "2026-11-08T04:30:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 時代最好的機會不是追流行，奧特曼喊話年輕人：別做下一個 OpenAI，要做更大的新事業",
+   "link": "https://technews.tw/2026/11/08/openai-ceo-slams-mba-programs-disappointment-students-5-year-old-trends/",
+   "date": "2026-11-08T03:00:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 理財是神隊友還是陷阱，採納建議前必做的交叉驗證四步驟",
+   "link": "https://finance.technews.tw/2026/11/08/how-to-check-ai-financial-advice-before-you-act-on-it/",
+   "date": "2026-11-08T02:30:24.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
   {
    "title": "AI 聊天機器人也能當學者？實測揭露學術出版防線的新危機",
    "link": "https://technews.tw/2026/11/08/ai-generated-fake-papers-challenge-academic-defenses/",
@@ -95,14 +256,14 @@
    "lang": "zh"
   },
   {
-   "title": "選舉結果不改擴張計劃！OpenAI 完成 110 億美元融資、估值 1.25 兆美元",
+   "title": "選舉結果不改擴張計畫！OpenAI 完成 110 億美元融資、估值 1.25 兆美元",
    "link": "https://finance.technews.tw/2026/11/07/openai-gets-11-billion/",
    "date": "2026-11-07T02:05:13.000Z",
    "source": "TechNews 科技新報",
    "lang": "zh"
   },
   {
-   "title": "半年狂虧 800 億卻衝 2 兆市值！Anthropic 挑戰史上最大 IPO，是一場豪賭還是盛世？",
+   "title": "半年狂虧 800 億卻衝 2 兆市值！Anthropic 挑戰史上最大 IPO，是豪賭還是盛世？",
    "link": "https://finance.technews.tw/2026/11/07/anthropic-2-trillion-market-cap-biggest-ipo-challenge-wall-street-nervous/",
    "date": "2026-11-07T02:00:14.000Z",
    "source": "TechNews 科技新報",
@@ -144,7 +305,7 @@
    "lang": "zh"
   },
   {
-   "title": "ChatGPT 搜尋量逼近 Google 兩成，搜尋龍頭面臨挑戰",
+   "title": "ChatGPT 搜尋量逼近 Google 二成，搜尋龍頭面臨挑戰",
    "link": "https://technews.tw/2026/11/06/chatgpt-search-reaches-roughly-20-percent-of-google-s-search-volume/",
    "date": "2026-11-06T08:49:24.000Z",
    "source": "TechNews 科技新報",
