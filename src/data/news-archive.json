@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T01:17:30.751Z",
+ "updatedAt": "2026-11-10T03:52:50.105Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,286 @@
   }
  ],
  "items": [
+  {
+   "title": "金融時報：黃樂曾兜售資料中心計畫，稱有辦法拿到輝達 GPU",
+   "link": "https://technews.tw/2026/11/10/alleged-chinese-spy-linked-to-nvidia-chief-pitched-ai-chip-deals-to-investors/",
+   "date": "2026-11-10T03:45:51.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "從助眠神器變 AI 訓練庫，神經科技公司遭踢爆未經同意收集腦電波",
+   "link": "https://infosecu.technews.tw/2026/11/10/sleep-trackers-surreptitiously-use-brainwaves-train-ai/",
+   "date": "2026-11-10T03:40:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic IPO 前夕推 Fable 5.2 與 Mythos 5.2，效能提升且降價 20%",
+   "link": "https://technews.tw/2026/11/10/anthropic-introduces-claude-fable-5-2-and-claude-mythos-5-2/",
+   "date": "2026-11-10T03:29:42.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 傳最快 11 月 19 日登 Nasdaq，機構投資人要求估值低於 1.5 兆美元",
+   "link": "https://www.inside.com.tw/article/42863-anthropic-ipo-nasdaq-ant-valuation-below-1-5-trillion",
+   "date": "2026-11-10T03:25:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta 策略長 Dave Wehner 離職，轉戰 AI 推論新創 Fireworks 財務長",
+   "link": "https://technews.tw/2026/11/10/metas-dave-wehner-is-leaving-to-become-cfo-of-fireworks-ai/",
+   "date": "2026-11-10T03:20:25.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "七成求職者用 AI 查公司底細，企業官網形象擋不住員工真實評價",
+   "link": "https://technews.tw/2026/11/10/job-seekers-asking-chatgpt-what-employees-really-think-of-their-company/",
+   "date": "2026-11-10T03:10:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "迪士尼與 Adobe 締結多年戰略聯盟，以專屬 AI 模型驅動次世代創意敘事",
+   "link": "https://technews.tw/2026/11/10/disney-adobe-partner-create-new-ai-experiences/",
+   "date": "2026-11-10T03:00:40.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "獨吞空巴 A350 認證、AI 能源櫃爆量！經寶前三季賺 14.05 元連兩根漲停板",
+   "link": "https://finance.technews.tw/2026/11/10/power-energy-components/",
+   "date": "2026-11-10T02:42:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "中國打造 800MW「銀河」AI 巨型資料中心，成本僅美國 1/5、力抗「星際之門」",
+   "link": "https://technews.tw/2026/11/10/china-builds-giant-ai-data-center/",
+   "date": "2026-11-10T02:40:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "日本 2031 年前在大學設防衛技術研究中心，主攻 AI 與太空技術",
+   "link": "https://technews.tw/2026/11/10/japan-to-create-defense-research-hubs-at-universities-for-ai-space-tech/",
+   "date": "2026-11-10T02:25:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "SemiAnalysis揭中國AI資料中心建設成本僅美國1/5",
+   "link": "https://www.ithome.com.tw/news/180355",
+   "date": "2026-11-10T02:11:26.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "馬斯克樂看 AI 創造極度豐饒，機器人生產力達人類 5 倍、現代貨幣將如貝殼般過時",
+   "link": "https://technews.tw/2026/11/10/elon-musk-optimistic-ai-extreme-abundance-robot-productivity-5x-human-modern-currency-obsolete-seashells/",
+   "date": "2026-11-10T01:55:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "紐時：輝達疑介入商務部調查 Megaspeed 晶片輸中案",
+   "link": "https://technews.tw/2026/11/10/commerce-dept-chip-inquiry-was-halted-after-nvidia-intervention/",
+   "date": "2026-11-10T01:50:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "97% AI 代理可存取敏感資料，調查：僅 21% 企業有信心控管風險",
+   "link": "https://finance.technews.tw/2026/11/10/ai-agent-manage-risks/",
+   "date": "2026-11-10T01:41:29.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳外遇掀國安疑雲，川普：某 AI 公司執行長遭警告準備坐牢",
+   "link": "https://infosecu.technews.tw/2026/11/10/jensen-huang-affair-national-security-concerns-trump-ai-ceo-warned-jail/",
+   "date": "2026-11-10T01:30:58.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "夏普純益暴減近 6 成 AI 伺服器最快 26 年度末交貨",
+   "link": "https://finance.technews.tw/2026/11/10/sharp-consolidated-financial-results-for-the-second-quarter-ended-september-30-2026/",
+   "date": "2026-11-10T01:10:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "眾院民主黨領袖要求輝達案完整簡報，籲限晶片銷中",
+   "link": "https://technews.tw/2026/11/10/house-democratic-leader-says-lawmakers-need-answers-on-nvidia-wants-china-chip-restrictions/",
+   "date": "2026-11-10T00:40:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "整合開發環境GoLand 2026.3讓AI代理直接操作效能分析器，追查Go程式瓶頸",
+   "link": "https://www.ithome.com.tw/news/180347",
+   "date": "2026-11-10T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI加快漏洞發現與攻擊速度，2027年企業資安面臨四大變化",
+   "link": "https://www.ithome.com.tw/news/180299",
+   "date": "2026-11-10T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 學會讀懂視覺皮質，新仿生眼讓失明者看見更精準「光影」",
+   "link": "https://technews.tw/2026/11/10/a-new-era-of-bionic-vision-ai-helps-scientists-unlock-the-brains-visual-cortex/",
+   "date": "2026-11-10T00:10:42.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "日本工具機產業邁向人型機器人協作時代：三菱電機以實體 AI 布局智慧製造新商機",
+   "link": "https://technews.tw/2026/11/10/mitsubishi-electric-stock-develops-humanoid-cnc-system-pre-market/",
+   "date": "2026-11-10T00:00:21.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美期中選舉為 AI 熱潮降溫，讓真正有競爭力的業者浮出水面",
+   "link": "https://technews.tw/2026/11/10/us-midterm-elections-temper-ai-hype-competitive-players-emerge/",
+   "date": "2026-11-09T23:50:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "估值達 155 億美元，法律 AI 超級獨角獸 Harvey 傳籌備 IPO",
+   "link": "https://technews.tw/2026/11/10/legal-ai-startup-harvey-has-held-early-talks-about-an-ipo/",
+   "date": "2026-11-09T23:40:55.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "高鐵追撞事故慘劇後，西班牙加速更新行控系統將引進 AI",
+   "link": "https://technews.tw/2026/11/10/spain-accelerates-train-control-system-upgrades-with-ai-integration/",
+   "date": "2026-11-09T23:30:05.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "找出 2,300 個關鍵基因標靶，生技新創 Colossal 靠 AI 繪製渡渡鳥「復活藏寶圖」",
+   "link": "https://technews.tw/2026/11/10/ai-accelerates-extinct-species-de-extinction-project/",
+   "date": "2026-11-09T23:20:43.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達與 SK 電信等韓企簽 MOU，未回應黃仁勳爭議",
+   "link": "https://technews.tw/2026/11/09/nvidia-sk-telecom-korean-companies-mou-no-response-jensen-huang-controversy/",
+   "date": "2026-11-09T09:50:52.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟傳不續約 Oracle AI 算力租約，2023 年為 Bing 簽下的舊世代 NVIDIA 產能陸續關閉",
+   "link": "https://www.inside.com.tw/article/42860-microsoft-winds-down-oracle-ai-cloud-capacity-bing",
+   "date": "2026-11-09T08:45:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "一次看懂！黃仁勳共諜風暴時間軸 NVIDIA、Megaspeed、黃樂與美國出口管制",
+   "link": "https://www.inside.com.tw/article/42857-jensen-huang-alleged-chinese-spy-nvidia-board-probe-congress-timeline",
+   "date": "2026-11-09T08:44:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳涉遭外國情報機構鎖定公司啟動調查，輝達盤後股價挫跌",
+   "link": "https://finance.technews.tw/2026/11/09/jensen-huang-nvidia-investigation-foreign-intelligence-targeting-stock-drops/",
+   "date": "2026-11-09T08:30:38.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 投資帶動韓國經濟成長，家庭尚未感受景氣改善",
+   "link": "https://technews.tw/2026/11/09/south-korean-households-yet-to-feel-economic-improvement/",
+   "date": "2026-11-09T06:50:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美中審批卡關，輝達推動 H200 晶片銷中相關時間軸",
+   "link": "https://technews.tw/2026/11/09/nvidia-h200-chip-sales-china-us-china-approval-delays-timeline/",
+   "date": "2026-11-09T06:45:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳婚外情衝擊？供應鏈：AI 需求無虞，觀察美監管力道",
+   "link": "https://technews.tw/2026/11/09/jensen-huang-alleged-affair-ai-demand-unaffected-supply-chain-us-regulatory-scrutiny/",
+   "date": "2026-11-09T06:20:37.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Siri 明年再升級！傳蘋果開發 AI 代理功能，可自主執行任務",
+   "link": "https://technews.tw/2026/11/09/siri-ai-ai-agent/",
+   "date": "2026-11-09T06:19:23.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 傳簽下 34 億美元燃氣發電機訂單，AI 業者已知最大單筆發電設備採購",
+   "link": "https://www.inside.com.tw/article/42856-anthropic-onepwr-gas-generators-3-4b",
+   "date": "2026-11-09T05:59:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳坦承出軌將遭調查，分析師：輝達股價承壓",
+   "link": "https://finance.technews.tw/2026/11/09/jensen-huang-admits-affair-faces-investigation-nvidia-stock-pressure/",
+   "date": "2026-11-09T05:55:54.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 抓出 RSA 加密雙重漏洞，破解效率飆升 1,600 倍",
+   "link": "https://infosecu.technews.tw/2026/11/09/ai-math-breakthroughs-cybersecurity-threats/",
+   "date": "2026-11-09T04:30:49.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "騰訊首席 AI 科學家：AI 將掌握生物學，生物武器風險不容忽視",
+   "link": "https://technews.tw/2026/11/09/ai-will-soon-master-biology-unleashing-new-safety-risks/",
+   "date": "2026-11-09T03:45:25.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Gemini 購物功能支援中文，快速找商品、精準比價格",
+   "link": "https://technews.tw/2026/11/09/make-shopping-easier-with-gemini/",
+   "date": "2026-11-09T03:34:20.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳婚外情捲入中國情報疑雲，NVIDIA 董事會啟動調查！分析師示警股價風險",
+   "link": "https://www.inside.com.tw/article/42854-jensen-huang-affair-china-espionage-concerns-nvidia-investigation",
+   "date": "2026-11-09T02:27:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "搶攻企業AI規模化的需求，Google新推兩款TPU新系統，TPU首度支援機密運算",
+   "link": "https://www.ithome.com.tw/news/180336",
+   "date": "2026-11-09T01:11:21.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
   {
    "title": "微軟傳未續租 AI 算力 甲骨文股價劇烈震盪",
    "link": "https://finance.technews.tw/2026/11/09/microsoft-winding-down-oracle-deal-to-rent-ai-cloud-capacity/",
@@ -120,6 +400,34 @@
    "link": "https://www.inside.com.tw/article/42820-aiello",
    "date": "2026-11-08T22:04:00.000Z",
    "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI Images 2.6支援GIF動畫生成，API新增SVG圖檔輸出與編輯控制",
+   "link": "https://www.ithome.com.tw/news/180340",
+   "date": "2026-11-08T21:11:30.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "有民眾透過AI學會架設自動化網路攻擊系統，高雄警方破案示警網路犯罪門檻降低",
+   "link": "https://www.ithome.com.tw/news/180317",
+   "date": "2026-11-08T20:11:02.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "【資安日報】11月9日，AI自動化攻擊系統BossAI鎖定臺灣緊急應變服務",
+   "link": "https://www.ithome.com.tw/news/180334",
+   "date": "2026-11-08T19:11:12.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic應用市集目前已有超過25款代理人、服務",
+   "link": "https://www.ithome.com.tw/news/180332",
+   "date": "2026-11-08T18:11:40.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
