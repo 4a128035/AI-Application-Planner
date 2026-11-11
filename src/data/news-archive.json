@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T03:52:50.105Z",
+ "updatedAt": "2026-11-11T01:34:18.560Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,76 @@
   }
  ],
  "items": [
+  {
+   "title": "Reddit利用AI整理商品評價，首波涵蓋約1萬項商品",
+   "link": "https://www.ithome.com.tw/news/180401",
+   "date": "2026-11-11T01:11:09.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "迪士尼擴大與Adobe的AI合作，從樂園設計延伸至電影與體育內容",
+   "link": "https://www.ithome.com.tw/news/180397",
+   "date": "2026-11-11T00:11:52.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "柏克萊研究推演2027至2029年AI資安威脅，AI代理供應鏈與自動化攻防成焦點",
+   "link": "https://www.ithome.com.tw/news/180348",
+   "date": "2026-11-11T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "澳洲更新關鍵基礎設施資安指引，強化網路隔離措施並納入AI風險管理建議",
+   "link": "https://www.ithome.com.tw/news/180258",
+   "date": "2026-11-11T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "CSA建議企業推動資安職能轉型，從漏洞管理導入AI代理",
+   "link": "https://www.ithome.com.tw/news/180249",
+   "date": "2026-11-11T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "【繁中 Siri AI 實測】Siri AI 是什麼、怎麼裝？哪些 iPhone 可以用？一文看懂",
+   "link": "https://www.inside.com.tw/article/42871-siri-ai-taiwan-beta",
+   "date": "2026-11-10T22:46:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "NVIDIA 跌逾 4%、AMD 卻大漲 13%！華爾街分析師升評，看好資料中心商機",
+   "link": "https://www.inside.com.tw/article/42872-amd-stock-surges-13-percent-nvidia-falls-analyst-upgrade",
+   "date": "2026-11-10T10:02:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "從 Core 3 Series 到資料中心，Intel 把競爭焦點拉向 AI 部署成本",
+   "link": "https://www.inside.com.tw/article/42870-intel-core-3-series",
+   "date": "2026-11-10T08:41:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Aisin 與東北大學開發新型 AI 晶片，耗電比現有晶片少約 98%",
+   "link": "https://www.inside.com.tw/article/42816-aisin-tohoku-mram-ai-chip-cuts-energy-use-98-percent",
+   "date": "2026-11-10T06:02:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 發表 Fable 5.2 與 Mythos 5.2，模型「懷疑自己正在受測」的頻率高於近期 Claude 模型",
+   "link": "https://www.inside.com.tw/article/42865-anthropic-fable-mythos-5-2-metr-evaluation-awareness",
+   "date": "2026-11-10T04:06:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "金融時報：黃樂曾兜售資料中心計畫，稱有辦法拿到輝達 GPU",
    "link": "https://technews.tw/2026/11/10/alleged-chinese-spy-linked-to-nvidia-chief-pitched-ai-chip-deals-to-investors/",
@@ -190,6 +260,55 @@
    "link": "https://technews.tw/2026/11/10/ai-accelerates-extinct-species-de-extinction-project/",
    "date": "2026-11-09T23:20:43.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟WinApp CLI新增WinUI DevTools，AI代理可檢查執行中的介面元件",
+   "link": "https://www.ithome.com.tw/news/180394",
+   "date": "2026-11-09T23:11:48.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "英特爾在臺揭露主流PC、邊緣運算到資料中心最新運算架構，加速布局Agent AI",
+   "link": "https://www.ithome.com.tw/news/180395",
+   "date": "2026-11-09T22:11:25.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "WorkOS資料外洩事故出現新進展，AI滲透測試框架突破測試環境釀禍",
+   "link": "https://www.ithome.com.tw/news/180388",
+   "date": "2026-11-09T21:11:07.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "醫療AI從內容生成走向自主行動，衛福部下一階段指引瞄準Agent治理",
+   "link": "https://www.ithome.com.tw/news/180379",
+   "date": "2026-11-09T20:11:53.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "美國司法部成立AI犯罪專責單位，打擊詐騙及其他非法活動",
+   "link": "https://www.ithome.com.tw/news/180378",
+   "date": "2026-11-09T19:11:45.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "一旦影像模糊或遭竄改，AI機器人恐因視覺判斷失準，嘗試執行可能傷害人的危險動作",
+   "link": "https://www.ithome.com.tw/news/180364",
+   "date": "2026-11-09T18:11:07.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta推出輕量級模型Muse Ember，每任務成本是Claude Haiku 5.5的1/3",
+   "link": "https://www.ithome.com.tw/news/180367",
+   "date": "2026-11-09T17:11:14.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
