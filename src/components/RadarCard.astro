@@ -1,0 +1,23 @@
+---
+// One 新技術解說 card on the AI 新聞 page.
+import type { RadarItem } from '../data/radar'
+import { url } from '../lib/url'
+interface Props { r: RadarItem }
+const { r } = Astro.props
+---
+
+<li class="flex flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 shadow-[var(--shadow-soft)]">
+  <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+    <span class="rounded-full bg-brand-soft px-2.5 py-1 text-brand">{r.code}</span>
+    <span class="text-ink-2">{r.date}</span>
+  </div>
+  <p class="mt-2 text-lg font-extrabold leading-[1.5]">{r.title}</p>
+  {r.plain && (
+    <p class="mt-2 text-[15px] leading-[1.75]"><span class="font-extrabold">💡 是什麼：</span>{r.plain}</p>
+  )}
+  <p class="mt-2 flex-1 text-[15px] leading-[1.75] text-ink-2">{r.plain && <span class="font-extrabold text-ink">🎯 為什麼可能會考：</span>}{r.why}</p>
+  <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold">
+    <a class="text-brand underline underline-offset-4" href={url(r.lesson.path)}>📖 {r.lesson.label}</a>
+    <a class="text-ink-2 underline underline-offset-4 hover:text-ink" href={r.source.url} target="_blank" rel="noopener noreferrer">來源：{r.source.label} ↗</a>
+  </div>
+</li>
