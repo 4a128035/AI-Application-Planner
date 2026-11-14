@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T02:14:28.559Z",
+ "updatedAt": "2026-11-14T01:53:53.620Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -18,7 +18,238 @@
  ],
  "items": [
   {
-   "title": "AI 記憶體出貨 2 個月神救援！美而快第三季大賺 1.53 元訂單至 2027 年",
+   "title": "AI 代理進駐銀行，美國監理機關要求：能追蹤、能稽核、能關機",
+   "link": "https://finance.technews.tw/2026/11/14/how-ai-might-be-deployed-for-better-bank-supervision/",
+   "date": "2026-11-14T01:30:23.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 傳向國會表態支持 3 項對中管制法案，限制中國取得 AI 晶片與製造設備",
+   "link": "https://www.inside.com.tw/article/42906-openai-backs-china-chip-export-control-bills",
+   "date": "2026-11-14T01:08:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳風波延燒！黃樂參與創立的 Megaspeed 是中國取得輝達 GPU 的祕密管道？",
+   "link": "https://finance.technews.tw/2026/11/14/what-is-megaspeed/",
+   "date": "2026-11-14T01:00:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳請辭引發輝達動盪，美媒：台積電、超微與博通有望受惠",
+   "link": "https://finance.technews.tw/2026/11/13/jensen-huang-resignation-nvidia-turmoil-tsmc-amd-broadcom-benefit/",
+   "date": "2026-11-13T09:40:22.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "矽谷仍力挺黃仁勳！輝達員工難接受「晶片之王」下台，AI 產業憂泡沫化風險",
+   "link": "https://technews.tw/2026/11/13/silicon-valley-strongly-supports-nvidia-jensen-huang/",
+   "date": "2026-11-13T09:00:52.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "讓 AI 學習接上產業需求：龍華科大「AI 技術種子人才」培訓，從實作累積解題能力",
+   "link": "https://www.inside.com.tw/article/42875-TCA-lhu",
+   "date": "2026-11-13T09:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達總部外出現鮮花蠟燭，網友：為黃仁勳時代送別",
+   "link": "https://technews.tw/2026/11/13/photos-show-flowers-outside-nvidias-headquarters-following-jensen-huangs-resignation/",
+   "date": "2026-11-13T08:48:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "光麗旗下宸曜啟動 AI 醫療雙引擎！董座王嘉瑋喊第四季轉盈迎收穫期",
+   "link": "https://finance.technews.tw/2026/11/13/g-clinic/",
+   "date": "2026-11-13T08:46:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "路透：黃仁勳另與一名輝達員工有第三段婚外情，兩名前員工匿名證實",
+   "link": "https://finance.technews.tw/2026/11/13/jensen-huang-was-having-a-third-affair-reuters-reports/",
+   "date": "2026-11-13T08:40:04.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "SpaceX 砸 740 億美元，德州亞利桑那州建 AI 超級電腦園區",
+   "link": "https://technews.tw/2026/11/13/spacex-74-billion-ai-supercomputer-campuses-texas-arizona/",
+   "date": "2026-11-13T08:00:24.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 研究員稱以 48 個 AI 代理找到未知馬雅遺址，其實 2025 年就發表過",
+   "link": "https://infosecu.technews.tw/2026/11/13/no-ai-agents-did-not-discover-a-previously-unknown-maya-site/",
+   "date": "2026-11-13T07:10:31.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美 AI 實驗室「重新教育」阿里 Qwen 模型，擺脫中國言論審查、注入西方價值觀",
+   "link": "https://technews.tw/2026/11/13/us-companies-re-educate-alibaba-ai/",
+   "date": "2026-11-13T06:50:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳去職，日本政府關注 AI 產業及半導體供應鏈衝擊",
+   "link": "https://technews.tw/2026/11/13/jensen-huang-steps-down-japanese-government-monitors-ai-industry-semiconductor-supply-chain-impact/",
+   "date": "2026-11-13T06:40:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "打破學界算力荒！優必達 GPU 進駐中央大學解鎖台灣 AI 學用落差",
+   "link": "https://technews.tw/2026/11/13/iisr/",
+   "date": "2026-11-13T06:32:46.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達韓國前代表談黃仁勳卸任，CUDA 優勢仍在短期影響有限",
+   "link": "https://technews.tw/2026/11/13/former-nvidia-korea-representative-discusses-jensen-huang-departure-cuda-advantage-remains-short-term-impact-limited/",
+   "date": "2026-11-13T06:30:20.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳震撼卸任 AI 格局恐生變，韓國企業有望受惠",
+   "link": "https://technews.tw/2026/11/13/jensen-huang-resignation-ai-landscape-shift-korean-firms-benefit/",
+   "date": "2026-11-13T06:20:51.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳辭職，供應鏈：明年訂單無虞、AI 門檻高成護城河",
+   "link": "https://technews.tw/2026/11/13/jensen-huang-resigns-supply-chain-next-year-orders-secure-ai-moat-high-barrier/",
+   "date": "2026-11-13T06:10:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "西門子財報優、受惠 AI 基建需求 與輝達合作穩",
+   "link": "https://finance.technews.tw/2026/11/13/siemens-beats-earnings-expectations/",
+   "date": "2026-11-13T05:50:35.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國國會擬收緊 AI 晶片對中出口，中國取得輝達晶片難度增",
+   "link": "https://technews.tw/2026/11/13/us-congress-proposes-tightening-ai-chip-exports-china-increasing-difficulty-acquiring-nvidia-chips/",
+   "date": "2026-11-13T05:45:14.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "北市府：輝達海外總部履約正常，籌建如期推進",
+   "link": "https://technews.tw/2026/11/13/taipei-city-government-nvidia-overseas-headquarters-project-fulfilling-contract-construction-on-schedule/",
+   "date": "2026-11-13T05:40:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "傳獲三星青睞 AI 散熱廠 Modine 盤後暴漲近 27%",
+   "link": "https://finance.technews.tw/2026/11/13/samsung-reportedly-in-talks-to-acquire-modine/",
+   "date": "2026-11-13T05:30:25.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳去職，供應鏈：輝達技術路徑不變、ASIC 發展加速",
+   "link": "https://technews.tw/2026/11/13/jensen-huang-departs-supply-chain-nvidia-tech-roadmap-unchanged-asic-dev-accelerates/",
+   "date": "2026-11-13T04:30:51.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "餐廳訂位、看診預約交給 AI，Meta Muse「代打電話」服務於美國付費上線",
+   "link": "https://technews.tw/2026/11/13/meta-muse-call-proxy-feature/",
+   "date": "2026-11-13T04:00:18.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 發表 Gemini 4 Hydrogen，AI 代理任務較上代快 2.5 倍",
+   "link": "https://www.inside.com.tw/article/42905-google-gemini-4-hydrogen",
+   "date": "2026-11-13T03:51:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "沒有黃仁勳的輝達防線鬆動？法人：ASIC 迎「黃金篡位期」轉單",
+   "link": "https://finance.technews.tw/2026/11/13/harvey-c-jones/",
+   "date": "2026-11-13T03:42:13.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達代理 CEO，曾被黃仁勳批評只會看報表",
+   "link": "https://technews.tw/2026/11/13/nvidia-executive-once-criticized-by-jensen-huang-for-focusing-solely-on-financial-reports/",
+   "date": "2026-11-13T03:26:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 2027 團隊提前預測時程，「超人類 AI 研究員」明年就可能問世",
+   "link": "https://technews.tw/2026/11/13/ai-futures-project-pulls-its-intelligence-explosion-forecast-into-2027/",
+   "date": "2026-11-13T03:00:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 導購藏陷阱，三大聊天機器人實測：Perplexity 出錯率最高、ChatGPT 也中招",
+   "link": "https://infosecu.technews.tw/2026/11/13/ai-shopping-guides-traps/",
+   "date": "2026-11-13T02:50:11.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 基金會董事警告「AI 意外會成死因之一」，三年內 AI 接管人類風險偏高",
+   "link": "https://infosecu.technews.tw/2026/11/13/openai-board-member-warns-ai-takeover-could-be-months-away/",
+   "date": "2026-11-13T02:40:40.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達震撼啟動危機接班，法人指科技供應鏈面臨洗牌與估值修正",
+   "link": "https://finance.technews.tw/2026/11/13/nvidia-launches-a-shocking-crisis-succession-plan/",
+   "date": "2026-11-13T02:40:35.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "馬化騰喊「半數兵力轉戰 AI」遭誤傳裁員五成，騰訊知情人士急闢謠",
+   "link": "https://technews.tw/2026/11/13/tencent-founder-rallies-half-of-staff-behind-ai-native-push/",
+   "date": "2026-11-13T02:35:17.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "憂AI助長網攻及生物武器風險，美國非營利組織控告OpenAI等5家業者",
+   "link": "https://www.ithome.com.tw/news/180485",
+   "date": "2026-11-13T02:11:16.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI讓攻擊進入自動化時代，Google：企業更要管好Agent權限",
+   "link": "https://www.ithome.com.tw/news/180481",
+   "date": "2026-11-13T02:11:06.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 記憶體出貨兩個月神救援！美而快第三季大賺 1.53 元訂單至 2027 年",
    "link": "https://finance.technews.tw/2026/11/13/v-color/",
    "date": "2026-11-13T02:09:56.000Z",
    "source": "TechNews 科技新報",
@@ -102,6 +333,13 @@
    "lang": "zh"
   },
   {
+   "title": "AWS擴充AgentCore執行環境，支援大型程式編譯與本地模型載入",
+   "link": "https://www.ithome.com.tw/news/180503",
+   "date": "2026-11-13T01:11:24.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
    "title": "黃仁勳辭去Nvidia執行長立刻生效，財務長Colette Kress接任臨時執行長、董事會任命首任董事長",
    "link": "https://www.ithome.com.tw/news/180472",
    "date": "2026-11-13T01:11:00.000Z",
@@ -162,6 +400,13 @@
    "link": "https://technews.tw/2026/11/13/demand-digital-marketing-talent-ai-era/",
    "date": "2026-11-12T23:20:44.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "GovTech月報第58期：國網中心擬擴充TAIWAN AI RAP模型微調服務；歐洲央行將在2027年試點驗證數位歐元的實境支付能力",
+   "link": "https://www.ithome.com.tw/news/180496",
+   "date": "2026-11-12T20:11:12.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
