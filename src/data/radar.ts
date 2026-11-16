@@ -61,6 +61,33 @@ export const radar: RadarIssue[] = [
         code: 'L11102',
         lesson: { label: '科目一第 9 課：AI 治理', path: 'l11/ai-governance/' },
         source: { label: '理律法律事務所', url: 'https://www.leeandli.com/TW/Newsletters/7656.htm' }
+      },
+      {
+        title: '攻擊 AI 的手法有了新分類：NIST 對抗式機器學習草案',
+        date: '2026 年 11 月 9 日',
+        plain: '美國 NIST 發布《對抗式機器學習：攻擊與防禦的分類與術語》新版草案（NIST SP 2400-102e2026），依「用的是哪種機器學習方法、發生在生命週期哪個階段、攻擊者想達成什麼、有多少能力」替攻擊手法分類，並列出對應的防禦方法。這一版特別著重針對 AI 代理系統的攻擊，公開徵求意見到 12 月 18 日。',
+        why: '考題常問攻擊發生在哪個階段：訓練或回饋階段混入壞資料，是汙染模型本身；使用階段用輸入的文字騙模型，是提示注入。AI 代理能自己呼叫工具，被騙的後果比只回答文字嚴重，所以防護要包含限縮權限和人工確認。',
+        code: 'L12303',
+        lesson: { label: '科目二第 12 課：風險管理', path: 'l12/risk-management/' },
+        source: { label: 'NIST 資訊安全資源中心', url: 'https://csrc.nist.gov/News/2026/adversarial-machine-learning-taxonomy-2026-draft' }
+      },
+      {
+        title: 'AI 代理也能回你一個「畫面」：Google 發布 A2UI 1.0',
+        date: '2026 年 11 月 11 日',
+        plain: 'A2UI 是讓 AI 代理用表單、圖表、選單這類互動畫面來回覆的開放協定。代理只「描述」要顯示什麼，由各個 App 用自己事先註冊的元件畫出來，不是讓代理送程式碼過來執行。1.0 是第一個穩定版，也能在支援 MCP Apps 的 AI 助理裡使用。',
+        why: '可以和 MCP（代理接工具）、A2A（代理對代理）一起記：協定的價值是「標準化」，讓不同廠商的系統能互通。安全設計也是考點：只允許註冊過的元件、敏感資料不經過模型、送出前由使用者確認。',
+        code: 'L12202',
+        lesson: { label: '科目二第 9 課：MCP 與多代理協作', path: 'l12/mcp-multi-agent/' },
+        source: { label: 'Google Developers Blog', url: 'https://developers.googleblog.com/en/a2ui-10-build-delightful-fast-reliable-agentic-experiences/' }
+      },
+      {
+        title: '用微調改掉模型的立場傾向：Nous Research 重訓 Qwen',
+        date: '2026 年 11 月 13 日',
+        plain: '美國 AI 實驗室 Nous Research 拿阿里巴巴的開源模型 Qwen3.8 重新訓練，發布為 Arete-27B，目標是修正它在政治敏感問題上的立場傾向。做法是用另一個模型當「老師」產生示範答案，再用約 5,000 萬 token 的資料做監督式微調。實驗室自評：帶宣傳色彩的回答從 22% 降到 1%，但這是自家評測，還沒有第三方驗證。',
+        why: '兩個觀念：偏見會藏在訓練好的權重裡，換個介面不會消失；開放權重的模型可以再用 SFT 微調來改變行為。考題可能問「要讓模型的回答穩定符合規範，該用提示、RAG 還是微調」。另外，廠商自評的數字要經獨立驗證才可信。',
+        code: 'L12202',
+        lesson: { label: '科目二第 7 課：微調與模型優化', path: 'l12/fine-tuning/' },
+        source: { label: 'TechNews 科技新報', url: 'https://technews.tw/2026/11/13/us-companies-re-educate-alibaba-ai/' }
       }
     ]
   },
