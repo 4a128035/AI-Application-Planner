@@ -23,6 +23,10 @@ const SUBJECT_2 = ['llm-basics', 'genai-tools', 'prompt-engineering', 'low-code-
 
 export const updates: Update[] = [
   {
+    date: '2026-11-16', type: 'site', title: '首頁與 AI 新聞頁精簡',
+    detail: '首頁拿掉只存在瀏覽器裡的學習進度卡；AI 新聞頁分清「本週新技術（每週一更新）」與「每日新聞（每天自動更新）」，並新增「最近 3 天新增」新聞清單。'
+  },
+  {
     date: '2026-11-12', type: 'site', title: 'AI 新聞改成只收「新技術」',
     detail: '略過股價、財報和八卦，只留下宣布新模型、新工具、新規範的新聞，並依考試主題分類；考點雷達改為每週一期的「本週新技術」白話解說。'
   },

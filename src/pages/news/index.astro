@@ -22,6 +22,17 @@ const groups = topics
   .filter(g => g.list.length > 0)
 const updated = new Intl.DateTimeFormat('zh-TW', { timeZone: tz, dateStyle: 'long', timeStyle: 'short' }).format(new Date(updatedAt))
 
+// Headlines from the last RECENT_DAYS Taipei calendar days (counting the day of the last fetch), newest first,
+// so readers can see at a glance what came in since their last visit.
+const RECENT_DAYS = 3
+const taipeiDay = (d: string) => new Intl.DateTimeFormat('en-CA', { timeZone: tz }).format(new Date(d))
+const recentFrom = (() => {
+  const d = new Date(taipeiDay(updatedAt))
+  d.setUTCDate(d.getUTCDate() - (RECENT_DAYS - 1))
+  return d.toISOString().slice(0, 10)
+})()
+const recent = tech.filter(i => taipeiDay(i.date) >= recentFrom).sort((a, b) => b.date.localeCompare(a.date))
+
 const [latest, ...older] = radar
 
 const timeline = [
@@ -38,7 +49,7 @@ const timeline = [
   <div class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_20rem]">
     <div class="min-w-0 space-y-12">
       <section aria-labelledby="weekly-title">
-        <h2 id="weekly-title" class="flex items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">🆕</span>本週新技術</h2>
+        <h2 id="weekly-title" class="flex flex-wrap items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">🆕</span>本週新技術<span class="rounded-full bg-brand-soft px-3 py-1 text-sm font-extrabold text-brand">每週一更新</span></h2>
         <p class="mt-2 text-ink-2">每週從新聞中挑出可能出成考題的新技術與法規：它是什麼、為什麼可能會考、對應哪一課。</p>
         {latest && (
           <div class="mt-6">
@@ -64,15 +75,29 @@ const timeline = [
       </section>
 
       <section aria-labelledby="news-title">
-        <h2 id="news-title" class="flex items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">📰</span>新技術新聞</h2>
-        <p class="mt-2 text-ink-2">近 {keepDays} 天的新技術新聞，依考試主題分類，每類先顯示最新 {SHOW} 則。點標題會在新分頁開啟原文。</p>
+        <h2 id="news-title" class="flex flex-wrap items-center gap-2 text-2xl font-extrabold tracking-tight"><span aria-hidden="true">📰</span>每日新聞<span class="rounded-full bg-info-soft px-3 py-1 text-sm font-extrabold text-info">每天早上自動更新</span></h2>
+        <p class="mt-2 text-ink-2">只收宣布新模型、新工具、新規範的新聞標題，點標題會在新分頁開啟原文。</p>
+
+        <div class="mt-6">
+          <h3 class="text-lg font-extrabold"><span aria-hidden="true">📌</span> 最近 {RECENT_DAYS} 天新增<span class="ml-1 text-sm font-bold text-ink-2">・{recent.length} 則</span></h3>
+          {recent.length > 0 ? (
+            <ul class="mt-2 divide-y divide-line overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface">
+              {recent.map(it => <Row it={it} tag={topicOf(it.title).name} />)}
+            </ul>
+          ) : (
+            <p class="mt-2 rounded-[var(--radius-card)] bg-surface-2 p-4 text-ink-2">這幾天沒有新技術新聞（週末和假日常常比較少），網站仍每天早上自動檢查。</p>
+          )}
+        </div>
+
+        <h3 class="mt-10 text-lg font-extrabold">近 {keepDays} 天・依考試主題分類</h3>
+        <p class="mt-1 text-sm text-ink-2">每類先顯示最新 {SHOW} 則。</p>
         {groups.length === 0 && (
           <p class="mt-6 rounded-[var(--radius-card)] bg-surface-2 p-5 text-ink-2">目前沒有新聞，明天會再自動更新一次。</p>
         )}
         {groups.map(({ topic, list }) => (
           <div class="mt-8">
             <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-              <h3 class="text-lg font-extrabold"><span aria-hidden="true">{topic.emoji}</span> {topic.name}<span class="ml-1 text-sm font-bold text-ink-2">・{list.length} 則</span></h3>
+              <h4 class="text-base font-extrabold"><span aria-hidden="true">{topic.emoji}</span> {topic.name}<span class="ml-1 text-sm font-bold text-ink-2">・{list.length} 則</span></h4>
               {topic.lesson && <a class="text-sm font-bold text-brand underline underline-offset-4" href={url(topic.lesson.path)}>📖 {topic.lesson.label}</a>}
             </div>
             <ul class="mt-2 divide-y divide-line overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface">
@@ -107,13 +132,13 @@ const timeline = [
 
     <aside class="h-fit space-y-5 rounded-[var(--radius-card)] bg-info-soft p-6 lg:sticky lg:top-24">
       <div>
-        <p class="font-extrabold text-info">🔄 自動更新</p>
-        <p class="mt-1 text-[15px] leading-[1.75]">新聞每天早上自動更新，保留 {keepDays} 天。<br />最後更新：{updated}</p>
+        <p class="font-extrabold text-info">🔄 更新時間</p>
+        <ul class="mt-1 list-disc space-y-0.5 pl-5 text-[15px] leading-[1.75]">
+          <li>本週新技術：每週一整理上一週</li>
+          <li>每日新聞：每天早上自動抓取，保留 {keepDays} 天</li>
+        </ul>
+        <p class="mt-2 text-sm leading-[1.7]">新聞最後抓取：{updated}</p>
         {failed.length > 0 && <p class="mt-2 text-sm leading-[1.7]">這次沒抓到：{failed.join('、')}，下次更新會再試。</p>}
-      </div>
-      <div>
-        <p class="font-extrabold text-info">🧹 篩選方式</p>
-        <p class="mt-1 text-[15px] leading-[1.75]">近 {keepDays} 天共 {zh.length} 則 AI 新聞，只留下宣布新模型、新工具、新方法、新規範的 {tech.length} 則；股價、財報、人事和資料中心等新聞不列出。</p>
       </div>
       <div>
         <p class="font-extrabold text-info">📚 新聞來源</p>

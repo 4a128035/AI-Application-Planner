@@ -1,16 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import ProgressSummary from '../components/ProgressSummary.vue'
 import { subjects } from '../data/scope'
-import { getLessons, lessonUrl } from '../lib/lessons'
+import { getLessons } from '../lib/lessons'
 import { url } from '../lib/url'
 import { updates, typeLabel, fmtDate } from '../data/updates'
 
 const lessons = await getLessons()
-const lessonInfo = lessons.map(l => ({
-  id: l.id, subject: l.data.subject, title: l.data.title, emoji: l.data.emoji, href: lessonUrl(l), total: l.data.quiz.length
-}))
-const subjectInfo = subjects.map(s => ({ id: s.id, short: s.short, tone: s.tone }))
 const lessonCount = (id: string) => lessons.filter(l => l.data.subject === id).length
 
 const steps = [
@@ -30,7 +25,7 @@ const facts = [
 
 <BaseLayout title="AI 應用規劃師養成所">
   <!-- Hero -->
-  <section class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pt-16 lg:grid-cols-[1.15fr_1fr]">
+  <section class="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 sm:pt-16">
     <div>
       <p class="inline-flex rounded-full bg-brand-soft px-4 py-1.5 text-sm font-extrabold text-brand">iPAS AI 應用規劃師・初級</p>
       <h1 class="mt-5 text-[34px] font-extrabold leading-[1.25] tracking-tight sm:text-[52px]">
@@ -43,7 +38,6 @@ const facts = [
         <a href={url('l11/')} class="inline-flex min-h-12 items-center rounded-[var(--radius-btn)] bg-brand px-6 font-extrabold text-on-brand shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5">從科目一開始 →</a>
       </div>
     </div>
-    <ProgressSummary client:load lessons={lessonInfo} subjects={subjectInfo} />
   </section>
 
   <!-- Recent updates -->
