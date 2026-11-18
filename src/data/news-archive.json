@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T04:14:36.335Z",
+ "updatedAt": "2026-11-18T03:12:58.307Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,307 @@
   }
  ],
  "items": [
+  {
+   "title": "微軟 CEO 納德拉給工程師的 AI 時代生存忠告：多做少說，直接投入實戰",
+   "link": "https://technews.tw/2026/11/18/satya-nadellas-advice-ai-engineers/",
+   "date": "2026-11-18T03:10:44.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達「AI 央行」生變？新雲端業者恐失融資管道",
+   "link": "https://finance.technews.tw/2026/11/18/apollo-ceo-marc-rowan-warns-neocloud-financing-access-could-disappear/",
+   "date": "2026-11-18T03:05:15.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "GPT-6.2 Astra / Sol 雙模型登場，更少的 token 搞定高難度任務",
+   "link": "https://technews.tw/2026/11/18/openai-introduces-gpt%e2%80%916-2-astra-and-gpt%e2%80%916-2-sol/",
+   "date": "2026-11-18T03:04:47.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "向盜版與 AI 抄襲宣戰，Instagram 全新「內容保護」功能上線",
+   "link": "https://technews.tw/2026/11/18/ig-launches-new-feature-combat-piracy/",
+   "date": "2026-11-18T02:50:17.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "一句「這是遊戲」就破防，研究：多家 AI 模型在模擬戰場中把學校、救護車標為目標",
+   "link": "https://technews.tw/2026/11/18/ai-models-misidentify-civilians-as-military-targets-in-tests/",
+   "date": "2026-11-18T02:35:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 更新 Gemini 隱私設定，聊天紀錄與 AI 訓練控制權正式脫鉤",
+   "link": "https://technews.tw/2026/11/18/gemini-separates-history-from-ai-training-but-keeps-chats-longer/",
+   "date": "2026-11-18T02:30:26.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta 高層出奇招，「深偽」OpenAI 執行長幫自家產品宣傳惹議",
+   "link": "https://technews.tw/2026/11/18/meta-executives-mock-sam-altman-raising-ai-concerns/",
+   "date": "2026-11-18T02:20:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國 AI 晶片管制連「海外租借算力」也要管！安永解析企業該如何應對？",
+   "link": "https://finance.technews.tw/2026/11/18/overseas-computing-power-rental/",
+   "date": "2026-11-18T02:18:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟推出7款自研AI模型，以低價挑戰OpenAI及Anthropic",
+   "link": "https://www.ithome.com.tw/news/180590",
+   "date": "2026-11-18T02:11:23.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Gemini對話保留期將由72小時延長為2個月",
+   "link": "https://www.ithome.com.tw/news/180592",
+   "date": "2026-11-18T02:11:05.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 代理如何走進企業日常？Google Cloud 從開發、治理到協作，打造企業落地解方",
+   "link": "https://www.inside.com.tw/article/42869-Google",
+   "date": "2026-11-18T02:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic IPO 超搶手 傳最終定價高於 80 美元",
+   "link": "https://finance.technews.tw/2026/11/18/anthropic-plans-to-raise-ipo-price-after-strong-demand/",
+   "date": "2026-11-18T01:55:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "資料缺乏上下文，AI 代理人恐從「無法存取」變成「帶著風險運作」",
+   "link": "https://technews.tw/2026/11/18/why-fragmented-data-estates-can-drain-leaders-ai-budgets/",
+   "date": "2026-11-18T01:15:11.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Nvidia營收翻倍，黃仁勳首度表態願回任Nvidia執行長",
+   "link": "https://www.ithome.com.tw/news/180587",
+   "date": "2026-11-18T01:11:35.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 助攻雷射物理模擬：運算速度飆升 250 倍、毫秒間精準預測光脈衝",
+   "link": "https://technews.tw/2026/11/18/ai-accelerates-laser-physics-research/",
+   "date": "2026-11-18T00:45:22.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "傳輝達曾提醒客戶，美限制中企存取 AI 晶片法將帶來法律風險",
+   "link": "https://technews.tw/2026/11/18/nvidia-warns-chip-buyers-of-legal-risks-tied-to-china-ai-access/",
+   "date": "2026-11-18T00:35:40.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美 AI 晶片新規，經部：台廠代工若涉管制由美系客戶申請許可",
+   "link": "https://technews.tw/2026/11/18/moea-taiwan-oems-us-ai-chip-new-rules-client-permits/",
+   "date": "2026-11-18T00:25:46.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "董事長回絕！黃仁勳辭任後首度公開發聲：董事會若認為合適願意回任 NVIDIA 執行長",
+   "link": "https://www.inside.com.tw/article/42941-jensen-huang-first-statement-after-resignation-open-to-return-nvidia-ceo",
+   "date": "2026-11-18T00:24:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "憂美選後 AI 支出放緩，美銀調查經理人減碼科技股創 20 年最劇",
+   "link": "https://finance.technews.tw/2026/11/18/investors-slashed-tech-exposure-allocations-by-most-since-2006/",
+   "date": "2026-11-18T00:15:27.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI加速嵌入式設備漏洞挖掘，研究人員90小時找出66項TCP/IP協定堆疊新漏洞",
+   "link": "https://www.ithome.com.tw/news/180564",
+   "date": "2026-11-18T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Google揭駭客利用多代理AI框架發動攻擊，另有工具可自動發掘及利用漏洞",
+   "link": "https://www.ithome.com.tw/news/180563",
+   "date": "2026-11-18T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳辭職後打破沉默，表態願回任輝達 CEO",
+   "link": "https://technews.tw/2026/11/18/jensen-huang-nvidia/",
+   "date": "2026-11-18T00:07:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "ChatGPT、Gemini 看選戰，同參選人有不同動漫樣態",
+   "link": "https://technews.tw/2026/11/18/chatgpt-gemini/",
+   "date": "2026-11-17T23:30:37.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟前團隊創立新創 Edelbyte 獲 7,000 萬美元募資，打造專為 AI 時代而生的搜尋分析平台",
+   "link": "https://technews.tw/2026/11/18/microsoft-ex-team-edelbyte-raises-70m-for-ai-search-analytics-platform/",
+   "date": "2026-11-17T23:20:37.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美嚴控先進 AI 晶片出口，集邦：部分訂單可能遞延",
+   "link": "https://finance.technews.tw/2026/11/17/us-tightens-control-advanced-ai-chip-exports-orders-delayed/",
+   "date": "2026-11-17T10:30:40.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美祭 AI 晶片出口新規防轉運，廣達、緯創評估不受影響",
+   "link": "https://finance.technews.tw/2026/11/17/us-ai-chip-export-rules-prevent-transshipment-quanta-wistron-no-impact/",
+   "date": "2026-11-17T09:50:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "馴服 AI 吞電怪獸！雲鑠攜緯創導入 WATS 架構開拓 AIDC 商機",
+   "link": "https://finance.technews.tw/2026/11/17/yunova/",
+   "date": "2026-11-17T09:32:00.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "演算法不再紙上談兵：雲科大 AI 種子培訓，帶學生走進物流與製造現場解題",
+   "link": "https://www.inside.com.tw/feature/tca-ai/42924-TCA-YunTech",
+   "date": "2026-11-17T09:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "從 CAD 跨足高階 CAE！實威憑 SIMULIA 切入 AI 與網通供應鏈商機",
+   "link": "https://finance.technews.tw/2026/11/17/simulia/",
+   "date": "2026-11-17T08:42:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 奧特曼談黃仁勳：英雄並不完美，強勁市場需求將支撐 AI 產業發展",
+   "link": "https://technews.tw/2026/11/17/sam-altman-speaks-at-silicon-valley-and-the-world-2/",
+   "date": "2026-11-17T08:14:47.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "蘋果 AI 進入付費時代？Siri 複雜指令與圖片生成將受「每台裝置」額度管控",
+   "link": "https://technews.tw/2026/11/17/apple-siri-ai-usage-limit/",
+   "date": "2026-11-17T08:10:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Apple 想知道人們怎麼跟 AI 聊健康，20 萬人研究在美國開跑",
+   "link": "https://www.inside.com.tw/article/42933-apple-launches-research-study-to-explore-the-use-of-ai-for-health",
+   "date": "2026-11-17T08:04:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "美晶片禁令下另闢蹊徑，中企藉美 AI 模型訓練自家系統",
+   "link": "https://technews.tw/2026/11/17/chinese-firms-use-us-ai-models-to-train-their-own-systems/",
+   "date": "2026-11-17T07:50:12.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美嚴控先進 AI 晶片出口，供應鏈：製造流向有既定機制監管",
+   "link": "https://technews.tw/2026/11/17/us-strict-controls-advanced-ai-chip-exports-supply-chain-manufacturing-flows-established-mechanisms-regulate/",
+   "date": "2026-11-17T06:50:38.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 抓漏速度遠超以往，Anthropic 宣布重大資安漏洞揭露期限縮短至 30 天",
+   "link": "https://infosecu.technews.tw/2026/11/17/anthropic-shortens-security-vulnerability-disclosure-period/",
+   "date": "2026-11-17T06:30:52.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "防堵 AI 遭濫用於兒少性剝削，OpenAI 推出偵測工具並升級 ChatGPT 防護",
+   "link": "https://technews.tw/2026/11/17/openai-launches-tool-for-finding-child-sexual-abuse-material/",
+   "date": "2026-11-17T06:20:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達董事會成員賺翻，持股與賣股收益累積逾 150 億美元",
+   "link": "https://finance.technews.tw/2026/11/17/how-nvidias-board-made-billions-while-overseeing-the-company/",
+   "date": "2026-11-17T06:10:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Apple 開始替 Siri AI 設每日額度，iCloud+ 訂閱者最高可享 20 倍用量",
+   "link": "https://www.inside.com.tw/article/42932-apple-siri-ai-daily-limits-icloud-plus",
+   "date": "2026-11-17T05:27:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "IMF 警告全球經濟過度依賴 AI 產業，恐危及金融穩定",
+   "link": "https://finance.technews.tw/2026/11/17/imf-warns-global-economy-over-reliance-ai-industry-financial-stability-risk/",
+   "date": "2026-11-17T05:00:07.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國遠端存取新規防堵中國租用 AI 算力，新加坡、馬來西亞等 5 國晶片出口改採許可制",
+   "link": "https://www.inside.com.tw/article/42931-us-bis-remote-access-ai-chips-rule-singapore-malaysia-license",
+   "date": "2026-11-17T04:22:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 執行長在黃仁勳下台後首度表態，AI 產業「會沒事」、NVIDIA 擔保仍受信任",
+   "link": "https://www.inside.com.tw/article/42929-altman-jensen-huang-ouster-ai-industry-fine-nvidia",
+   "date": "2026-11-17T04:21:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "公開網路上存在逾3,800個AI攻擊框架執行個體，臺灣也有20個",
+   "link": "https://www.ithome.com.tw/news/180560",
+   "date": "2026-11-17T04:11:39.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "駭客利用AI自動化漏洞研究，遭到利用的零時差漏洞一個月爆增至22個",
+   "link": "https://www.ithome.com.tw/news/180561",
+   "date": "2026-11-17T04:11:10.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
   {
    "title": "AnyInsight Edge 正式推出：私有 AI 不再是孤島，企業同時擁有地端 LLM 的自主掌控與 AI Agent 的生產力",
    "link": "https://www.inside.com.tw/article/42930-Agentic%20Security",
@@ -267,6 +568,34 @@
    "link": "https://infosecu.technews.tw/2026/11/17/beware-the-new-ai-fueled-ransomware-boom/",
    "date": "2026-11-16T23:20:15.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "500大超級電腦排名前十名不變，新系統數量創新低，並呈現AI工廠正在改寫GPU算力流向的趨勢",
+   "link": "https://www.ithome.com.tw/news/180575",
+   "date": "2026-11-16T22:11:37.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "德國研究揭露AI開發平臺Lovable用戶開發的應用程式，至少7千多個資料庫存在權限設定不當問題",
+   "link": "https://www.ithome.com.tw/news/180567",
+   "date": "2026-11-16T20:11:09.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "研究人員揭露N-central零時差漏洞4EverAble2Shell、Agent2Shell",
+   "link": "https://www.ithome.com.tw/news/180569",
+   "date": "2026-11-16T19:11:10.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI開放4家外部機構進駐，深入檢驗AI模型安全性",
+   "link": "https://www.ithome.com.tw/news/180565",
+   "date": "2026-11-16T18:11:13.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
