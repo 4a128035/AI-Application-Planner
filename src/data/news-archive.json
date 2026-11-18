@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T03:12:58.307Z",
+ "updatedAt": "2026-11-18T11:55:05.097Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,153 @@
   }
  ],
  "items": [
+  {
+   "title": "希格諾、茂綸展示 Physical AI，機器手臂精準揮桿打高爾夫",
+   "link": "https://technews.tw/2026/11/18/epson-physical-ai-nvidia/",
+   "date": "2026-11-18T09:45:26.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 啟動上市，將成檢驗全球 AI 投資熱潮關鍵指標",
+   "link": "https://finance.technews.tw/2026/11/18/anthropic-ipo-to-test-the-ai-investment-boom/",
+   "date": "2026-11-18T08:30:24.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美收緊 AI 晶片管制，傳字節 4.8 億美元貸款遭擱置",
+   "link": "https://technews.tw/2026/11/18/us-tightens-ai-chip-regulations-bytedance-480-million-loan-shelved/",
+   "date": "2026-11-18T08:20:26.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "400 家製造業客戶規劃 118 條新產線，Profet AI 推五大 Domain Twin 補擴產人力缺口",
+   "link": "https://technews.tw/2026/11/18/profet-ai-unveils-twin-accelerator-with-five-domain-twin-applications/",
+   "date": "2026-11-18T08:09:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "獨家「水解膠帶」卡位 AI 封裝！碩正科技預計 12 月中掛牌上櫃",
+   "link": "https://finance.technews.tw/2026/11/18/3d-foplp/",
+   "date": "2026-11-18T08:02:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "科技巨頭掀 AI 節流潮，Salesforce 祭「代幣預算制」每月最高上限 1,000 美元",
+   "link": "https://technews.tw/2026/11/18/salesforce-ai-budget-cap/",
+   "date": "2026-11-18T07:50:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "挾醫療 AI 與電漿耗材雙引擎！施吉生技 11/23 以每股 80 元登錄興櫃",
+   "link": "https://finance.technews.tw/2026/11/18/medical-ai-subscription/",
+   "date": "2026-11-18T07:28:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI DC 需求增 富士軟片傳擴充磁帶產能至 5 倍",
+   "link": "https://technews.tw/2026/11/18/fujifilm-reportedly-plans-to-expand-tape-production-fivefold/",
+   "date": "2026-11-18T07:10:26.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic IPO 點燃舊金山財富潮，彭博估 AI 新創內部人持股合計 1.2 兆美元",
+   "link": "https://www.inside.com.tw/article/42947-anthropic-ipo-san-francisco-ai-wealth-1-2-trillion",
+   "date": "2026-11-18T06:34:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Amazon CEO Jassy：AI 仍屬「極為早期」，今年資本支出約 2,200 億美元、明年還會更多",
+   "link": "https://www.inside.com.tw/article/42954-amazon-andy-jassy-ai-early-innings-capex-220-billion",
+   "date": "2026-11-18T06:26:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Google Gemini AI 代理免費開放！能查帳單、比價購物，首波限六國",
+   "link": "https://www.inside.com.tw/article/42946-google-gemini-tasks-ai-agent-free-six-countries",
+   "date": "2026-11-18T06:22:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "經濟學人剖析 2027 年趨勢，川普政治動向、台海安全與 AI 風險受矚",
+   "link": "https://finance.technews.tw/2026/11/18/economist-2027-trends-trump-politics-taiwan-strait-security-ai-risks/",
+   "date": "2026-11-18T06:10:38.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "高通 AI200 開放客戶雲端測試！攜 Cirrascale 搶攻 AI 推論市場",
+   "link": "https://technews.tw/2026/11/18/qualcomm-cirrascale-dragonfly-ai200/",
+   "date": "2026-11-18T06:06:05.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "台灣 AI 造富潮遇考驗，彭博：半導體富豪榮景能否持續掀憂",
+   "link": "https://finance.technews.tw/2026/11/18/taiwan-ai-wealth-boom-test-bloomberg-semiconductor-billionaire-prosperity-sustainability/",
+   "date": "2026-11-18T06:00:36.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "NBA 球星詹姆斯告博彩 App 盜用綽號和 AI 分身，控侵害商標權",
+   "link": "https://technews.tw/2026/11/18/lebron-james-sues-startup-over-viral-ai-ad-allegedly-exploiting-his-likeness/",
+   "date": "2026-11-18T05:40:08.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達：已停止向中國出貨 Hopper 晶片",
+   "link": "https://technews.tw/2026/11/18/nvidia-stops-shipping-hopper-chips-to-china/",
+   "date": "2026-11-18T05:30:17.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 擴大 ChatGPT 學術研究人員計畫，目標涵蓋全球 20 萬名研究人員，11 月 23 日開放新一輪申請",
+   "link": "https://www.inside.com.tw/article/42936-openai-chatgpt-academic-researchers-program-expands-200000-applications-open-nov-23",
+   "date": "2026-11-18T04:41:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI推出GPT-6.2雙模型，Astra首度達AI自我改進高風險門檻",
+   "link": "https://www.ithome.com.tw/news/180605",
+   "date": "2026-11-18T04:11:58.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟推 MAI Code 2 程式模型，稱以 Claude Opus 5.5 約 5% 價格達 96% 效能",
+   "link": "https://technews.tw/2026/11/18/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai/",
+   "date": "2026-11-18T03:50:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "中國 AI 夢醒了，AI 明星企業股價暴跌七成",
+   "link": "https://finance.technews.tw/2026/11/18/chinas-ai-dream-has-hit-a-reality-check-with-the-share-prices-of-star-ai-companies-plunging-by-70/",
+   "date": "2026-11-18T03:32:47.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳辭後 NVIDIA 首份財報報喜，代理執行長透露：台積電才剛來訪",
+   "link": "https://www.inside.com.tw/article/42944-nvidia-earnings-after-jensen-huang-exit-tsmc-visit",
+   "date": "2026-11-18T03:12:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "微軟 CEO 納德拉給工程師的 AI 時代生存忠告：多做少說，直接投入實戰",
    "link": "https://technews.tw/2026/11/18/satya-nadellas-advice-ai-engineers/",
@@ -46,7 +193,7 @@
    "lang": "zh"
   },
   {
-   "title": "一句「這是遊戲」就破防，研究：多家 AI 模型在模擬戰場中把學校、救護車標為目標",
+   "title": "一句「這是遊戲」就破防，研究：多家 AI 模型在模擬戰場把學校、救護車標為目標",
    "link": "https://technews.tw/2026/11/18/ai-models-misidentify-civilians-as-military-targets-in-tests/",
    "date": "2026-11-18T02:35:34.000Z",
    "source": "TechNews 科技新報",
@@ -183,6 +330,20 @@
    "link": "https://technews.tw/2026/11/18/microsoft-ex-team-edelbyte-raises-70m-for-ai-search-analytics-platform/",
    "date": "2026-11-17T23:20:37.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Databricks發表表格基礎模型運算平臺AI Runtime",
+   "link": "https://www.ithome.com.tw/news/180616",
+   "date": "2026-11-17T19:11:53.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "面對AI加速攻擊，英國NCSC呼籲企業董事會應關切以主動威脅獵捕找出偵測缺口",
+   "link": "https://www.ithome.com.tw/news/180613",
+   "date": "2026-11-17T19:11:05.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
