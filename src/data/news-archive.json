@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T11:55:05.097Z",
+ "updatedAt": "2026-11-19T02:52:11.579Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,181 @@
   }
  ],
  "items": [
+  {
+   "title": "美國 GAO 祕密測試 ChatGPT、Claude 等四大 AI，不到 12 小時就做出恐攻計畫",
+   "link": "https://infosecu.technews.tw/2026/11/19/major-ai-platforms-generated-terrorist-attack-plans-during-independent-government-audit/",
+   "date": "2026-11-19T02:50:31.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic IPO 定價超出預期，募資規模將超越 SpaceX",
+   "link": "https://finance.technews.tw/2026/11/19/anthropic-priced-its-ipo-at-83-per-share/",
+   "date": "2026-11-19T02:44:32.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "用自然語言就能做 3D 場景！開源專案 blender-skills 把建模到渲染打包成 28 項代理技能",
+   "link": "https://www.inside.com.tw/article/42949-blender-skills-28-agent-skills-claude-code-codex-3d-modeling-rendering",
+   "date": "2026-11-19T02:39:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 助長駭客攻擊速度，Anduril 創辦人示警：舊防禦已難招架，是時候拔腿狂奔了",
+   "link": "https://infosecu.technews.tw/2026/11/19/palmer-luckey-warns-ai-cybersecurity-defense-alert/",
+   "date": "2026-11-19T02:30:36.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "FBI 示警 AI 滲透測試工具 ARTEX 遭駭客濫用，最快不到 3 小時取得企業高階權限",
+   "link": "https://infosecu.technews.tw/2026/11/19/artex-is-criminals-new-favorite-point-and-shoot-ai-hacking-tool/",
+   "date": "2026-11-19T02:20:01.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "跨足企業 AI 模型部署，Palo Alto Networks 砸 45 億美元收購 AI 新創",
+   "link": "https://technews.tw/2026/11/19/palo-alto-networks-buy-applied-compute/",
+   "date": "2026-11-19T02:17:08.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "銅價暴跌反成 AI 隱憂，資料中心恐面臨缺銅危機",
+   "link": "https://technews.tw/2026/11/19/plummeting-copper-prices-emerge-as-an-unexpected-concern-for-ai-data-centers-may-face-a-copper-shortage/",
+   "date": "2026-11-19T01:51:53.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Claude Code 推出 Code Mode，寫 JavaScript 一次跑完多個工具呼叫，只把需要的結果帶回對話",
+   "link": "https://www.inside.com.tw/article/42950-claude-code-code-mode-javascript-tool-calls-filter-output-experimental",
+   "date": "2026-11-19T01:38:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "劍橋辭典 2026 代表字 human，AI 焦慮促納 FOBO 新詞",
+   "link": "https://technews.tw/2026/11/19/cambridge-dictionary-word-of-the-year-2026-is-human/",
+   "date": "2026-11-19T01:20:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Microsoft 在 Ignite 發表 MAI Code 2 等專用 AI 模型，主打接近 OpenAI 與 Anthropic 的表現且便宜",
+   "link": "https://www.inside.com.tw/article/42951-microsoft-ignite-mai-code-2-specialized-ai-models-cheaper-openai-anthropic",
+   "date": "2026-11-19T01:20:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 前高層領軍推 AI 國防新創 Tiberius，獲 8,500 萬美元融資躋身軍工獨角獸",
+   "link": "https://technews.tw/2026/11/19/silicon-valley-executive-builds-ai-powered-defense-empire/",
+   "date": "2026-11-19T01:15:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "駭客利用AI代理框架ARTEX攻擊資安公司Barracuda，44小時入侵10個雲端帳戶搜刮憑證",
+   "link": "https://www.ithome.com.tw/news/180621",
+   "date": "2026-11-19T01:11:29.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Palo Alto Networks斥資45億美元併購AI新創Applied Compute",
+   "link": "https://www.ithome.com.tw/news/180637",
+   "date": "2026-11-19T01:11:15.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "美政府報告：中國尋求取得輝達先進晶片，用於 AI 武器",
+   "link": "https://technews.tw/2026/11/19/china-seeks-advanced-nvidia-chips-for-ai-weapons-despite-us-curbs/",
+   "date": "2026-11-19T01:10:41.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 從常規心電圖發掘隱藏訊號，精準辨識心臟猝死高風險群",
+   "link": "https://technews.tw/2026/11/19/new-breakthrough-ai-prediction-sudden-cardiac-death/",
+   "date": "2026-11-19T00:45:58.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達案引發美關注先進 AI 晶片使用情形，新加坡稱願協助檢查",
+   "link": "https://technews.tw/2026/11/19/nvidia-case-prompts-us-concern-advanced-ai-chip-use-singapore-offers-assist-checks/",
+   "date": "2026-11-19T00:40:07.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "鎖定法國媒體、娛樂等網站、俄語駭客用 AI 代理發動全自動化漏洞攻擊",
+   "link": "https://infosecu.technews.tw/2026/11/19/google-says-russian-speakers-pulled-off-first-ever-fully-automated-ai-cyberattack/",
+   "date": "2026-11-19T00:20:07.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟Agent Framework套件遭植入惡意程式，鎖定Azure及CI/CD環境憑證",
+   "link": "https://www.ithome.com.tw/news/180624",
+   "date": "2026-11-19T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "研究人員揭Gemini 4 Argon行為偏離測試結果，AI代理繞過網路限制、試圖攻擊真實網站",
+   "link": "https://www.ithome.com.tw/news/180579",
+   "date": "2026-11-19T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI代理廣泛用於軟體開發，但不到1成企業能全面偵測未受管控AI活動",
+   "link": "https://www.ithome.com.tw/news/180578",
+   "date": "2026-11-19T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "CSA發布自主滲透測試標準APAS，建立AI測試結果可信度評估規範",
+   "link": "https://www.ithome.com.tw/news/180548",
+   "date": "2026-11-19T00:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "主管愛用 AI 做決策，Z 世代卻有 69% 更信任「無 AI」的工作成果",
+   "link": "https://technews.tw/2026/11/19/senior-executives-rely-more-on-ai/",
+   "date": "2026-11-19T00:10:18.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟、FAA、Workday 接連出包：真正的問題不是 AI，而是沒人看得懂系統",
+   "link": "https://technews.tw/2026/11/19/microsoft-global-outage-puts-ai-generated-code-back-in-the-spotlight/",
+   "date": "2026-11-19T00:00:11.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "路透：川普政府擬要求美企，揭露中國 AI 模型使用情況",
+   "link": "https://technews.tw/2026/11/19/trump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use/",
+   "date": "2026-11-18T23:50:02.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "機器人握得住手卻給不了安慰，共感是 AI 學不會的人類超能力",
+   "link": "https://technews.tw/2026/11/19/sensitivity-ai-will-never-learn/",
+   "date": "2026-11-18T23:20:59.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
   {
    "title": "希格諾、茂綸展示 Physical AI，機器手臂精準揮桿打高爾夫",
    "link": "https://technews.tw/2026/11/18/epson-physical-ai-nvidia/",
