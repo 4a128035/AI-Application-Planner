@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T02:43:52.061Z",
+ "updatedAt": "2026-11-21T02:54:07.166Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,153 @@
   }
  ],
  "items": [
+  {
+   "title": "AI 讓詐騙信件不再錯字連篇，資安防線轉向驗證流程",
+   "link": "https://infosecu.technews.tw/2026/11/21/ai-cybersecurity-terms-explained-10-definitions-to-know/",
+   "date": "2026-11-21T01:30:49.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "被質疑就改口，UNESCO 研究：AI 回答氣候問題九成正確，卻很容易被說服",
+   "link": "https://technews.tw/2026/11/21/ai-models-mislead-on-climate-science/",
+   "date": "2026-11-21T00:30:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 前景疑慮罩頂族群重挫，法人：籌碼沉澱是止跌關鍵",
+   "link": "https://finance.technews.tw/2026/11/20/ai-prospects-doubts-sectors-plunge-institutional-investors-chip-consolidation-key-stop-decline/",
+   "date": "2026-11-20T10:30:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "韓國 AI 作弊爭議，李在明：改革考試制度嚴懲違規",
+   "link": "https://technews.tw/2026/11/20/south-korea-ai-cheating-controversy-lee-jae-myung-urges-exam-system-reform-severe-punishment-violations/",
+   "date": "2026-11-20T09:50:24.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "macOS 版 Gemini 加入電腦使用功能，化身桌面助理代勞日常任務",
+   "link": "https://technews.tw/2026/11/20/gemini-for-mac-gains-computer-use-capabilities/",
+   "date": "2026-11-20T09:49:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 上市難救行情，日股暴跌逾 3,000 點",
+   "link": "https://finance.technews.tw/2026/11/20/nikkei-plunges-more-than-3000-points/",
+   "date": "2026-11-20T08:40:14.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "ChatGPT 推出 Live Dictation 即時語音輸入！打破 10 分鐘限制，全平台免費上線",
+   "link": "https://infosecu.technews.tw/2026/11/20/chatgpt-voice-input-privacy-risks/",
+   "date": "2026-11-20T08:00:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達共同創辦人員工大會哽咽，批黃仁勳「背叛公司核心價值」",
+   "link": "https://technews.tw/2026/11/20/nvidia-co-founder-choked-up-employee-meeting-criticizes-jensen-huang-betraying-core-values/",
+   "date": "2026-11-20T07:50:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美商務部核准逾 87.9 萬顆 AI 晶片銷中 議員質疑「出口管制失靈」",
+   "link": "https://www.inside.com.tw/article/42970-us-commerce-ai-chip-export-licenses-china-nvidia-h200-879000",
+   "date": "2026-11-20T07:37:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 掛牌首日完全稀釋市值 1.76 兆美元，躍居全球市值第 7 大公司",
+   "link": "https://www.inside.com.tw/article/42969-anthropic-ant-nasdaq-debut-1-76-trillion-7th-most-valuable",
+   "date": "2026-11-20T07:37:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "輝達洽購擴散語言模型新創 Inception，金額逾 5 億美元",
+   "link": "https://finance.technews.tw/2026/11/20/nvidia-in-talks-to-acquire-inception-for-over-500m/",
+   "date": "2026-11-20T07:30:53.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "從資料、算力到資安，專家把脈 AI Agent 如何從試驗走向落地",
+   "link": "https://infosecu.technews.tw/2026/11/20/technews-hosted-an-ai-and-digital-transformation-seminar-on-november-19/",
+   "date": "2026-11-20T07:19:27.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI「交棒主義」掀論戰，學者警告人類恐失去未來主導權",
+   "link": "https://infosecu.technews.tw/2026/11/20/the-dangers-of-ai-handoverism/",
+   "date": "2026-11-20T07:10:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 十大新貴身價破百億美元！梁文鋒 440 億居冠，背後卻是高度集中的「紙上富貴」？",
+   "link": "https://finance.technews.tw/2026/11/20/global-top-10-ai-billionaires-net-worth/",
+   "date": "2026-11-20T07:00:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "哲學家：AI 若安全發展，人類平均壽命上看 1,400 歲",
+   "link": "https://technews.tw/2026/11/20/living-to-1400-could-be-possible-with-ai/",
+   "date": "2026-11-20T06:40:01.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "川普：與習近平均同意 AI 應設最低限度護欄",
+   "link": "https://technews.tw/2026/11/20/trump-xi-jinping-agree-minimum-ai-guardrails/",
+   "date": "2026-11-20T06:00:10.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國批准近 88 萬顆高階 AI 晶片輸中，廠商名單曝光促國安爭議升溫",
+   "link": "https://technews.tw/2026/11/20/list-of-companies-approved-by-the-u-s-for-exports-of-nearly-880000-high-end-ai-chips-to-china/",
+   "date": "2026-11-20T05:15:27.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 戰國時代才剛開始，蘋果徵才搶攻 AI 代理人",
+   "link": "https://technews.tw/2026/11/20/the-warring-states-era-of-ai-has-only-just-begun-apple-is-hiring-to-make-a-push-into-ai-agents/",
+   "date": "2026-11-20T03:57:56.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta、OpenAI 相繼推出 AI 代理，Apple 職缺透露也在加緊開發",
+   "link": "https://www.inside.com.tw/article/42968-apple-ai-agent-development",
+   "date": "2026-11-20T03:45:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Google跟進OpenAI、Anthropic，Gemini開始支援Mac電腦操作",
+   "link": "https://www.ithome.com.tw/news/180677",
+   "date": "2026-11-20T03:11:19.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "不只會寫 Code 還要懂脈絡，Slack 開放 AI 存取對話紀錄掌握開發意圖",
+   "link": "https://technews.tw/2026/11/20/ai-software-engineering-collaborative-landscape/",
+   "date": "2026-11-20T02:50:37.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
   {
    "title": "AI 繁榮物極必反，牛津：下次經濟衰退恐更深更長",
    "link": "https://technews.tw/2026/11/20/ai-boom-may-reach-a-tipping-point-oxford-warns-next-recession-could-be-deeper-and-longer/",
@@ -144,10 +291,24 @@
    "lang": "zh"
   },
   {
+   "title": "AI趨勢周報第295期：微軟一口氣推出7款AI模型，拚效能也拚Token成本",
+   "link": "https://www.ithome.com.tw/news/180669",
+   "date": "2026-11-19T21:11:10.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
    "title": "Anthropic 掛牌！ANT 首日開高 34% 至 111.50 美元，執行長 Amodei 盼以「向上競賽」帶動業界安全開發",
    "link": "https://www.inside.com.tw/article/42966-anthropic-ipo-ant-nasdaq-debut-83-dollars",
    "date": "2026-11-19T17:54:00.000Z",
    "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟全面部署Office in Copilot，Autopilot提供給早鳥用戶",
+   "link": "https://www.ithome.com.tw/news/180679",
+   "date": "2026-11-19T17:11:16.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
