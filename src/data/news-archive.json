@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T02:54:07.166Z",
+ "updatedAt": "2026-11-22T01:45:06.155Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,69 @@
   }
  ],
  "items": [
+  {
+   "title": "AI 加速科學研究，資料品質與驗證機制成新瓶頸",
+   "link": "https://technews.tw/2026/11/22/ai-raises-the-stakes-for-discovery-data/",
+   "date": "2026-11-22T00:30:25.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Amazon 禁止 AI 幫消費者購物，旗下 AWS 卻開放 AI 自己買軟體",
+   "link": "https://www.inside.com.tw/article/42977-amazon-aws-marketplace-ai-agent-shopping-x402-payments",
+   "date": "2026-11-21T08:07:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 數學家攜手 Claude 宣稱破解 167 年黎曼猜想，人類數學家也提出證明",
+   "link": "https://www.inside.com.tw/article/42976-anthropic-claude-ai-riemann-hypothesis-proof",
+   "date": "2026-11-21T07:33:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 評分也有「口音偏見」？研究：美英口音最吃香，中文、奈及利亞口音墊底",
+   "link": "https://technews.tw/2026/11/21/ai-voice-model-accent-bias/",
+   "date": "2026-11-21T07:30:20.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "川普揚言對海外 AI 資料中心課重稅，美國 75% 選民卻反對蓋在自家附近",
+   "link": "https://www.inside.com.tw/article/42975-trump-threatens-tax-us-companies-overseas-ai-data-centers",
+   "date": "2026-11-21T07:11:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 也有雙面性格，研究：AI 得知受監控時會隱藏真實意圖",
+   "link": "https://technews.tw/2026/11/21/ai-surveillance-behavioral-differences-study/",
+   "date": "2026-11-21T06:30:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "強鹿推免費 AI 助理「JD」告別繁瑣數據，一句話秒解農場大小事",
+   "link": "https://technews.tw/2026/11/21/john-deere-jd-ai-assistant/",
+   "date": "2026-11-21T05:30:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 研究員宣稱利用 Claude，解開困擾數學界超過 150 年黎曼猜想難題",
+   "link": "https://technews.tw/2026/11/21/anthropic-solve-riemann-problem-with-claude/",
+   "date": "2026-11-21T03:29:13.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "太空資料中心還沒蓋，債權人先怕了！SpaceX 遭要求別把 AI 晶片送上太空",
+   "link": "https://www.inside.com.tw/article/42974-spacex-space-data-center-ai-chips-collateral-concerns",
+   "date": "2026-11-21T03:29:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "AI 讓詐騙信件不再錯字連篇，資安防線轉向驗證流程",
    "link": "https://infosecu.technews.tw/2026/11/21/ai-cybersecurity-terms-explained-10-definitions-to-know/",
