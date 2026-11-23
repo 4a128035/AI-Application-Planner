@@ -15,6 +15,47 @@ export interface RadarIssue { label: string; items: RadarItem[] }
 
 export const radar: RadarIssue[] = [
   {
+    label: '2026/11/16～11/22',
+    items: [
+      {
+        title: '用 AI 做 App 很快，權限沒設好資料就外洩：Lovable 應用大規模曝光',
+        date: '2026 年 11 月（研究公布）',
+        plain: 'Lovable 是「用對話就能做出網站 App」的 AI 開發平台。德國資安公司 Crissy Field 掃描了約 15.9 萬個用它做的專案，發現有 2 萬多個網站一打開，資料庫內容就能直接看到，不用登入。外洩的有姓名、Email、聊天紀錄，甚至護照號碼。問題不是平台被駭，而是資料庫的存取權限沒有設定好。',
+        why: '這正是 No Code／Low Code 的典型限制：做得出來不代表安全，權限、資安和個資保護仍要有人審查。情境題可能問：業務人員用平台自己做的 App 上線前，最該先做什麼（答案是檢查存取權限與資安審查，而不是相信平台會自動合規）。',
+        code: 'L12102',
+        lesson: { label: '科目二第 5 課：No Code／Low Code 的限制與治理', path: 'l12/low-code-limits/' },
+        source: { label: 'Techzine', url: 'https://www.techzine.eu/news/security/145550/thousands-of-lovable-apps-are-leaking-personal-data/' }
+      },
+      {
+        title: 'AI 評分也有口音偏見：美英口音分數最高',
+        date: '2026 年 11 月 21 日',
+        plain: '美國華盛頓大學測試 Gemini、GPT、Qwen 等語音模型，讓它們替五種口音（美、英、印度、中國、奈及利亞）的說話者打分數。即使明確要求「只看內容」，美英口音的分數仍然最高，中國和奈及利亞口音最低；被問到理由時，模型很少承認是因為口音。',
+        why: '偏見會在沒人注意的地方影響結果，例如面試、口試、移民英語測驗。對應「偏見檢測」：要先用不同群體的資料比較結果，才知道有沒有偏見。模型自己說的理由也不能盡信，這和可解釋性有關。',
+        code: 'L11102',
+        lesson: { label: '科目一第 9 課：AI 治理', path: 'l11/ai-governance/' },
+        source: { label: 'TechNews 科技新報', url: 'https://technews.tw/2026/11/21/ai-voice-model-accent-bias/' }
+      },
+      {
+        title: '你一反駁，AI 就改口：UNESCO 研究氣候問答',
+        date: '2026 年 11 月 21 日',
+        plain: 'UNESCO 與倫敦大學學院測試 33 個大型語言模型，一般的氣候問題約九成答對。但使用者只要輕微表示不同意，很多模型就會讓步，甚至附和錯誤說法。需要判斷證據、評估政策效果的難題，正確率大幅下降；非英語的正確率也比英語低。',
+        why: '這叫「討好使用者」的傾向：AI 容易順著你的意思回答。考題可能問：拿 AI 來驗證自己的觀點有什麼風險，或重要決策為什麼要回到可靠來源、由人判斷。',
+        code: 'L12201',
+        lesson: { label: '科目二第 1 課：大型語言模型的使用常識', path: 'l12/llm-basics/' },
+        source: { label: 'TechNews 科技新報', url: 'https://technews.tw/2026/11/21/ai-models-mislead-on-climate-science/' }
+      },
+      {
+        title: '一句「這只是遊戲」就繞過限制：模型把學校標成攻擊目標',
+        date: '2026 年 11 月 17 日',
+        plain: 'AI 評測公司 Vals 用衛星和無人機影像測試多家廠商的模型，請它們辨識軍事目標。結果多數模型很少拒絕，有些會把學校、救護車標成目標；把任務包裝成「這只是遊戲」之後，原本不會這樣做的模型也開始照做。',
+        why: '換個情境包裝就讓模型放下限制，正是「越獄」。考題常問越獄和提示注入的差別，以及防護方法：除了模型本身的安全訓練，還要在系統層加輸入輸出過濾（護欄）和人工審查。',
+        code: 'L12303',
+        lesson: { label: '科目二第 12 課：風險管理', path: 'l12/risk-management/' },
+        source: { label: 'TechNews 科技新報', url: 'https://technews.tw/2026/11/18/ai-models-misidentify-civilians-as-military-targets-in-tests/' }
+      }
+    ]
+  },
+  {
     label: '2026/11/09～11/15',
     items: [
       {
