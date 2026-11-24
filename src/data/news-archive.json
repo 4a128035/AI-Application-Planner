@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T02:03:47.633Z",
+ "updatedAt": "2026-11-24T05:40:02.887Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,286 @@
   }
  ],
  "items": [
+  {
+   "title": "黃仁勳回歸，供應鏈：AI「循環融資」更受約束、美監管不鬆手",
+   "link": "https://technews.tw/2026/11/24/jensen-huang-returns-supply-chain-ai-circular-financing-tighter-constraints-us-regulation-strict/",
+   "date": "2026-11-24T04:30:17.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "「沒人開車只靠手煞車！」AWS 執行長批 AI 安全炒作，籲以系統工程取代緊急開關",
+   "link": "https://technews.tw/2026/11/24/aws-ceo-discusses-ai-safety/",
+   "date": "2026-11-24T04:20:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Amazon 傳砸 75 億美元取得 AI 新創 Decart 技術，為 Trainium 晶片對外銷售鋪路",
+   "link": "https://www.inside.com.tw/article/42990-amazon-decart-ai-optimization",
+   "date": "2026-11-24T04:08:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "動視 AI 專利擬蒐集玩家語音訓練 NPC，引發隱私與授權疑慮",
+   "link": "https://infosecu.technews.tw/2026/11/24/activision-ai-patent-privacy-controversy/",
+   "date": "2026-11-24T04:00:08.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "狂吸 39 億美元創紀錄，中國 300 家 AI 新創靠「單點突破」力抗 DeepSeek",
+   "link": "https://technews.tw/2026/11/24/chinese-ai-startups-hit-record-high-fundraising/",
+   "date": "2026-11-24T03:50:02.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "亞馬遜收購新創 Decart 核心 AI 優化技術，強化 Trainium 效能並延攬創辦團隊",
+   "link": "https://finance.technews.tw/2026/11/24/amazon-acquires-decart/",
+   "date": "2026-11-24T03:40:17.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic 推出 Claude Ship，由 AI Agent 審查、修正，再依團隊政策核准 PR",
+   "link": "https://www.inside.com.tw/article/42987-anthropic-claude-ship-ai-agent-code-review-approval",
+   "date": "2026-11-24T03:36:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "川普為何力保黃仁勳？《紐約時報》揭兩人關係轉變：輝達「大到不能倒」 AI 霸權才是關鍵",
+   "link": "https://www.inside.com.tw/article/42988-trump-jensen-huang-nvidia-ceo-reinstatement-ai-dominance",
+   "date": "2026-11-24T03:35:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 需求能否續強？戴爾、惠普財報見真章",
+   "link": "https://finance.technews.tw/2026/11/24/dell-and-hp-earnings-emerge-as-key-indicators-for-ai-stocks/",
+   "date": "2026-11-24T03:30:53.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "蘋果加速推進 Siri AI，多年 100% 再生能源神話會破功嗎？",
+   "link": "https://technews.tw/2026/11/24/will-siri-ai-threaten-apples-environmental-target/",
+   "date": "2026-11-24T02:55:51.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Godela 發表工程 AI「Godel-1」，像與工程師對話般打造並驗證實體產品",
+   "link": "https://technews.tw/2026/11/24/building-ai-for-the-physical-world-godel-1/",
+   "date": "2026-11-24T02:50:22.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "高通扶植台灣 AI 新創！QITC 優勝名單出爐，由自主巡檢機器人奪冠",
+   "link": "https://technews.tw/2026/11/24/qualcomm-2026-qitc-edge-ai-taiwan/",
+   "date": "2026-11-24T02:45:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 時代最缺的是人類思考，PwC 要求 8.5 萬名員工考「判斷力」認證",
+   "link": "https://technews.tw/2026/11/24/pwcs-talent-leader-shares-how-the-firm-will-certify-85000-workers-in-critical-thinking-for-the-ai-age/",
+   "date": "2026-11-24T02:35:09.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "APLD 再簽 18 年 AI 算力長約 潛在營收上看 127 億美元",
+   "link": "https://finance.technews.tw/2026/11/24/applied-digital-secures-new-150-mw-18-year-lease-with-tier-one-investment-grade-hyperscaler/",
+   "date": "2026-11-24T02:30:07.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳閃電回鍋輝達，凸顯對 AI 產業龐大掌控力",
+   "link": "https://technews.tw/2026/11/24/jensen-huang-swift-return-nvidia-highlights-immense-control-ai-industry/",
+   "date": "2026-11-24T02:25:44.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳戲劇性回歸！輝達董事會 180 度轉彎，背後關鍵推手竟是川普",
+   "link": "https://technews.tw/2026/11/24/trump-pushed-jensen-huang-comeback/",
+   "date": "2026-11-24T02:20:53.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Meta 首席 AI 長汪滔示警：超級智慧正在到來，未來一年成防失控關鍵",
+   "link": "https://technews.tw/2026/11/24/alexandr-wang-warns-superintelligence-could-go-out-of-control/",
+   "date": "2026-11-24T02:20:41.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "思科、OpenAI合作推出開源AI基礎架構防護技術Shirudo",
+   "link": "https://www.ithome.com.tw/news/180742",
+   "date": "2026-11-24T02:11:22.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 股狂歡 Anthropic 獨垂淚 黃仁勳、售股解禁成憂",
+   "link": "https://finance.technews.tw/2026/11/24/ai-stocks-rally-anthropic-struggles-jensen-huang-share-lockup-expiry-concerns/",
+   "date": "2026-11-24T01:55:12.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "150 萬個工作消失，研究：AI 不必裁員就能消滅工作",
+   "link": "https://technews.tw/2026/11/24/1-5-million-jobs-vanish-study-ai-can-eliminate-jobs-without-layoffs/",
+   "date": "2026-11-24T01:52:03.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳回鍋，分析：未消除 AI 生態系統或輝達嚴峻挑戰",
+   "link": "https://technews.tw/2026/11/24/jensen-huang-return-analysis-ai-ecosystem-nvidia-challenges-unresolved/",
+   "date": "2026-11-24T01:50:28.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Megaspeed 遭美列黑名單，涉助中取得輝達 AI 晶片",
+   "link": "https://technews.tw/2026/11/24/us-blacklists-megaspeed-cloud-company-linked-to-nvidia-scandal/",
+   "date": "2026-11-24T01:45:03.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 教父黃仁勳重量級回歸，輝達創紀錄單日拉抬市場 2 兆美元",
+   "link": "https://finance.technews.tw/2026/11/24/ai-godfather-jensen-huang-returns-nvidia-lifts-market-record-2-trillion-single-day/",
+   "date": "2026-11-24T01:35:34.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic推出Claude Ship，AI自動審查、修正及核准程式碼",
+   "link": "https://www.ithome.com.tw/news/180741",
+   "date": "2026-11-24T01:11:16.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "〈模擬市民〉之父沉寂逾 15 年再出手，新作〈MyMems〉結合 AI 將回憶化為主題樂園",
+   "link": "https://technews.tw/2026/11/24/will-wright-sims-creator-reveals-new-project-mymems/",
+   "date": "2026-11-24T00:30:39.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Nvidia董事會宣布黃仁勳回鍋，離職11天後重掌執行長職務",
+   "link": "https://www.ithome.com.tw/news/180739",
+   "date": "2026-11-24T00:11:42.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "對 OpenAI 大失所望，數學家自己從零開始打造 AI 模型",
+   "link": "https://technews.tw/2026/11/24/burned-by-openai-mathematicians-are-now-making-their-own-ai-models/",
+   "date": "2026-11-24T00:10:35.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 拿別人的歌詞練功，版權費誰來付？音樂巨頭向 Anthropic 開戰",
+   "link": "https://finance.technews.tw/2026/11/24/anthropic-music-publishers-square-off-on-fair-use-defense-in-ai-copyright-case/",
+   "date": "2026-11-24T00:00:11.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國管制與非紅供應鏈成趨勢，未來 AI 產業走向的幾點觀察",
+   "link": "https://technews.tw/2026/11/24/key-observations-factors-influencing-future-ai-industry-demand/",
+   "date": "2026-11-23T23:50:00.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 成網攻加速器：零時差漏洞翻倍、平均 11 天遭駭，雲端系統恐 3 小時內淪陷",
+   "link": "https://infosecu.technews.tw/2026/11/24/latest-battlefront-ai-cybersecurity/",
+   "date": "2026-11-23T23:40:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI將電腦使用代理人提供給醫療業",
+   "link": "https://www.ithome.com.tw/news/180749",
+   "date": "2026-11-23T17:11:45.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Amazon收購Decart AI運算最佳化技術，延攬核心研發團隊",
+   "link": "https://www.ithome.com.tw/news/180751",
+   "date": "2026-11-23T17:11:00.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "創辦人回歸！黃仁勳重任 NVIDIA 總裁暨執行長 董事會全票通過",
+   "link": "https://www.inside.com.tw/article/42986-jensen-huang-will-return",
+   "date": "2026-11-23T14:37:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Google 打造「鏡像維度」模擬網路，為 Chrome Agent 建立安全訓練沙盒",
+   "link": "https://infosecu.technews.tw/2026/11/23/google-chrome-introduces-mirror-dimension-to-safely-test-ai-agents/",
+   "date": "2026-11-23T13:04:16.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "台積電注入強心針，AI 長期看好先進製程持續供不應求",
+   "link": "https://technews.tw/2026/11/23/tsmc-boosts-ai-long-term-outlook-advanced-process-supply-shortages/",
+   "date": "2026-11-23T08:50:42.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "戳破科技業過度樂觀神話，諾華執行長：AI 難在 10 年內治癒癌症",
+   "link": "https://technews.tw/2026/11/23/novartis-rejects-ai-industry-hopes-to-cure-cancer-in-five-to-10-years/",
+   "date": "2026-11-23T08:20:50.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 助攻星系模擬提速 20 倍，日本研發「PHEASANT」系統首創單一恆星解析度",
+   "link": "https://technews.tw/2026/11/23/ai-galaxy-simulation/",
+   "date": "2026-11-23T06:30:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "聆機科技 AnyInsight 榮獲 2026 Meet Neo Star「中華電信特別獎」：讓企業放心把 AI Agent 帶進核心流程",
+   "link": "https://www.inside.com.tw/article/42985-2026%20Meet%20Neo%20Star",
+   "date": "2026-11-23T06:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AI Agent 與物理 AI 差在出錯之後，軟體留得下日誌、機器人失誤無法回滾",
+   "link": "https://www.inside.com.tw/article/42984-ai-agents-vs-physical-ai-differences",
+   "date": "2026-11-23T05:08:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 首席科學家提議用「困惑度」替 AI 設速限，公開 GPT-3.5 以來的預訓練數據",
+   "link": "https://www.inside.com.tw/article/42980-openai-pachocki-perplexity-common-limits-ai-pacing",
+   "date": "2026-11-23T03:00:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "中國股市 AI 熱潮逆轉上演大逃亡，科技類指數市值蒸發 56 兆",
    "link": "https://finance.technews.tw/2026/11/23/china-stock-market-ai-frenzy-mass-exodus-tech-indices-56-trillion-market-value-evaporation/",
@@ -120,6 +400,27 @@
    "link": "https://infosecu.technews.tw/2026/11/23/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-from-software-patches/",
    "date": "2026-11-22T23:10:04.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "COP31未達共識，環境部：加速推動AI成為減碳與氣候調適的新工具",
+   "link": "https://www.ithome.com.tw/news/180720",
+   "date": "2026-11-22T20:11:27.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "【資安日報】11月23日，東亞多所大學遭鎖定，中國駭客用AI攻擊框架Cairn發動攻擊，11分鐘內發現並利用醫療影像AI軟體零時差漏洞",
+   "link": "https://www.ithome.com.tw/news/180718",
+   "date": "2026-11-22T18:11:19.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "荷蘭測試6款AI眼鏡揭安全漏洞，建議消費者不要購買",
+   "link": "https://www.ithome.com.tw/news/180714",
+   "date": "2026-11-22T17:11:54.000Z",
+   "source": "iThome",
    "lang": "zh"
   },
   {
