@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T05:40:02.887Z",
+ "updatedAt": "2026-11-25T04:40:07.233Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,83 @@
   }
  ],
  "items": [
+  {
+   "title": "自己需要的 App 自己做！Claude 開放打造 Mac、Windows 桌面 App",
+   "link": "https://www.inside.com.tw/article/43007-claude-install-as-app",
+   "date": "2026-11-25T04:32:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Google公布全新AI代理人安全控管介面",
+   "link": "https://www.ithome.com.tw/news/180788",
+   "date": "2026-11-25T04:11:44.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "網擎揭露AI應用布局，從郵件產品功能創新到加速軟體開發與測試",
+   "link": "https://www.ithome.com.tw/news/180693",
+   "date": "2026-11-25T04:11:06.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "Anthropic（ANT）上市第 4 個交易日跌破 83 美元 IPO 價，收在 81.91 美元抹去首日漲幅",
+   "link": "https://www.inside.com.tw/article/43001-anthropic-ant-below-83-ipo-price",
+   "date": "2026-11-25T03:56:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "NVIDIA GTC 新品發表撞期國會問話！黃仁勳回鍋後硬仗接連來",
+   "link": "https://www.inside.com.tw/article/43000-jensen-huang-nvidia-congress-gtc",
+   "date": "2026-11-25T03:34:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "音樂串流平臺Tidal將全面封殺純AI生成音樂",
+   "link": "https://www.ithome.com.tw/news/180783",
+   "date": "2026-11-25T03:11:31.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "馬斯克坦承 SpaceX AI 競爭落後！出租算力比自研 Grok 更賺錢",
+   "link": "https://www.inside.com.tw/article/42999-spacex-ai-compute-rental-anthropic-google-grok",
+   "date": "2026-11-25T03:06:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "AWS開源Strands Decider v2模型，改善AI代理人決策準確度與推論成本",
+   "link": "https://www.ithome.com.tw/news/180761",
+   "date": "2026-11-25T02:11:22.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "因應AI網攻威脅，資安署強調遭駭及早通知上下游，並要提升漏洞處置效率及復原速度",
+   "link": "https://www.ithome.com.tw/news/180762",
+   "date": "2026-11-25T02:11:08.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "微軟 Agent 365 登錄數破 5,000 萬，Copilot 計費從按席次擴大到按用量",
+   "link": "https://www.inside.com.tw/article/42994-microsoft-agent-365-50-million-business-analytics",
+   "date": "2026-11-24T06:26:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "Tesla AI4 算力逼近極限，馬斯克證實 AI5 不上車，FSD v15 恐成無監督自駕最後機會",
+   "link": "https://www.inside.com.tw/article/42991-tesla-fsd-v15-ai4-last-shot-compute-limit",
+   "date": "2026-11-24T06:26:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
   {
    "title": "黃仁勳回歸，供應鏈：AI「循環融資」更受約束、美監管不鬆手",
    "link": "https://technews.tw/2026/11/24/jensen-huang-returns-supply-chain-ai-circular-financing-tighter-constraints-us-regulation-strict/",
