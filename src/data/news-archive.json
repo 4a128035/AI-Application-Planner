@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T03:51:27.532Z",
+ "updatedAt": "2026-11-28T03:37:48.900Z",
  "keepDays": 30,
  "failed": [],
  "sources": [
@@ -17,6 +17,125 @@
   }
  ],
  "items": [
+  {
+   "title": "主動標示 AI、手寫 POP 留給店員！唐吉訶德如何靠「近藤愛」加速行銷，又不失招牌「店的味道」？",
+   "link": "https://technews.tw/2026/11/28/don-don-donki-launches-ai-employee-but-keeps-posters-handwritten/",
+   "date": "2026-11-28T03:00:03.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 會安慰人不是天性，研究指聊天機器人的同理心是刻意設計",
+   "link": "https://technews.tw/2026/11/28/ai-empathy-not-innate-research-chatbot-compassion-deliberate-design/",
+   "date": "2026-11-28T01:30:54.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "中企以輝達 GB300 機櫃抵押貸款現身上海，產地點名來自台灣更受市場關注",
+   "link": "https://finance.technews.tw/2026/11/28/chinese-enterprises-use-nvidia-gb300-racks-as-collateral-for-loans/",
+   "date": "2026-11-28T00:30:45.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "黃仁勳回來了，AI 狂飆時代卻回不去了！2027 年三大隱憂浮現：投資、融資、成長全面降檔",
+   "link": "https://finance.technews.tw/2026/11/28/jensen-huang-11-day-return-what-changed-one-person-rule-ends-2027-ai-slowdown-experts-3-concerns/",
+   "date": "2026-11-28T00:00:14.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 仍供不應求，主計總處估明年出口破 1 兆美元創新高",
+   "link": "https://finance.technews.tw/2026/11/27/ai-supply-shortage-dgbass-forecasts-next-year-exports-1-trillion-record-high/",
+   "date": "2026-11-27T10:10:06.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美出口限令加速轉變！瑞銀：中國產 AI 晶片 2028 年市占率將突破 88%",
+   "link": "https://technews.tw/2026/11/27/ubs-see-chinese-ai-chip-market-by-2028/",
+   "date": "2026-11-27T09:12:30.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "日本提國防 AI 願景，判斷與責任由人類承擔",
+   "link": "https://technews.tw/2026/11/27/japan-defense-ai-vision-human-judgment-responsibility/",
+   "date": "2026-11-27T08:10:30.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "掌握 AI 晶片測試與日系航太專案！英柏得科技預計 12 月中掛牌上市",
+   "link": "https://finance.technews.tw/2026/11/27/industrial-grade-data-storage/",
+   "date": "2026-11-27T07:02:57.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美收緊先進 AI 晶片出口管制，東南亞 AI 基礎建設面臨考驗",
+   "link": "https://technews.tw/2026/11/27/us-tightens-ai-chip-export-controls-southeast-asia-ai-infrastructure-challenge/",
+   "date": "2026-11-27T07:00:33.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "涉向未成年人傳性暗示訊息，蘋果下架 AI 聊天機器人 Talkie",
+   "link": "https://technews.tw/2026/11/27/apple-pulls-minimax-ai-chatbot-from-app-store-over-child-safety-concerns/",
+   "date": "2026-11-27T06:50:48.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "美國防堵中國租用遠端算力，新規加查緝爭搶 AI 競賽優勢",
+   "link": "https://technews.tw/2026/11/27/us-curbs-china-remote-compute-rentals-new-regulations-crackdowns-secure-ai-race-advantage/",
+   "date": "2026-11-27T06:40:47.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 狂潮暗藏 2007 年次貸翻版！大賣空貝瑞示警：CDS 已拉響信用警報",
+   "link": "https://finance.technews.tw/2026/11/27/subprime-mortgage-crisis/",
+   "date": "2026-11-27T05:21:29.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "英國央行估雲端巨頭 AI 曝險逾 4 兆美元，表外承諾與循環融資放大跨市場連鎖風險",
+   "link": "https://www.inside.com.tw/article/43024-boe-ai-hyperscaler-4-trillion-exposure",
+   "date": "2026-11-27T05:19:00.000Z",
+   "source": "INSIDE",
+   "lang": "zh"
+  },
+  {
+   "title": "歐洲軟體龍頭 SAP 傳擬裁員萬人 加速 AI 轉型",
+   "link": "https://technews.tw/2026/11/27/sap-weighs-cutting-at-least-10000-positions-in-ai-restructuring/",
+   "date": "2026-11-27T04:20:19.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "Character.AI擬拍賣用戶聊天紀錄，美國42名檢察長反對",
+   "link": "https://www.ithome.com.tw/news/180847",
+   "date": "2026-11-27T04:11:54.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "美國新規堵漏洞，輝達晶片買家恐禁租算力予中企",
+   "link": "https://technews.tw/2026/11/27/nvidia-chip-buyers-told-to-rule-out-chinese-renters-to-purchase-gpus/",
+   "date": "2026-11-27T04:10:23.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI 坦承 GPT-6.2 計費出錯，多數用戶更快達到使用上限",
+   "link": "https://technews.tw/2026/11/27/openai-made-a-billing-mistake-at-the-launch-of-gpt-6-2/",
+   "date": "2026-11-27T03:54:36.000Z",
+   "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
   {
    "title": "AI 投資熱翻天 澳洲企業資本支出創 15 年最強",
    "link": "https://technews.tw/2026/11/27/ai-investment-drives-australian-capital-spending-to-15-year-high/",
@@ -102,6 +221,13 @@
    "lang": "zh"
   },
   {
+   "title": "AI治理從制度走向安全驗證，BSI解析ISO/IEC 27090與42119新進展，強調企業須跨部門管理AI風險",
+   "link": "https://www.ithome.com.tw/news/180834",
+   "date": "2026-11-27T01:11:11.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
    "title": "中國 AI 算力需求有多強？美國新規掀輝達 B300 求售潮",
    "link": "https://technews.tw/2026/11/27/china-ai-computing-power-demand-us-regulations-thousands-nvidia-b300-sell-off/",
    "date": "2026-11-27T00:11:36.000Z",
@@ -165,10 +291,38 @@
    "lang": "zh"
   },
   {
+   "title": "西班牙要求大型資料中心符合能源與水效率標準，強化AI算力基礎建設的永續監管",
+   "link": "https://www.ithome.com.tw/news/180859",
+   "date": "2026-11-26T22:11:32.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "印度主權AI計畫再添新成果，Chariot-1從零訓練強化多語言能力",
+   "link": "https://www.ithome.com.tw/news/180856",
+   "date": "2026-11-26T19:11:32.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
+   "title": "OpenAI修正GPT-6.2計費系統錯誤，Astra、Sol模型將更快用罄使用限額",
+   "link": "https://www.ithome.com.tw/news/180853",
+   "date": "2026-11-26T19:11:04.000Z",
+   "source": "iThome",
+   "lang": "zh"
+  },
+  {
    "title": "三年砸 3 億元攻智慧醫療，鴻海攜北榮秀 AI 機器人成果",
    "link": "https://technews.tw/2026/11/26/foxconn-smart-medicine/",
    "date": "2026-11-26T11:42:01.000Z",
    "source": "TechNews 科技新報",
+   "lang": "zh"
+  },
+  {
+   "title": "AI 搶不走的讀者！韓國電子報 Newneek 共同創辦人 Soyoun Kim 談社群與信任",
+   "link": "https://www.inside.com.tw/article/43014-newneek-soyoun-kim-interview",
+   "date": "2026-11-26T10:33:00.000Z",
+   "source": "INSIDE",
    "lang": "zh"
   },
   {
